@@ -10,14 +10,11 @@ public class Main {
 
     private static final Logger logger = LogManager.getLogger(Scraper.class);
 
-
     public static void main(String[] args) {
 
         String[] urls = UrlModifier.getModifiedUrls(inputLocation, inputOfferName, inputSeniority);
         String NoFluffJobsUrl = urls[0];
         String justjoinitUrl = urls[1];
-
-
 
         System.out.println("--------------------------------------");
         System.out.println("Looking for (" + inputSeniority + ") " + inputOfferName + " in " + inputLocation + ".");
@@ -25,6 +22,6 @@ public class Main {
         System.out.println("--------------------------------------");
 
         Scraper.scrapeData(NoFluffJobsUrl, justjoinitUrl);
-        logger.info("Successfully scraped and displayed data");
+        logger.info("Successfully displayed data");
     }
 }

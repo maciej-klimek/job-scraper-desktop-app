@@ -26,7 +26,7 @@ public class Scraper {
 
         }
         catch (Exception ex) {
-            logger.error("Cannot connect to nofluffjobs.com: invalid link or site is not responding", ex);
+            logger.error("Cannot connect to nofluffjobs.com: invalid link or website is not responding", ex);
         }
 
         try {
@@ -51,7 +51,11 @@ public class Scraper {
                     nofluffjobsData.add(entry);
                 }
             }
-            logger.info("Succesfully scraped " + nofluffjobsData.size() + " job listings from nofluffjobs.com");
+            if (nofluffjobsData.isEmpty()) {
+                logger.error("Failed to load data from nofluffjobs.com");
+            } else {
+                logger.info("Succesfully scraped " + nofluffjobsData.size() + " job offers from nofluffjobs.com");
+            }
 
         }
         catch (Exception ex) {
@@ -63,6 +67,5 @@ public class Scraper {
         }
 
     }
-
 
 }

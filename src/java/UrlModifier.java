@@ -18,7 +18,6 @@ public class UrlModifier {
             NoFluffJobsUrl += "/" + locationName;
             justjoinITUrl = "https://justjoin.it/" + locationName + "/with-salary_yes";
         }
-
     }
 
     public static void setSeniority(String seniorityLevel) {
@@ -34,7 +33,6 @@ public class UrlModifier {
             NoFluffJobsUrl += "/" + name;
             justjoinITUrl += "/" + name;
         }
-
     }
 
     public static String[] getModifiedUrls(String inputLoc, String inputOffName, String inputSen ) {
