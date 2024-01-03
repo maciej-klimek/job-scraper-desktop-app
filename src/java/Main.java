@@ -3,9 +3,9 @@ import org.apache.logging.log4j.Logger;
 public class Main {
 
     // for testing --------------------------------
-    static String inputLocation = "Gdansk";
-    static String inputOfferName = "Python developer";
-    static String inputExpLevel = "regular";
+    static String inputLocation = "Krakow";
+    static String inputOfferName = "python";
+    static String inputExpLevel = "junior";
     // -------------------------------------------
 
     private static final Logger logger = LogManager.getLogger(Scraper.class);

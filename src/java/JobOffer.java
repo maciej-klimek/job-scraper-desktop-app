@@ -14,4 +14,12 @@ public class JobOffer {
         this.expLevel = offerExpLevel;
         this.link = offerLink;
     }
+
+    public void print() {
+        System.out.println(this.name +
+                "  [" + this.expLevel + "]   |  " +
+                "w firmie: " + this.company + "  |  " +
+                "Zarobki: " + this.salary + "  |  " +
+                this.link);
+    }
 }
