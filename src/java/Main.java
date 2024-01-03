@@ -4,7 +4,7 @@ public class Main {
 
     // for testing --------------------------------
     static String inputLocation = "Krakow";
-    static String inputOfferName = "python";
+    static String inputOfferName = "python developer";
     static String inputExpLevel = "junior";
     // -------------------------------------------
 
