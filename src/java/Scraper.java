@@ -6,22 +6,23 @@ import java.util.Objects;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+
 public class Scraper {
 
     private static final Logger logger = LogManager.getLogger(Scraper.class);
-    private static Document nfjDocument;
+    private static Document nfjWebsite;
     private static Document jjitDocument;
+    private static Document offerWebsite;
 
 
     public static void scrapeData(String nfjUrl, String jjitUrl) {
 
 
-        ArrayList<String> nofluffjobsData = new ArrayList<>();
-        ArrayList<String> justJoinItData = new ArrayList<>();
+        ArrayList<String> jobOffers = new ArrayList<>();
 
 
         try {
-            nfjDocument = Jsoup.connect(nfjUrl).get();
+            nfjWebsite = Jsoup.connect(nfjUrl).get();
             logger.info("Succesfully connected to nofluffjobs.com");
 
         }
@@ -30,7 +31,7 @@ public class Scraper {
         }
 
         try {
-            Elements desiredContent = nfjDocument.select("nfj-postings-list > div.list-container");
+            Elements desiredContent = nfjWebsite.select("nfj-postings-list > div.list-container");
             for (Element jobListing : desiredContent.select("a")) {
 
                 if (!Objects.equals(jobListing.select("h3").text(), "")) {
@@ -42,19 +43,28 @@ public class Scraper {
                     String salaryValue = jobListing.select("nfj-posting-item-salary > span").text();
                     String link = jobListing.attr("href");
 
-                    String entry = "";
-                    entry += "Pozycja: " + offerName;
-                    entry += "   |   W firmie: " + companyName;
-                    entry += "   |   Zarobki: " + salaryValue;
-                    entry += "   ->    https://nofluffjobs.com" + link;
+                    try {
+                        offerWebsite = Jsoup.connect("https://nofluffjobs.com" + link).get();
+                        String expLevel = offerWebsite.select("#posting-seniority > div > span").text();
+                        logger.info(expLevel);
 
-                    nofluffjobsData.add(entry);
+                    } catch (Exception ex){
+                        logger.error("Cannot access " + link + ", ivalid link or website is not responding", ex);
+                    }
+
+//                    JobOffer currentOffer = new JobOffer(offerName, companyName, salaryValue, expLevel, link);
+//                    entry += "Pozycja: " + offerName;
+//                    entry += "   |   W firmie: " + companyName;
+//                    entry += "   |   Zarobki: " + salaryValue;
+//                    entry += "   ->    https://nofluffjobs.com" + link;
+//
+//                    jobOffers.add(entry);
                 }
             }
-            if (nofluffjobsData.isEmpty()) {
+            if (jobOffers.isEmpty()) {
                 logger.error("Failed to load data from nofluffjobs.com");
             } else {
-                logger.info("Succesfully scraped " + nofluffjobsData.size() + " job offers from nofluffjobs.com");
+                logger.info("Succesfully scraped " + jobOffers.size() + " job offers from nofluffjobs.com");
             }
 
         }
@@ -62,7 +72,7 @@ public class Scraper {
             logger.error("An error occurred during data scraping from nofluffjobs.com", ex);
         }
 
-        for (String jobEntry : nofluffjobsData) {
+        for (String jobEntry : jobOffers) {
             System.out.println(jobEntry);
         }
 
