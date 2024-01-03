@@ -13,12 +13,11 @@ public class Scraper {
     private static Document nfjWebsite;
     private static Document jjitDocument;
     private static Document offerWebsite;
+    static ArrayList<JobOffer> jobOffers = new ArrayList<>();
 
 
-    public static void scrapeData(String nfjUrl, String jjitUrl) {
+    public static ArrayList<JobOffer> scrapeData(String nfjUrl, String jjitUrl) {
 
-
-        ArrayList<JobOffer> jobOffers = new ArrayList<>();
 
 
         //SCRAPER NOFLUFFJOBS ----------------------------------------------------------------------------------------
@@ -70,9 +69,7 @@ public class Scraper {
 
         //KONIEC SCRAPER NOFLUFFJOBS ----------------------------------------------------------------------------------
 
-        for (JobOffer offer : jobOffers) {
-            offer.print();
-        }
+    return jobOffers;
 
     }
 }
