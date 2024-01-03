@@ -1,0 +1,5 @@
+- zrob se swoje issue na githubie
+- zrobic scrappra dla https://justjoin.it/ na wzór tego co juz zrobilem
+    (modyfikacjć linku sie nie przejmuj narazie, niech scrappuje dla jakiegos danego jednoego linku)
+- scrapper zbiera dane z ofert pracy, wrzuca je w obiekt JobOffer (patrz JobOffer.java) i wrzuca je to arraya tak jak ten co napisałem
+- tutorial do JSoupa z ktorego ja korzystalem https://www.youtube.com/watch?v=tI1qGwhn_bs
