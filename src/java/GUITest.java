@@ -8,8 +8,8 @@ import java.util.ArrayList;
 public class GUITest extends JFrame {
     private ArrayList<JobOffer> jobOffers = Scraper.jobOffers;
     private JTextField offerNameField;
-    private JTextField locationField;
-    private JTextField expLevelField;
+    private JComboBox<String> locationDropdown;
+    private JComboBox<String> expLevelDropdown;
 
     public GUITest() {
         initializeUI();
@@ -23,8 +23,10 @@ public class GUITest extends JFrame {
         // Input fields
         JPanel inputPanel = new JPanel();
         offerNameField = new JTextField(20);
-        locationField = new JTextField(20);
-        expLevelField = new JTextField(20);
+        locationDropdown = new JComboBox<>(new String[]{"dowolna", "remote", "warszawa", "krakow", "wroclaw", "gdansk", "poznan",
+                "katowice", "lodz", "bialystok", "gdynia", "lublin", "rzeszow",
+                "bydgoszcz", "gliwice", "czestochowa", "szczecin", "sopot"});
+        expLevelDropdown = new JComboBox<>(new String[]{"dowolny", "junior", "mid", "regular", "senior", "expert"});
         JButton searchButton = new JButton("Search");
         searchButton.addActionListener(new ActionListener() {
             @Override
@@ -36,9 +38,9 @@ public class GUITest extends JFrame {
         inputPanel.add(new JLabel("Offer Name:"));
         inputPanel.add(offerNameField);
         inputPanel.add(new JLabel("Location:"));
-        inputPanel.add(locationField);
+        inputPanel.add(locationDropdown);
         inputPanel.add(new JLabel("Exp Level:"));
-        inputPanel.add(expLevelField);
+        inputPanel.add(expLevelDropdown);
         inputPanel.add(searchButton);
 
         // Table
@@ -56,10 +58,19 @@ public class GUITest extends JFrame {
     }
 
     private void searchJobOffers() {
+        jobOffers.clear();
         // Perform web scraping and update jobOffers ArrayList based on user input
         String inputOfferName = offerNameField.getText();
-        String inputLocation = locationField.getText();
-        String inputExpLevel = expLevelField.getText();
+        String inputLocation = locationDropdown.getSelectedItem().toString();
+        String inputExpLevel = expLevelDropdown.getSelectedItem().toString();
+
+        // Convert "dowolne" to an empty string
+        if ("dowolna".equals(inputLocation)) {
+            inputLocation = "";
+        }
+        if ("dowolny".equals(inputExpLevel)) {
+            inputExpLevel = "";
+        }
 
         String[] urls = UrlModifier.getModifiedUrls(inputLocation, inputOfferName, inputExpLevel);
         String NoFluffJobsUrl = urls[0];
