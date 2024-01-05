@@ -3,7 +3,7 @@ import org.apache.logging.log4j.Logger;
 public class Main {
 
     // for testing --------------------------------
-    static String inputLocation = "Krakow";
+    static String inputLocation = "krakow";
     static String inputOfferName = "python developer";
     static String inputExpLevel = "junior";
     // -------------------------------------------
@@ -19,6 +19,7 @@ public class Main {
         System.out.println("--------------------------------------");
         System.out.println("Looking for (" + inputExpLevel + ") " + inputOfferName + " in " + inputLocation + ".");
         System.out.println("Using link: " + NoFluffJobsUrl);
+        System.out.println("Using link: " + justjoinitUrl);
         System.out.println("--------------------------------------");
 
         Scraper.scrapeData(NoFluffJobsUrl, justjoinitUrl);
