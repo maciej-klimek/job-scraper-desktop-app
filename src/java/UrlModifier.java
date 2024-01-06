@@ -44,6 +44,9 @@ public class UrlModifier {
         urls[0] = NoFluffJobsUrl;
         urls[1] = justjoinITUrl;
 
+        NoFluffJobsUrl = "https://nofluffjobs.com";
+        justjoinITUrl = "https://justjoin.it/with-salary_yes";
+
         return urls;
     }
 }

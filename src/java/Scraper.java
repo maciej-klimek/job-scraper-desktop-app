@@ -13,19 +13,16 @@ public class Scraper {
     private static Document nfjWebsite;
     private static Document jjitDocument;
     private static Document offerWebsite;
+    static ArrayList<JobOffer> jobOffers = new ArrayList<>();
 
 
     public static void scrapeData(String nfjUrl, String jjitUrl) {
-
-
-        ArrayList<JobOffer> jobOffers = new ArrayList<>();
-
 
         //SCRAPER NOFLUFFJOBS ----------------------------------------------------------------------------------------
 
         try {
             nfjWebsite = Jsoup.connect(nfjUrl).get();
-            logger.info("Succesfully connected to nofluffjobs.com");
+            logger.info("Succesfully connected to " + nfjUrl);
 
         }
         catch (Exception ex) {
@@ -55,6 +52,7 @@ public class Scraper {
 
                     JobOffer currentOffer = new JobOffer(offerName, companyName, salaryValue, expLevel, link);
                     jobOffers.add(currentOffer);
+                    logger.info("Scraped offer " + currentOffer.name);
                 }
             }
             if (jobOffers.isEmpty()) {
@@ -69,10 +67,6 @@ public class Scraper {
         }
 
         //KONIEC SCRAPER NOFLUFFJOBS ----------------------------------------------------------------------------------
-
-        for (JobOffer offer : jobOffers) {
-            offer.print();
-        }
 
     }
 }
