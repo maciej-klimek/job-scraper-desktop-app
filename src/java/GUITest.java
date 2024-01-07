@@ -26,14 +26,11 @@ public class GUITest extends JFrame {
         locationDropdown = new JComboBox<>(new String[]{"dowolna", "remote", "warszawa", "krakow", "wroclaw", "gdansk", "poznan",
                 "katowice", "lodz", "bialystok", "gdynia", "lublin", "rzeszow",
                 "bydgoszcz", "gliwice", "czestochowa", "szczecin", "sopot"});
+
         expLevelDropdown = new JComboBox<>(new String[]{"dowolny", "junior", "mid", "regular", "senior", "expert"});
         JButton searchButton = new JButton("Search");
-        searchButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                searchJobOffers();
-            }
-        });
+
+        searchButton.addActionListener(e -> searchJobOffers());
 
         inputPanel.add(new JLabel("Offer Name:"));
         inputPanel.add(offerNameField);
