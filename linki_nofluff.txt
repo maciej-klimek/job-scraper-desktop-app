@@ -1,0 +1,21 @@
+
+Wszystko:
+https://nofluffjobs.com/warszawa?page=1&criteria=jobPosition%3D%27java%20developer%27%20seniority%3Djunior
+
+Nazwa + exp
+https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27java%20developer%27%20seniority%3Djunior
+
+Nazwa + lok
+https://nofluffjobs.com/warszawa?page=1&criteria=jobPosition%3D%27java%20developer%27
+
+Nazwa
+https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27java%20developer%27
+
+lok
+https://nofluffjobs.com/warszawa?page=1
+
+exp
+https://nofluffjobs.com/?page=1&criteria=seniority%3Dmid
+
+lok + exp
+https://nofluffjobs.com/warszawa?page=1&criteria=seniority%3Dmid

@@ -42,12 +42,10 @@ public class UrlModifier {
 
         if (!Objects.equals(inputOffName, "")) {
 
-            inputOffName = inputOffName.trim();
-
             inputOffName = inputOffName.replace(" ", "%20");
             nofluffjobsUrl += "/" + inputOffName;
             inputOffName = inputOffName.replace("%20", "+");
-            justjoinitUrl += "/with_salary_yes?keyword=" + inputOffName;
+            justjoinitUrl += "/with_salary-yes?keyword=" + inputOffName;
         }
 
         String[] urls = new String[2];
