@@ -17,6 +17,8 @@ public class Scraper {
 
 
     public static void scrapeData(String nfjUrl, String jjitUrl) {
+        logger.error("aa");
+        System.out.println("aaa");
 
         //SCRAPER NOFLUFFJOBS ----------------------------------------------------------------------------------------
 
