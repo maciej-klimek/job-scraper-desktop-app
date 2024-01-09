@@ -1,26 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="WARN">
+<Configuration>
     <Appenders>
-        <!-- Console Appender for INFO and ERROR logs -->
-        <Console name="Console" target="SYSTEM_OUT">
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
         </Console>
-
-        <!-- File Appender for ERROR logs -->
-        <File name="File" fileName="logs/app.log">
-            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        <File name="FileAppender" fileName="logs/app.log">
+            <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n"/>
         </File>
     </Appenders>
-
     <Loggers>
-        <!-- Console Logger for INFO and ERROR logs -->
         <Root level="info">
-            <AppenderRef ref="Console"/>
+            <AppenderRef ref="ConsoleAppender"/>
+            <AppenderRef ref="FileAppender"/>
         </Root>
-
-        <!-- File Logger for ERROR logs -->
-        <Logger name="org.apache.logging.log4j.core" level="error" additivity="false">
-            <AppenderRef ref="File"/>
-        </Logger>
     </Loggers>
 </Configuration>

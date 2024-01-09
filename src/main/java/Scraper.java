@@ -14,11 +14,11 @@ public class Scraper {
     private static Document jjitDocument;
     static ArrayList<JobOffer> jobOffers = new ArrayList<>();
 
+    static int maxNumOfOffers = 40;
+
 
 
     public static void scrapeData(String nfjUrl, String jjitUrl) {
-        logger.error("aa");
-        System.out.println("aaa");
 
         //SCRAPER NOFLUFFJOBS ----------------------------------------------------------------------------------------
 
@@ -59,6 +59,9 @@ public class Scraper {
                     jobOffers.add(currentOffer);
                     offerCount++;
                     logger.info("Scraped offer " + currentOffer.name);
+                    if (jobOffers.size() > maxNumOfOffers) {
+                        break;
+                    }
                 }
             }
 
@@ -107,6 +110,9 @@ public class Scraper {
                     jobOffers.add(currentOffer);
                     offerCount++;
                     logger.info("Scraped offer " + currentOffer.name);
+                    if (jobOffers.size() > maxNumOfOffers) {
+                        break;
+                    }
                 }
             if (jobOffers.isEmpty()) {
                 logger.error("Failed to load data from nofluffjobs.com");
