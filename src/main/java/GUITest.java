@@ -4,6 +4,10 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
+
 
 public class GUITest extends JFrame {
     private ArrayList<JobOffer> jobOffers = Scraper.jobOffers;
@@ -73,8 +77,15 @@ public class GUITest extends JFrame {
         String NoFluffJobsUrl = urls[0];
         String justjoinitUrl = urls[1];
 
-        Scraper.scrapeData(NoFluffJobsUrl, justjoinitUrl);
-        updateTable(jobOffers);
+        ExecutorService executor = Executors.newFixedThreadPool(2);
+        executor.execute(() -> Scraper.scrapeDataNfj(NoFluffJobsUrl));
+        executor.execute(() -> Scraper.ScrapeDataJjit(justjoinitUrl));
+
+        Timer timer = new Timer(1000, e -> updateTable());
+        timer.start();
+
+        executor.shutdown();
+
     }
 
     private void updateTable(ArrayList<JobOffer> offers) {
@@ -85,6 +96,21 @@ public class GUITest extends JFrame {
             Object[] rowData = {offer.name, offer.expLevel, offer.company, offer.salary, offer.link};
             model.addRow(rowData);
         }
+    }
+
+
+    private void updateTable() {
+        SwingUtilities.invokeLater(() -> {
+            DefaultTableModel model = (DefaultTableModel) ((JTable) ((JScrollPane) getContentPane().getComponent(1)).getViewport().getView()).getModel();
+            model.setRowCount(0);
+
+            synchronized (Scraper.jobOffers) {
+                for (JobOffer offer : Scraper.jobOffers) {
+                    Object[] rowData = {offer.name, offer.expLevel, offer.company, offer.salary, offer.link};
+                    model.addRow(rowData);
+                }
+            }
+        });
     }
 
     public static void main(String[] args) {

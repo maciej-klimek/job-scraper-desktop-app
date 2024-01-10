@@ -22,7 +22,7 @@ public class Main {
         System.out.println("Using link: " + justjoinitUrl);
         System.out.println("--------------------------------------");
 
-        Scraper.scrapeData(NoFluffJobsUrl, justjoinitUrl);
+        //Scraper.scrapeData(NoFluffJobsUrl, justjoinitUrl);
         logger.info("Successfully displayed data");
     }
 }

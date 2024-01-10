@@ -10,7 +10,7 @@ public class ScrapingThread extends Thread {
     @Override
     public void run() {
         // Your thread logic using noFluffJobsUrl and justJoinItUrl
-        Scraper.scrapeData(noFluffJobsUrl, justJoinItUrl);
+        //Scraper.scrapeData(noFluffJobsUrl, justJoinItUrl);
     }
 
 }

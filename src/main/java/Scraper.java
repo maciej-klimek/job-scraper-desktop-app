@@ -14,20 +14,18 @@ public class Scraper {
     private static Document jjitDocument;
     static ArrayList<JobOffer> jobOffers = new ArrayList<>();
 
-    static int maxNumOfOffers = 40;
+    static int maxNumOfOffers = 20;
 
 
 
-    public static void scrapeData(String nfjUrl, String jjitUrl) {
+    public static void scrapeDataNfj(String nfjUrl) {
 
         //SCRAPER NOFLUFFJOBS ----------------------------------------------------------------------------------------
-
         try {
             nfjWebsite = Jsoup.connect(nfjUrl).get();
             logger.info("Succesfully connected to " + nfjUrl);
 
-        }
-        catch (Exception ex) {
+        } catch (Exception ex) {
             logger.error("Cannot connect to " + nfjUrl + ": invalid link or website is not responding", ex);
         }
 
@@ -51,7 +49,7 @@ public class Scraper {
                         offerWebsite = Jsoup.connect(link).get();
                         expLevel = offerWebsite.select("#posting-seniority > div > span").text();
 
-                    } catch (Exception ex){
+                    } catch (Exception ex) {
                         logger.error("Cannot access " + link + ", invalid link or website is not responding", ex);
                     }
 
@@ -71,26 +69,26 @@ public class Scraper {
                 logger.info("Succesfully scraped " + offerCount + " job offers from " + nfjUrl + "\n");
             }
 
-        }
-        catch (Exception ex) {
+        } catch (Exception ex) {
             logger.error("An error occurred during data scraping from " + nfjUrl, ex);
         }
+    }
 
-        //SCRAPER JUSTJOINIT -----------------------------------------------------------------------------------------
-        try{
-            jjitDocument = Jsoup.connect(jjitUrl).get();
-            logger.info("Succesfully connected to  " + jjitUrl);
+        public static void ScrapeDataJjit (String jjitUrl){
+            //SCRAPER JUSTJOINIT -----------------------------------------------------------------------------------------
+            try {
+                jjitDocument = Jsoup.connect(jjitUrl).get();
+                logger.info("Succesfully connected to  " + jjitUrl);
 
-        }
-        catch (Exception ex){
-            logger.error("Cannot connect to " + jjitUrl + ": invalid link or website is not responding", ex);
-        }
+            } catch (Exception ex) {
+                logger.error("Cannot connect to " + jjitUrl + ": invalid link or website is not responding", ex);
+            }
+            Document offerWebsite;
+            try {
+                Elements desiredContent = jjitDocument.select("div.css-2crog7");
+                int offerCount = 0;
 
-        try {
-            Elements desiredContent = jjitDocument.select("div.css-2crog7");
-            int offerCount = 0;
-
-                for (Element jobListing:desiredContent){
+                for (Element jobListing : desiredContent) {
 
                     String offerName = jobListing.select("h2.css-16gpjqw").text();
                     String companyName = jobListing.select("div.css-ldh1c9").text();
@@ -98,11 +96,10 @@ public class Scraper {
                     String link = "https://justjoin.it" + jobListing.select("a.css-4lqp8g").attr("href");
                     String expLevel = "not specified";
 
-                    try{
+                    try {
                         offerWebsite = Jsoup.connect(link).get();
                         expLevel = offerWebsite.select("div.css-15qbbm2").get(1).text();
-                    }
-                    catch (Exception ex){
+                    } catch (Exception ex) {
                         logger.error("Cannot access " + link + ", invalid link or website is not responding", ex);
                     }
 
@@ -114,15 +111,14 @@ public class Scraper {
                         break;
                     }
                 }
-            if (jobOffers.isEmpty()) {
-                logger.error("Failed to load data from nofluffjobs.com");
-            } else {
-                logger.info("Succesfully scraped " + offerCount + " job offers from " + jjitUrl + "\n");
+                if (jobOffers.isEmpty()) {
+                    logger.error("Failed to load data from nofluffjobs.com");
+                } else {
+                    logger.info("Succesfully scraped " + offerCount + " job offers from " + jjitUrl + "\n");
+                }
+            } catch (Exception ex) {
+                logger.error("An error occurred during data scraping from " + jjitUrl, ex);
             }
-        }
-        catch (Exception ex){
-            logger.error("An error occurred during data scraping from " + jjitUrl, ex);
-        }
 
+        }
     }
-}
