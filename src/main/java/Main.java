@@ -11,7 +11,7 @@ public class Main {
     private static final Logger logger = LogManager.getLogger(Scraper.class);
 
     public static void main(String[] args) {
-
+        logger.info("A");
         String[] urls = UrlModifier.getModifiedUrls(inputLocation, inputOfferName, inputExpLevel);
         String NoFluffJobsUrl = urls[0];
         String justjoinitUrl = urls[1];
@@ -22,7 +22,6 @@ public class Main {
         System.out.println("Using link: " + justjoinitUrl);
         System.out.println("--------------------------------------");
 
-        Scraper.scrapeData(NoFluffJobsUrl, justjoinitUrl);
         logger.info("Successfully displayed data");
     }
 }
