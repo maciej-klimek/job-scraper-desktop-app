@@ -1,11 +1,9 @@
 
 Cienszkie:
-- Zrobić zeby dwie stronki scrappowaly sie asynchronicznie (watki albo jakies inne gowno)
-- Zrobic zeby w gui pokazywaly sie jobOffers wraz jak naplywaja do tabeli (giga cienszkie)
-- powoli robic zeby UI wygladalo jakos lepiej - rozbic UI na pojedyncze klasy
-
+- powoli robic zeby UI wygladalo jakos lepiej
 
 Fajne:
-- rozwalic Scrappera na dwie funkcje
-- filtrowanie jobOffers, alfabetycznie + wedlug zarobków
+- rozbic UI na pojedyncze klasy
 - zapisywanie ulubionych jobOffers w prostej bazie danych i wyswietlanie ich potem GUI
+- rozbic scrapera na dwie klasy, porobic packages z intenijących klas bo dodatkowe punkty u orzecha
+- filtrowanie jobOffers, alfabetycznie + wedlug zarobków

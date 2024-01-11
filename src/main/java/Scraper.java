@@ -18,12 +18,12 @@ public class Scraper {
 
 
 
-    public static void scrapeDataNfj(String nfjUrl) {
+    public static void getNfjData(String nfjUrl) {
+        logger.error("test error");
 
-        //SCRAPER NOFLUFFJOBS ----------------------------------------------------------------------------------------
         try {
             nfjWebsite = Jsoup.connect(nfjUrl).get();
-            logger.info("Succesfully connected to " + nfjUrl);
+            logger.info("Successfully connected to " + nfjUrl);
 
         } catch (Exception ex) {
             logger.error("Cannot connect to " + nfjUrl + ": invalid link or website is not responding", ex);
@@ -56,7 +56,7 @@ public class Scraper {
                     JobOffer currentOffer = new JobOffer(offerName, companyName, salaryValue, expLevel, link);
                     jobOffers.add(currentOffer);
                     offerCount++;
-                    logger.info("Scraped offer " + currentOffer.name);
+                    logger.info("Scraped offer " + currentOffer.name + " from " + link);
                     if (jobOffers.size() > maxNumOfOffers) {
                         break;
                     }
@@ -66,7 +66,7 @@ public class Scraper {
             if (jobOffers.isEmpty()) {
                 logger.error("Failed to load data from nofluffjobs.com");
             } else {
-                logger.info("Succesfully scraped " + offerCount + " job offers from " + nfjUrl + "\n");
+                logger.info("Successfully scraped " + offerCount + " job offers from " + nfjUrl + "\n");
             }
 
         } catch (Exception ex) {
@@ -74,11 +74,11 @@ public class Scraper {
         }
     }
 
-        public static void ScrapeDataJjit (String jjitUrl){
-            //SCRAPER JUSTJOINIT -----------------------------------------------------------------------------------------
+        public static void getJjitData(String jjitUrl){
+
             try {
                 jjitDocument = Jsoup.connect(jjitUrl).get();
-                logger.info("Succesfully connected to  " + jjitUrl);
+                logger.info("Successfully connected to  " + jjitUrl);
 
             } catch (Exception ex) {
                 logger.error("Cannot connect to " + jjitUrl + ": invalid link or website is not responding", ex);
@@ -106,7 +106,7 @@ public class Scraper {
                     JobOffer currentOffer = new JobOffer(offerName, companyName, salaryValue, expLevel, link);
                     jobOffers.add(currentOffer);
                     offerCount++;
-                    logger.info("Scraped offer " + currentOffer.name);
+                    logger.info("Scraped offer " + currentOffer.name + " from " + link);
                     if (jobOffers.size() > maxNumOfOffers) {
                         break;
                     }
@@ -114,7 +114,7 @@ public class Scraper {
                 if (jobOffers.isEmpty()) {
                     logger.error("Failed to load data from nofluffjobs.com");
                 } else {
-                    logger.info("Succesfully scraped " + offerCount + " job offers from " + jjitUrl + "\n");
+                    logger.info("Successfully scraped " + offerCount + " job offers from " + jjitUrl + "\n");
                 }
             } catch (Exception ex) {
                 logger.error("An error occurred during data scraping from " + jjitUrl, ex);

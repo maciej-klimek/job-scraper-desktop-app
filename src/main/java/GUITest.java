@@ -1,16 +1,13 @@
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.TimeUnit;
 
 
 public class GUITest extends JFrame {
-    private ArrayList<JobOffer> jobOffers = Scraper.jobOffers;
+    private final ArrayList<JobOffer> jobOffers = Scraper.jobOffers;
     private JTextField offerNameField;
     private JComboBox<String> locationDropdown;
     private JComboBox<String> expLevelDropdown;
@@ -60,12 +57,11 @@ public class GUITest extends JFrame {
 
     private void searchJobOffers() {
         jobOffers.clear();
-        // Perform web scraping and update jobOffers ArrayList based on user input
+
         String inputOfferName = offerNameField.getText();
         String inputLocation = locationDropdown.getSelectedItem().toString();
         String inputExpLevel = expLevelDropdown.getSelectedItem().toString();
 
-        // Convert "dowolne" to an empty string
         if ("dowolna".equals(inputLocation)) {
             inputLocation = "";
         }
@@ -74,12 +70,12 @@ public class GUITest extends JFrame {
         }
 
         String[] urls = UrlModifier.getModifiedUrls(inputLocation, inputOfferName, inputExpLevel);
-        String NoFluffJobsUrl = urls[0];
+        String nofluffjobsUrl = urls[0];
         String justjoinitUrl = urls[1];
 
         ExecutorService executor = Executors.newFixedThreadPool(2);
-        executor.execute(() -> Scraper.scrapeDataNfj(NoFluffJobsUrl));
-        executor.execute(() -> Scraper.ScrapeDataJjit(justjoinitUrl));
+        executor.execute(() -> Scraper.getNfjData(nofluffjobsUrl));
+        executor.execute(() -> Scraper.getJjitData(justjoinitUrl));
 
         Timer timer = new Timer(1000, e -> updateTable());
         timer.start();
@@ -114,6 +110,6 @@ public class GUITest extends JFrame {
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new GUITest());
+        SwingUtilities.invokeLater(GUITest::new);
     }
 }
