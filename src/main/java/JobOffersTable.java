@@ -3,6 +3,7 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.Comparator;
 
 public class JobOffersTable extends JScrollPane {
     private final JTable jobTable;
@@ -21,6 +22,8 @@ public class JobOffersTable extends JScrollPane {
     public void updateTable() {
         DefaultTableModel model = (DefaultTableModel) jobTable.getModel();
         model.setRowCount(0);
+
+        Scraper.jobOffers.sort(Comparator.comparing((JobOffer offer) -> offer.salary).reversed());
 
         for (JobOffer offer : Scraper.jobOffers) {
             Object[] rowData = {offer.name, offer.expLevel, offer.company, offer.salary, offer.link};

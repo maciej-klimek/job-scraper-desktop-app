@@ -19,7 +19,6 @@ public class Scraper {
 
 
     public static void getNfjData(String nfjUrl) {
-        logger.error("test error");
 
         try {
             nfjWebsite = Jsoup.connect(nfjUrl).get();
@@ -50,7 +49,7 @@ public class Scraper {
                         expLevel = offerWebsite.select("#posting-seniority > div > span").text();
 
                     } catch (Exception ex) {
-                        logger.error("Cannot access " + link + ", invalid link or website is not responding", ex);
+                        logger.warn("Cannot access " + link + ", invalid link or website is not responding", ex);
                     }
 
                     JobOffer currentOffer = new JobOffer(offerName, companyName, salaryValue, expLevel, link);
@@ -100,7 +99,7 @@ public class Scraper {
                         offerWebsite = Jsoup.connect(link).get();
                         expLevel = offerWebsite.select("div.css-15qbbm2").get(1).text();
                     } catch (Exception ex) {
-                        logger.error("Cannot access " + link + ", invalid link or website is not responding", ex);
+                        logger.warn("Cannot access " + link + ", invalid link or website is not responding", ex);
                     }
 
                     JobOffer currentOffer = new JobOffer(offerName, companyName, salaryValue, expLevel, link);

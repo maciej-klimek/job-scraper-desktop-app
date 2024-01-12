@@ -37,7 +37,9 @@ public class UrlModifier {
 
         if (!Objects.equals(inputOffName, "")) {
             inputOffName = inputOffName.replace(" ", "+");
-            justjoinitUrl += "/with_salary-yes?keyword=" + inputOffName;
+            justjoinitUrl += "/with-salary_yes?keyword=" + inputOffName;
+        } else {
+            justjoinitUrl += "/with-salary_yes?keyword=";
         }
     }
 

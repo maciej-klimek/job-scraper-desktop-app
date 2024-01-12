@@ -8,7 +8,7 @@ import java.util.concurrent.Executors;
 public class MainInterface extends JFrame {
     private static final ArrayList<JobOffer> jobOffers = Scraper.jobOffers;
     private static JobOffersTable jobOffersTable;
-    private static SearchBar searchBar;
+    private static SearchPanel searchBar;
 
     public MainInterface() {
         initializeUI();
@@ -20,7 +20,7 @@ public class MainInterface extends JFrame {
         setLayout(new BorderLayout());
 
         jobOffersTable = new JobOffersTable();
-        searchBar = new SearchBar();
+        searchBar = new SearchPanel();
 
         add(searchBar, BorderLayout.NORTH);
         add(jobOffersTable, BorderLayout.CENTER);

@@ -1,10 +1,8 @@
 // File: SearchBar.java
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-public class SearchBar extends JPanel {
+public class SearchPanel extends JPanel {
     private final JTextField offerNameField;
     private final JLabel nameLabel;
     private final JComboBox<String> locationDropdown;
@@ -13,15 +11,18 @@ public class SearchBar extends JPanel {
     private final JLabel expLabel;
     private final JButton searchButton;
 
-    public SearchBar() {
+    public SearchPanel() {
         offerNameField = new JTextField(20);
+        offerNameField.setText("java developer");
         nameLabel = new JLabel("Offer Name:");
         locationDropdown = new JComboBox<>(new String[]{"dowolna", "remote", "warszawa", "krakow", "wroclaw", "gdansk", "poznan",
                 "katowice", "lodz", "bialystok", "gdynia", "lublin", "rzeszow",
                 "bydgoszcz", "gliwice", "czestochowa", "szczecin", "sopot"});
+        locationDropdown.setSelectedIndex(3);
         locationLabel = new JLabel("Location:");
         expLevelDropdown = new JComboBox<>(new String[]{"dowolny", "junior", "mid", "regular", "senior", "expert"});
         expLabel = new JLabel("Exp Level:");
+        expLevelDropdown.setSelectedIndex(4);
         searchButton = new JButton("Search");
 
         searchButton.addActionListener(e -> MainInterface.searchJobOffers());
