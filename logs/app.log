@@ -1,1 +1,55 @@
 2024-01-11 10:39:53 ERROR Scraper:22 - test error
+2024-01-12 11:28:02 ERROR Scraper:22 - test error
+2024-01-12 11:28:40 ERROR Scraper:22 - test error
+2024-01-12 11:29:11 ERROR Scraper:22 - test error
+2024-01-12 11:40:52 ERROR Scraper:22 - test error
+2024-01-12 11:41:08 ERROR Scraper:29 - Cannot connect to https://nofluffjobs.com/krakow?page=1&criteria=jobPosition%3D%27data%20science%27%20seniority%3Dmid: invalid link or website is not responding
+java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:278) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:489) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:483) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1066) ~[?:?]
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:291) ~[?:?]
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:347) ~[?:?]
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:420) ~[?:?]
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:827) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:759) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1690) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1599) ~[?:?]
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307) ~[?:?]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:856) ~[jsoup-1.17.1.jar:1.17.1]
+	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:818) ~[jsoup-1.17.1.jar:1.17.1]
+	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:346) ~[jsoup-1.17.1.jar:1.17.1]
+	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:331) ~[jsoup-1.17.1.jar:1.17.1]
+	at Scraper.getNfjData(Scraper.java:25) ~[classes/:?]
+	at GUITest.lambda$searchJobOffers$1(GUITest.java:77) ~[classes/:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2024-01-12 11:41:08 ERROR Scraper:73 - An error occurred during data scraping from https://nofluffjobs.com/krakow?page=1&criteria=jobPosition%3D%27data%20science%27%20seniority%3Dmid
+java.lang.NullPointerException: Cannot invoke "org.jsoup.nodes.Document.select(String)" because "Scraper.nfjWebsite" is null
+	at Scraper.getNfjData(Scraper.java:34) ~[classes/:?]
+	at GUITest.lambda$searchJobOffers$1(GUITest.java:77) ~[classes/:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
+2024-01-12 11:42:00 ERROR Scraper:22 - test error
+2024-01-12 11:46:52 ERROR Scraper:114 - Failed to load data from nofluffjobs.com
+2024-01-12 11:49:10 ERROR Scraper:114 - Failed to load data from nofluffjobs.com
+2024-01-12 11:49:23 ERROR Scraper:114 - Failed to load data from nofluffjobs.com
+2024-01-12 11:49:23 ERROR Scraper:114 - Failed to load data from nofluffjobs.com
+2024-01-12 11:55:41 ERROR Scraper:114 - Failed to load data from nofluffjobs.com
+2024-01-12 11:56:32 ERROR Scraper:114 - Failed to load data from nofluffjobs.com
+2024-01-12 12:08:19 ERROR Scraper:114 - Failed to load data from nofluffjobs.com
+2024-01-12 12:09:34 ERROR Scraper:114 - Failed to load data from nofluffjobs.com
+2024-01-12 12:10:33 ERROR Scraper:114 - Failed to load data from nofluffjobs.com
+2024-01-12 12:11:18 ERROR Scraper:114 - Failed to load data from nofluffjobs.com
+2024-01-12 12:12:19 ERROR Scraper:114 - Failed to load data from nofluffjobs.com

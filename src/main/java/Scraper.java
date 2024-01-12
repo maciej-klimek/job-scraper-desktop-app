@@ -14,12 +14,11 @@ public class Scraper {
     private static Document jjitDocument;
     static ArrayList<JobOffer> jobOffers = new ArrayList<>();
 
-    static int maxNumOfOffers = 20;
+    static int maxNumOfOffers = 100;
 
 
 
     public static void getNfjData(String nfjUrl) {
-        logger.error("test error");
 
         try {
             nfjWebsite = Jsoup.connect(nfjUrl).get();
@@ -31,7 +30,7 @@ public class Scraper {
 
         Document offerWebsite;
         try {
-            Elements desiredContent = nfjWebsite.select("nfj-postings-list > div.list-container");
+            Element desiredContent = nfjWebsite.select("nfj-postings-list > div.list-container").first();
             int offerCount = 0;
 
             for (Element jobListing : desiredContent.select("a")) {
@@ -50,7 +49,7 @@ public class Scraper {
                         expLevel = offerWebsite.select("#posting-seniority > div > span").text();
 
                     } catch (Exception ex) {
-                        logger.error("Cannot access " + link + ", invalid link or website is not responding", ex);
+                        logger.warn("Cannot access " + link + ", invalid link or website is not responding", ex);
                     }
 
                     JobOffer currentOffer = new JobOffer(offerName, companyName, salaryValue, expLevel, link);
@@ -100,7 +99,7 @@ public class Scraper {
                         offerWebsite = Jsoup.connect(link).get();
                         expLevel = offerWebsite.select("div.css-15qbbm2").get(1).text();
                     } catch (Exception ex) {
-                        logger.error("Cannot access " + link + ", invalid link or website is not responding", ex);
+                        logger.warn("Cannot access " + link + ", invalid link or website is not responding", ex);
                     }
 
                     JobOffer currentOffer = new JobOffer(offerName, companyName, salaryValue, expLevel, link);
