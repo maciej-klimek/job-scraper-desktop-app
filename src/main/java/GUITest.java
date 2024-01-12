@@ -2,6 +2,7 @@ import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -102,10 +103,7 @@ public class GUITest extends JFrame {
 
             synchronized (Scraper.jobOffers) {
 
-                Scraper.jobOffers.sort(Comparator.comparing(JobOffer::getSalary).reversed());
-
-                DefaultTableModel model = (DefaultTableModel) ((JTable) ((JScrollPane) getContentPane().getComponent(1)).getViewport().getView()).getModel();
-                model.setRowCount(0);
+                Scraper.jobOffers.sort(Comparator.comparing((JobOffer offer) -> offer.salary).reversed());
 
                 for (JobOffer offer : Scraper.jobOffers) {
                     Object[] rowData = {offer.name, offer.expLevel, offer.company, offer.salary, offer.link};
