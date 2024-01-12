@@ -21,6 +21,7 @@ public class MainInterface extends JFrame {
 
         jobOffersTable = new JobOffersTable();
         searchBar = new SearchPanel();
+        searchBar.setBorder(BorderFactory.createEmptyBorder(20, 10, 20, 100));
 
         add(searchBar, BorderLayout.NORTH);
         add(jobOffersTable, BorderLayout.CENTER);
@@ -34,15 +35,12 @@ public class MainInterface extends JFrame {
     }
 
     private void customizeAppearance() {
-        // Set background color
-        Color backgroundColor = Color.decode("#282828");
-        getContentPane().setBackground(backgroundColor);
 
-        // Set font color
-        Color fontColor = Color.decode("#D3D3D3"); // Light Grey
-        setForeground(fontColor);
-        searchBar.setForeground(fontColor);
-        jobOffersTable.setForeground(fontColor);
+        getContentPane().setBackground(UIVariables.backgroundColor2);
+        setForeground(UIVariables.foregroundColor);
+
+        searchBar.setForeground(UIVariables.foregroundColor);
+        jobOffersTable.setForeground(UIVariables.foregroundColor);
     }
 
     public static void searchJobOffers() {

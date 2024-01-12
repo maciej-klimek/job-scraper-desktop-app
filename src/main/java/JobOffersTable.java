@@ -2,7 +2,6 @@
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
-import java.util.ArrayList;
 import java.util.Comparator;
 
 public class JobOffersTable extends JScrollPane {
@@ -32,26 +31,14 @@ public class JobOffersTable extends JScrollPane {
     }
 
     private void customizeAppearance() {
-        // Set background color
-        Color backgroundColor = Color.decode("#282828");
-        jobTable.setBackground(backgroundColor);
-        jobTable.getTableHeader().setBackground(backgroundColor);
 
-        // Set font color
-        Color fontColor = Color.decode("#D3D3D3"); // Light Grey
-        jobTable.setForeground(fontColor);
-        jobTable.getTableHeader().setForeground(fontColor);
+        jobTable.setBackground(new Color(213, 215, 219));
+        jobTable.getTableHeader().setBackground(UIVariables.backgroundColor1);
+        jobTable.getTableHeader().setFont(UIVariables.mainFont);
 
-        // Set grid color
-        Color gridColor = Color.decode("#505050");
-        jobTable.setGridColor(gridColor);
 
-        // Set selection background color
-        Color selectionColor = Color.decode("#505050");
-        jobTable.setSelectionBackground(selectionColor);
+        jobTable.setForeground(UIVariables.foregroundColor);
+        jobTable.getTableHeader().setForeground(UIVariables.foregroundColor);
 
-        // Set selection foreground color
-        Color selectionFontColor = Color.decode("#D3D3D3"); // Light Grey
-        jobTable.setSelectionForeground(selectionFontColor);
     }
 }

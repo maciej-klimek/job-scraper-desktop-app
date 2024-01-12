@@ -2,6 +2,9 @@
 import javax.swing.*;
 import java.awt.*;
 
+import static javax.swing.SwingConstants.CENTER;
+import static javax.swing.SwingConstants.RIGHT;
+
 public class SearchPanel extends JPanel {
     private final JTextField offerNameField;
     private final JLabel nameLabel;
@@ -12,19 +15,23 @@ public class SearchPanel extends JPanel {
     private final JButton searchButton;
 
     public SearchPanel() {
-        offerNameField = new JTextField(20);
+        setLayout(new GridLayout(1, 5, 10, 5));
+
+        offerNameField = new JTextField(10);
         offerNameField.setText("java developer");
-        nameLabel = new JLabel("Offer Name:");
+        nameLabel = new JLabel("Offer Name:", RIGHT);
+
         locationDropdown = new JComboBox<>(new String[]{"dowolna", "remote", "warszawa", "krakow", "wroclaw", "gdansk", "poznan",
                 "katowice", "lodz", "bialystok", "gdynia", "lublin", "rzeszow",
                 "bydgoszcz", "gliwice", "czestochowa", "szczecin", "sopot"});
+        locationLabel = new JLabel("Location:", RIGHT);
         locationDropdown.setSelectedIndex(3);
-        locationLabel = new JLabel("Location:");
-        expLevelDropdown = new JComboBox<>(new String[]{"dowolny", "junior", "mid", "regular", "senior", "expert"});
-        expLabel = new JLabel("Exp Level:");
-        expLevelDropdown.setSelectedIndex(4);
-        searchButton = new JButton("Search");
 
+        expLevelDropdown = new JComboBox<>(new String[]{"dowolny", "junior", "mid", "regular", "senior", "expert"});
+        expLevelDropdown.setSelectedIndex(4);
+        expLabel = new JLabel("Exp Level:", RIGHT);
+
+        searchButton = new JButton("Search");
         searchButton.addActionListener(e -> MainInterface.searchJobOffers());
 
         add(nameLabel);
@@ -33,6 +40,7 @@ public class SearchPanel extends JPanel {
         add(locationDropdown);
         add(expLabel);
         add(expLevelDropdown);
+        add(new JLabel());
         add(searchButton);
 
         // Customize appearance
@@ -40,27 +48,33 @@ public class SearchPanel extends JPanel {
     }
 
     private void customizeAppearance() {
-        // Set background color
-        Color backgroundColor = Color.decode("#282828");
-        setBackground(backgroundColor);
 
-        // Set font color
-        Color fontColor = new Color(255, 255,  255);
+        setBackground(UIVariables.backgroundColor2);
 
-        // Set button background color
-        searchButton.setBackground(backgroundColor);
-        searchButton.setForeground(fontColor);
+        offerNameField.setFont(UIVariables.mainFont);
+        offerNameField.setBackground(UIVariables.backgroundColor1);
+        offerNameField.setForeground(UIVariables.foregroundColor);
+        nameLabel.setForeground(UIVariables.foregroundColor);
+        nameLabel.setFont(UIVariables.mainFont);
+        offerNameField.setBorder(UIVariables.getButtonBorder(5, 5, 5, 5, 2));
 
-        // Set text field background color
-        offerNameField.setBackground(backgroundColor);
-        offerNameField.setForeground(fontColor);
-        nameLabel.setForeground(fontColor);
-        locationDropdown.setBackground(backgroundColor);
-        locationDropdown.setForeground(fontColor);
-        locationLabel.setForeground(fontColor);
-        expLevelDropdown.setBackground(backgroundColor);
-        expLevelDropdown.setForeground(fontColor);
-        expLabel.setForeground(fontColor);
+        locationDropdown.setFont(UIVariables.mainFont);
+        locationDropdown.setBackground(UIVariables.backgroundColor1);
+        locationDropdown.setForeground(UIVariables.foregroundColor);
+        locationLabel.setForeground(UIVariables.foregroundColor);
+        locationLabel.setFont(UIVariables.mainFont);
+
+        expLevelDropdown.setFont(UIVariables.mainFont);
+        expLevelDropdown.setBackground(UIVariables.backgroundColor1);
+        expLevelDropdown.setForeground(UIVariables.foregroundColor);
+        expLabel.setForeground(UIVariables.foregroundColor);
+        expLabel.setFont(UIVariables.mainFont);
+
+        searchButton.setFont(UIVariables.mainFont);
+        searchButton.setBackground(new Color(235, 235, 235));
+        searchButton.setForeground(UIVariables.foregroundColor);
+        searchButton.setFont(UIVariables.mainFont);
+        searchButton.setBorder(UIVariables.getButtonBorder(10, 0, 10, 0, 2));
 
     }
 
