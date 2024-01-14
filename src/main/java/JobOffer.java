@@ -22,4 +22,18 @@ public class JobOffer {
                 "Zarobki: " + this.salary + "  |  " +
                 this.link);
     }
+
+    public double getMeanSalary() {
+
+        String cleanedSalary = salary.endsWith(" PLN") ? salary.substring(0, salary.length() - 4) : salary;
+
+        String[] salaryRange = cleanedSalary.replaceAll("–", "-").replaceAll("\\s", "").split("-");
+
+        int lower = Integer.parseInt(salaryRange[0]);
+        int upper = Integer.parseInt(salaryRange[1]);
+
+        return (lower + upper) / 2.0;
+    }
 }
+
+

@@ -1,8 +1,8 @@
-// File: SearchBar.java
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-import static javax.swing.SwingConstants.CENTER;
 import static javax.swing.SwingConstants.RIGHT;
 
 public class SearchPanel extends JPanel {
@@ -13,11 +13,13 @@ public class SearchPanel extends JPanel {
     private final JComboBox<String> expLevelDropdown;
     private final JLabel expLabel;
     private final JButton searchButton;
+    private final JComboBox<String> sortingComboBox; // New sorting JComboBox
+    private final JLabel sortingLabel; // Label for the sorting JComboBox
 
     public SearchPanel() {
-        setLayout(new GridLayout(1, 5, 10, 5));
+        setLayout(new GridLayout(1, 7, 10, 0));
 
-        offerNameField = new JTextField(10);
+        offerNameField = new JTextField(12);
         offerNameField.setText("java developer");
         nameLabel = new JLabel("Offer Name:", RIGHT);
 
@@ -31,8 +33,19 @@ public class SearchPanel extends JPanel {
         expLevelDropdown.setSelectedIndex(4);
         expLabel = new JLabel("Exp Level:", RIGHT);
 
+        sortingComboBox = new JComboBox<>(new String[]{
+                "zarobkach",
+                "pozycji",
+                "firmie",
+        });
+
+        sortingLabel = new JLabel("Sortuj po:", RIGHT);
+        sortingComboBox.setSelectedIndex(0);
+
         searchButton = new JButton("Search");
-        searchButton.addActionListener(e -> MainInterface.searchJobOffers());
+        searchButton.addActionListener(e -> {
+            MainInterface.searchJobOffers();
+        });
 
         add(nameLabel);
         add(offerNameField);
@@ -40,7 +53,8 @@ public class SearchPanel extends JPanel {
         add(locationDropdown);
         add(expLabel);
         add(expLevelDropdown);
-        add(new JLabel());
+        add(sortingLabel);
+        add(sortingComboBox);
         add(searchButton);
 
         // Customize appearance
@@ -75,7 +89,13 @@ public class SearchPanel extends JPanel {
         searchButton.setForeground(UIVariables.foregroundColor);
         searchButton.setFont(UIVariables.mainFont);
         searchButton.setBorder(UIVariables.getButtonBorder(10, 0, 10, 0, 2));
+        searchButton.setBorder(BorderFactory.createLineBorder(new Color(74, 115, 148), 3));
 
+        sortingComboBox.setFont(UIVariables.mainFont);
+        sortingComboBox.setBackground(UIVariables.backgroundColor1);
+        sortingComboBox.setForeground(UIVariables.foregroundColor);
+        sortingLabel.setForeground(UIVariables.foregroundColor);
+        sortingLabel.setFont(UIVariables.mainFont);
     }
 
     public String getOfferName() {

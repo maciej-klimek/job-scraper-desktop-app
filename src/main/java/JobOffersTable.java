@@ -22,13 +22,14 @@ public class JobOffersTable extends JScrollPane {
         DefaultTableModel model = (DefaultTableModel) jobTable.getModel();
         model.setRowCount(0);
 
-        Scraper.jobOffers.sort(Comparator.comparing((JobOffer offer) -> offer.salary).reversed());
+        Scraper.jobOffers.sort(Comparator.comparingDouble(JobOffer::getMeanSalary).reversed());
 
         for (JobOffer offer : Scraper.jobOffers) {
             Object[] rowData = {offer.name, offer.expLevel, offer.company, offer.salary, offer.link};
             model.addRow(rowData);
         }
     }
+
 
     private void customizeAppearance() {
 
