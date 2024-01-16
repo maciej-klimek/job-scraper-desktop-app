@@ -18,17 +18,32 @@ public class JobOffersTable extends JScrollPane {
         customizeAppearance();
     }
 
-    public void updateTable() {
+    public void updateTable(Comparator<JobOffer> comparator) {
         DefaultTableModel model = (DefaultTableModel) jobTable.getModel();
         model.setRowCount(0);
 
-        Scraper.jobOffers.sort(Comparator.comparingDouble(JobOffer::getMeanSalary).reversed());
+        //Scraper.jobOffers.sort(Comparator.comparingDouble(JobOffer::getMeanSalary).reversed());
+        //Scraper.jobOffers.sort(Comparator.comparing(JobOffer::getCompany));
+        //Scraper.jobOffers.sort(Comparator.comparing(JobOffer::getOfferName));
+        Scraper.jobOffers.sort(comparator);
 
         for (JobOffer offer : Scraper.jobOffers) {
             Object[] rowData = {offer.name, offer.expLevel, offer.company, offer.salary, offer.link};
             model.addRow(rowData);
         }
     }
+
+    /*public void sortByMeanSalary(){
+        updateTable(Comparator.comparingDouble(JobOffer::getMeanSalary).reversed());
+    }
+
+    public void sortByCompanyName(){
+        updateTable(Comparator.comparing(JobOffer::getCompany));
+    }
+
+    public void sortByOfferName(){
+        updateTable(Comparator.comparing(JobOffer::getOfferName));
+    }*/
 
 
     private void customizeAppearance() {

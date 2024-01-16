@@ -14,7 +14,7 @@ public class Scraper {
     private static Document jjitDocument;
     static ArrayList<JobOffer> jobOffers = new ArrayList<>();
 
-    static int maxNumOfOffers = 20;
+    static int maxNumOfOffers = 30;
 
 
 

@@ -2,6 +2,7 @@
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -9,6 +10,30 @@ public class MainInterface extends JFrame {
     private static final ArrayList<JobOffer> jobOffers = Scraper.jobOffers;
     private static JobOffersTable jobOffersTable;
     private static SearchPanel searchBar;
+
+    public static void setSortingOption(String sortingOption) {
+        if (jobOffersTable != null) {
+            Comparator<JobOffer> comparator = null;
+
+            switch(sortingOption){
+                case "zarobkach":
+                    comparator = Comparator.comparingDouble(JobOffer::getMeanSalary).reversed();
+                    break;
+                case "pozycji":
+                    comparator = Comparator.comparing(JobOffer::getOfferName);
+                    break;
+                case "firmie":
+                    comparator = Comparator.comparing(JobOffer::getCompany);
+                    break;
+
+                default:
+                    break;
+            }
+            if (comparator != null){
+                jobOffersTable.updateTable(comparator);
+            }
+        }
+    }
 
     public MainInterface() {
         initializeUI();

@@ -34,6 +34,15 @@ public class JobOffer {
 
         return (lower + upper) / 2.0;
     }
-}
 
+    public String getCompany() {
+
+        return company;
+    }
+
+    public String getOfferName(){
+
+        return name;
+    }
+}
 

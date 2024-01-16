@@ -39,6 +39,13 @@ public class SearchPanel extends JPanel {
                 "firmie",
         });
 
+        sortingComboBox.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                MainInterface.setSortingOption(getSortingOption());
+            }
+        });
+
         sortingLabel = new JLabel("Sortuj po:", RIGHT);
         sortingComboBox.setSelectedIndex(0);
 
@@ -59,6 +66,9 @@ public class SearchPanel extends JPanel {
 
         // Customize appearance
         customizeAppearance();
+    }
+    public String getSortingOption(){
+        return sortingComboBox.getSelectedItem().toString();
     }
 
     private void customizeAppearance() {
