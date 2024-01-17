@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 import static javax.swing.SwingConstants.RIGHT;
 
 public class SearchPanel extends JPanel {
+    public static String selectedOption;
     private final JTextField offerNameField;
     private final JLabel nameLabel;
     private final JComboBox<String> locationDropdown;
@@ -42,7 +43,8 @@ public class SearchPanel extends JPanel {
         sortingComboBox.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                MainInterface.setSortingOption(getSortingOption());
+                selectedOption = (String) sortingComboBox.getSelectedItem();
+                JobOffersTable.updateTable();
             }
         });
 
@@ -68,7 +70,7 @@ public class SearchPanel extends JPanel {
         customizeAppearance();
     }
     public String getSortingOption(){
-        return sortingComboBox.getSelectedItem().toString();
+        return selectedOption;
     }
 
     private void customizeAppearance() {
@@ -106,6 +108,7 @@ public class SearchPanel extends JPanel {
         sortingComboBox.setForeground(UIVariables.foregroundColor);
         sortingLabel.setForeground(UIVariables.foregroundColor);
         sortingLabel.setFont(UIVariables.mainFont);
+        System.out.println(getSortingOption());
     }
 
     public String getOfferName() {

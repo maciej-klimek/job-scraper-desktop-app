@@ -18,14 +18,34 @@ public class JobOffersTable extends JScrollPane {
         customizeAppearance();
     }
 
-    public void updateTable(Comparator<JobOffer> comparator) {
+    public void updateTable() {
         DefaultTableModel model = (DefaultTableModel) jobTable.getModel();
         model.setRowCount(0);
 
+        String sortingOption = SearchPanel.getSortingOption();
+        Comparator<JobOffer> comparator = null;
+
+                switch(sortingOption){
+                    case "zarobkach":
+                        comparator = Comparator.comparingDouble(JobOffer::getMeanSalary).reversed();
+                        break;
+                    case "pozycji":
+                        comparator = Comparator.comparing(JobOffer::getOfferName);
+                        break;
+                    case "firmie":
+                        comparator = Comparator.comparing(JobOffer::getCompany);
+                        break;
+
+                    default:
+                        break;
+                }
+                if (comparator != null){
+                    Scraper.jobOffers.sort(comparator);
+                }
         //Scraper.jobOffers.sort(Comparator.comparingDouble(JobOffer::getMeanSalary).reversed());
         //Scraper.jobOffers.sort(Comparator.comparing(JobOffer::getCompany));
         //Scraper.jobOffers.sort(Comparator.comparing(JobOffer::getOfferName));
-        Scraper.jobOffers.sort(comparator);
+
 
         for (JobOffer offer : Scraper.jobOffers) {
             Object[] rowData = {offer.name, offer.expLevel, offer.company, offer.salary, offer.link};
@@ -33,7 +53,7 @@ public class JobOffersTable extends JScrollPane {
         }
     }
 
-    public void updateTable1(Comparator<JobOffer> comparator){
+    /*public void updateTable1(Comparator<JobOffer> comparator){
         SwingUtilities.invokeLater(() -> {
             DefaultTableModel model = (DefaultTableModel) jobTable.getModel();
 
@@ -50,7 +70,7 @@ public class JobOffersTable extends JScrollPane {
                 model.addRow(rowData);
             }
         });
-    }
+    }*/
 
     /*public void sortByMeanSalary(){
         updateTable(Comparator.comparingDouble(JobOffer::getMeanSalary).reversed());

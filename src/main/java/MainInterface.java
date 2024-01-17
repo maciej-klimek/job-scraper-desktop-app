@@ -12,7 +12,7 @@ public class MainInterface extends JFrame {
     private static JobOffersTable jobOffersTable;
     private static SearchPanel searchBar;
 
-    public static void setSortingOption(String sortingOption) {
+    /*public static void setSortingOption(String sortingOption) {
         if (jobOffersTable != null) {
             Comparator<JobOffer> comparator = null;
 
@@ -37,7 +37,7 @@ public class MainInterface extends JFrame {
         }
     }
 
-    /*private void startUpdateTimer(){
+    private void startUpdateTimer(){
 
       Timer timer = new Timer(1000, e -> {setSortingOption(searchBar.getSortingOption());
                                                     jobOffersTable.updateTable(currentComparator);
@@ -100,7 +100,7 @@ public class MainInterface extends JFrame {
         executor.execute(() -> Scraper.getNfjData(nofluffjobsUrl));
         executor.execute(() -> Scraper.getJjitData(justjoinitUrl));
 
-        Timer timer = new Timer(1000, e -> jobOffersTable.updateTable1(Comparator.comparingDouble(JobOffer::getMeanSalary).reversed()));
+        Timer timer = new Timer(1000, e -> jobOffersTable.updateTable());
         timer.start();
 
         executor.shutdown();
