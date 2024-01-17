@@ -1,7 +1,9 @@
 // File: JobOffersTable.java
 import javax.swing.*;
+import javax.swing.event.MouseInputAdapter;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
+import java.awt.event.MouseEvent;
 import java.util.Comparator;
 
 public class JobOffersTable extends JScrollPane {
@@ -43,10 +45,6 @@ public class JobOffersTable extends JScrollPane {
                     Scraper.jobOffers.sort(comparator);
                 }
 
-        //Scraper.jobOffers.sort(Comparator.comparingDouble(JobOffer::getMeanSalary).reversed());
-        //Scraper.jobOffers.sort(Comparator.comparing(JobOffer::getCompany));
-        //Scraper.jobOffers.sort(Comparator.comparing(JobOffer::getOfferName));
-
 
         for (JobOffer offer : Scraper.jobOffers) {
             Object[] rowData = {offer.name, offer.expLevel, offer.company, offer.salary, offer.link};
@@ -54,36 +52,30 @@ public class JobOffersTable extends JScrollPane {
         }
     }
 
-    /*public void updateTable1(Comparator<JobOffer> comparator){
-        SwingUtilities.invokeLater(() -> {
-            DefaultTableModel model = (DefaultTableModel) jobTable.getModel();
 
-            synchronized (Scraper.jobOffers){
-                if(comparator != null){
-                    Scraper.jobOffers.sort(comparator);
+    private void addLinkClickListener() {
+        jobTable.addMouseListener(new MouseInputAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                int column = jobTable.columnAtPoint(e.getPoint());
+                int row = jobTable.rowAtPoint(e.getPoint());
+
+                if (column == jobTable.getColumn("Link").getModelIndex() && row != -1) {
+                    String link = Scraper.jobOffers.get(row).link;
+                    openLinkInBrowser(link);
                 }
             }
-
-            model.setRowCount(0);
-
-            for(JobOffer offer : Scraper.jobOffers){
-                Object[] rowData = {offer.name, offer.expLevel, offer.company, offer.salary, offer.link};
-                model.addRow(rowData);
-            }
         });
-    }*/
-
-    /*public void sortByMeanSalary(){
-        updateTable(Comparator.comparingDouble(JobOffer::getMeanSalary).reversed());
     }
 
-    public void sortByCompanyName(){
-        updateTable(Comparator.comparing(JobOffer::getCompany));
+    private void openLinkInBrowser(String link) {
+        // The actual link opening functionality remains the same
+        try {
+            Desktop.getDesktop().browse(new java.net.URI(link));
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
-
-    public void sortByOfferName(){
-        updateTable(Comparator.comparing(JobOffer::getOfferName));
-    }*/
 
 
     private void customizeAppearance() {
