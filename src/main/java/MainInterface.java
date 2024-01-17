@@ -7,6 +7,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class MainInterface extends JFrame {
+    //private static Comparator<JobOffer> currentComparator;
     private static final ArrayList<JobOffer> jobOffers = Scraper.jobOffers;
     private static JobOffersTable jobOffersTable;
     private static SearchPanel searchBar;
@@ -30,10 +31,19 @@ public class MainInterface extends JFrame {
                     break;
             }
             if (comparator != null){
-                jobOffersTable.updateTable(comparator);
+                jobOffersTable.updateTable1(comparator);
+                //currentComparator = comparator;
             }
         }
     }
+
+    /*private void startUpdateTimer(){
+
+      Timer timer = new Timer(1000, e -> {setSortingOption(searchBar.getSortingOption());
+                                                    jobOffersTable.updateTable(currentComparator);
+                                                    });
+        timer.start();
+    }*/
 
     public MainInterface() {
         initializeUI();
