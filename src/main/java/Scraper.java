@@ -16,9 +16,13 @@ public class Scraper {
 
     static int maxNumOfOffers = 30;
 
+    public static boolean nfjScrapingFlag = false;
+    public static boolean jjitScrapingFlag = false;
 
 
     public static void getNfjData(String nfjUrl) {
+
+        nfjScrapingFlag = true;
 
         try {
             nfjWebsite = Jsoup.connect(nfjUrl).get();
@@ -62,6 +66,8 @@ public class Scraper {
                 }
             }
 
+            nfjScrapingFlag = false;
+
             if (jobOffers.isEmpty()) {
                 logger.error("Failed to load data from nofluffjobs.com");
             } else {
@@ -74,6 +80,8 @@ public class Scraper {
     }
 
         public static void getJjitData(String jjitUrl){
+
+            jjitScrapingFlag = true;
 
             try {
                 jjitDocument = Jsoup.connect(jjitUrl).get();
@@ -110,6 +118,9 @@ public class Scraper {
                         break;
                     }
                 }
+
+                jjitScrapingFlag = false;
+
                 if (jobOffers.isEmpty()) {
                     logger.error("Failed to load data from nofluffjobs.com");
                 } else {

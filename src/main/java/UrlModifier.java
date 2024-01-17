@@ -39,7 +39,7 @@ public class UrlModifier {
             inputOffName = inputOffName.replace(" ", "+");
             justjoinitUrl += "/with-salary_yes?keyword=" + inputOffName;
         } else {
-            justjoinitUrl += "/with-salary_yes?keyword=";
+            justjoinitUrl += "/with-salary_yes?";
         }
     }
 

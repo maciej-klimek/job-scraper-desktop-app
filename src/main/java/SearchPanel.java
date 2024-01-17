@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 import static javax.swing.SwingConstants.RIGHT;
 
 public class SearchPanel extends JPanel {
-    public static String selectedOption;
+
     private final JTextField offerNameField;
     private final JLabel nameLabel;
     private final JComboBox<String> locationDropdown;
@@ -14,9 +14,9 @@ public class SearchPanel extends JPanel {
     private final JComboBox<String> expLevelDropdown;
     private final JLabel expLabel;
     private final JButton searchButton;
-    private final JComboBox<String> sortingComboBox; // New sorting JComboBox
-    private final JLabel sortingLabel; // Label for the sorting JComboBox
-
+    private final JComboBox<String> sortingComboBox;
+    private final JLabel sortingLabel;
+    public static String selectedSorting;
     public SearchPanel() {
         setLayout(new GridLayout(1, 7, 10, 0));
 
@@ -43,8 +43,7 @@ public class SearchPanel extends JPanel {
         sortingComboBox.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                selectedOption = (String) sortingComboBox.getSelectedItem();
-                JobOffersTable.updateTable();
+                selectedSorting = (String) sortingComboBox.getSelectedItem();
             }
         });
 
@@ -68,9 +67,6 @@ public class SearchPanel extends JPanel {
 
         // Customize appearance
         customizeAppearance();
-    }
-    public String getSortingOption(){
-        return selectedOption;
     }
 
     private void customizeAppearance() {
@@ -108,7 +104,6 @@ public class SearchPanel extends JPanel {
         sortingComboBox.setForeground(UIVariables.foregroundColor);
         sortingLabel.setForeground(UIVariables.foregroundColor);
         sortingLabel.setFont(UIVariables.mainFont);
-        System.out.println(getSortingOption());
     }
 
     public String getOfferName() {

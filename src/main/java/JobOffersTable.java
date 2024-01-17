@@ -22,7 +22,7 @@ public class JobOffersTable extends JScrollPane {
         DefaultTableModel model = (DefaultTableModel) jobTable.getModel();
         model.setRowCount(0);
 
-        String sortingOption = SearchPanel.getSortingOption();
+        String sortingOption = SearchPanel.selectedSorting;
         Comparator<JobOffer> comparator = null;
 
                 switch(sortingOption){
@@ -42,6 +42,7 @@ public class JobOffersTable extends JScrollPane {
                 if (comparator != null){
                     Scraper.jobOffers.sort(comparator);
                 }
+
         //Scraper.jobOffers.sort(Comparator.comparingDouble(JobOffer::getMeanSalary).reversed());
         //Scraper.jobOffers.sort(Comparator.comparing(JobOffer::getCompany));
         //Scraper.jobOffers.sort(Comparator.comparing(JobOffer::getOfferName));

@@ -1,16 +1,19 @@
 // File: MainInterface.java
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class MainInterface extends JFrame {
-    //private static Comparator<JobOffer> currentComparator;
     private static final ArrayList<JobOffer> jobOffers = Scraper.jobOffers;
     private static JobOffersTable jobOffersTable;
     private static SearchPanel searchBar;
+    private static final Logger logger = LogManager.getLogger(Scraper.class);
+
 
     /*public static void setSortingOption(String sortingOption) {
         if (jobOffersTable != null) {
@@ -79,6 +82,19 @@ public class MainInterface extends JFrame {
     }
 
     public static void searchJobOffers() {
+
+        if (Scraper.nfjScrapingFlag  || Scraper.jjitScrapingFlag) {
+
+            //TUTAJ ZEBY PIEKNE OKIENKO WYSKOCZYLO
+            logger.warn("Can't scrape new data while previous scraping process is still active");
+            logger.warn("Can't scrape new data while previous scraping process is still active");
+            logger.warn("Can't scrape new data while previous scraping process is still active");
+            logger.warn("Can't scrape new data while previous scraping process is still active");
+            logger.warn("Can't scrape new data while previous scraping process is still active");
+
+            return;
+        }
+
         jobOffers.clear();
 
         String inputOfferName = searchBar.getOfferName();
@@ -95,6 +111,7 @@ public class MainInterface extends JFrame {
         String[] urls = UrlModifier.getModifiedUrls(inputLocation, inputOfferName, inputExpLevel);
         String nofluffjobsUrl = urls[0];
         String justjoinitUrl = urls[1];
+
 
         ExecutorService executor = Executors.newFixedThreadPool(2);
         executor.execute(() -> Scraper.getNfjData(nofluffjobsUrl));
