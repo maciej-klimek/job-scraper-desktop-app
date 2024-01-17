@@ -33,6 +33,25 @@ public class JobOffersTable extends JScrollPane {
         }
     }
 
+    public void updateTable1(Comparator<JobOffer> comparator){
+        SwingUtilities.invokeLater(() -> {
+            DefaultTableModel model = (DefaultTableModel) jobTable.getModel();
+
+            synchronized (Scraper.jobOffers){
+                if(comparator != null){
+                    Scraper.jobOffers.sort(comparator);
+                }
+            }
+
+            model.setRowCount(0);
+
+            for(JobOffer offer : Scraper.jobOffers){
+                Object[] rowData = {offer.name, offer.expLevel, offer.company, offer.salary, offer.link};
+                model.addRow(rowData);
+            }
+        });
+    }
+
     /*public void sortByMeanSalary(){
         updateTable(Comparator.comparingDouble(JobOffer::getMeanSalary).reversed());
     }

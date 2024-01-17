@@ -90,7 +90,7 @@ public class MainInterface extends JFrame {
         executor.execute(() -> Scraper.getNfjData(nofluffjobsUrl));
         executor.execute(() -> Scraper.getJjitData(justjoinitUrl));
 
-        Timer timer = new Timer(1000, e -> jobOffersTable.updateTable());
+        Timer timer = new Timer(1000, e -> jobOffersTable.updateTable1(Comparator.comparingDouble(JobOffer::getMeanSalary).reversed()));
         timer.start();
 
         executor.shutdown();
