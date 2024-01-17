@@ -20,7 +20,7 @@ public class SearchPanel extends JPanel {
     public SearchPanel() {
         setLayout(new GridLayout(1, 7, 10, 0));
 
-        offerNameField = new JTextField(12);
+        offerNameField = new JTextField(10);
         offerNameField.setText("java developer");
         nameLabel = new JLabel("Offer Name:", RIGHT);
 

@@ -15,38 +15,6 @@ public class MainInterface extends JFrame {
     private static final Logger logger = LogManager.getLogger(Scraper.class);
 
 
-    /*public static void setSortingOption(String sortingOption) {
-        if (jobOffersTable != null) {
-            Comparator<JobOffer> comparator = null;
-
-            switch(sortingOption){
-                case "zarobkach":
-                    comparator = Comparator.comparingDouble(JobOffer::getMeanSalary).reversed();
-                    break;
-                case "pozycji":
-                    comparator = Comparator.comparing(JobOffer::getOfferName);
-                    break;
-                case "firmie":
-                    comparator = Comparator.comparing(JobOffer::getCompany);
-                    break;
-
-                default:
-                    break;
-            }
-            if (comparator != null){
-                jobOffersTable.updateTable1(comparator);
-                //currentComparator = comparator;
-            }
-        }
-    }
-
-    private void startUpdateTimer(){
-
-      Timer timer = new Timer(1000, e -> {setSortingOption(searchBar.getSortingOption());
-                                                    jobOffersTable.updateTable(currentComparator);
-                                                    });
-        timer.start();
-    }*/
 
     public MainInterface() {
         initializeUI();
@@ -87,11 +55,6 @@ public class MainInterface extends JFrame {
 
             //TUTAJ ZEBY PIEKNE OKIENKO WYSKOCZYLO
             logger.warn("Can't scrape new data while previous scraping process is still active");
-            logger.warn("Can't scrape new data while previous scraping process is still active");
-            logger.warn("Can't scrape new data while previous scraping process is still active");
-            logger.warn("Can't scrape new data while previous scraping process is still active");
-            logger.warn("Can't scrape new data while previous scraping process is still active");
-
             return;
         }
 
