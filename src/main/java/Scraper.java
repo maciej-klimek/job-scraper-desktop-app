@@ -6,6 +6,8 @@ import java.util.Objects;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import javax.swing.*;
+
 
 public class Scraper {
 
@@ -34,7 +36,14 @@ public class Scraper {
 
         Document offerWebsite;
         try {
-            Elements desiredContent = nfjWebsite.select("nfj-postings-list > div.list-container");
+
+            if (Objects.equals(nfjWebsite.select("nfj-postings-list > div.list-title-wrapper > div.list-title > h2").text(), "Offers of the day")) {
+                JOptionPane.showMessageDialog(null, "Nie znaleziono żadnych ofert w nofluffjobs.com", "Uwaga", JOptionPane.WARNING_MESSAGE);
+                nfjScrapingFlag = false;
+                return;
+            }
+
+            Element desiredContent = nfjWebsite.select("nfj-postings-list > div.list-container").first();
             int offerCount = 0;
 
             for (Element jobListing : desiredContent.select("a")) {
@@ -122,7 +131,10 @@ public class Scraper {
                 jjitScrapingFlag = false;
 
                 if (jobOffers.isEmpty()) {
-                    logger.error("Failed to load data from nofluffjobs.com");
+
+                    JOptionPane.showMessageDialog(null, "Nie znaleziono żadnych ofert w justjoinit.com", "Uwaga", JOptionPane.WARNING_MESSAGE);
+                    logger.error("Failed to load data from" + jjitUrl);
+
                 } else {
                     logger.info("Successfully scraped " + offerCount + " job offers from " + jjitUrl + "\n");
                 }

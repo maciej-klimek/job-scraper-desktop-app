@@ -74,8 +74,8 @@ public class SearchPanel extends JPanel {
     }
 
     private void customizeAppearance() {
-        try {
 
+        try {
             setBackground(UIVariables.backgroundColor2);
 
             offerNameField.setFont(UIVariables.mainFont);

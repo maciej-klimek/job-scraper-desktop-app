@@ -29,34 +29,40 @@ public class JobOffersTable extends JScrollPane {
     }
 
     public void updateTable() {
-        DefaultTableModel model = (DefaultTableModel) jobTable.getModel();
-        model.setRowCount(0);
 
-        String sortingOption = SearchPanel.selectedSorting;
-        Comparator<JobOffer> comparator = null;
+        try {
 
-                switch(sortingOption){
-                    case "zarobkach":
-                        comparator = Comparator.comparingDouble(JobOffer::getMeanSalary).reversed();
-                        break;
-                    case "pozycji":
-                        comparator = Comparator.comparing(JobOffer::getOfferName);
-                        break;
-                    case "firmie":
-                        comparator = Comparator.comparing(JobOffer::getCompany);
-                        break;
+            DefaultTableModel model = (DefaultTableModel) jobTable.getModel();
+            model.setRowCount(0);
 
-                    default:
-                        break;
-                }
-                if (comparator != null){
-                    Scraper.jobOffers.sort(comparator);
-                }
+            String sortingOption = SearchPanel.selectedSorting;
+            Comparator<JobOffer> comparator = null;
+
+            switch (sortingOption) {
+                case "zarobkach":
+                    comparator = Comparator.comparingDouble(JobOffer::getMeanSalary).reversed();
+                    break;
+                case "pozycji":
+                    comparator = Comparator.comparing(JobOffer::getOfferName);
+                    break;
+                case "firmie":
+                    comparator = Comparator.comparing(JobOffer::getCompany);
+                    break;
+
+                default:
+                    break;
+            }
+            if (comparator != null) {
+                Scraper.jobOffers.sort(comparator);
+            }
 
 
-        for (JobOffer offer : Scraper.jobOffers) {
-            Object[] rowData = {offer.name, offer.expLevel, offer.company, offer.salary, offer.link};
-            model.addRow(rowData);
+            for (JobOffer offer : Scraper.jobOffers) {
+                Object[] rowData = {offer.name, offer.expLevel, offer.company, offer.salary, offer.link};
+                model.addRow(rowData);
+            }
+        } catch (Exception e) {
+            logger.error("Failed to update the table");
         }
     }
 
@@ -80,12 +86,17 @@ public class JobOffersTable extends JScrollPane {
     }
 
     private int getColumnIndex(String columnName) {
-        for (int i = 0; i < jobTable.getColumnCount(); i++) {
-            if (columnName.equals(jobTable.getColumnName(i))) {
-                return i;
+        try {
+            for (int i = 0; i < jobTable.getColumnCount(); i++) {
+                if (columnName.equals(jobTable.getColumnName(i))) {
+                    return i;
+                }
             }
+            return -1;
+        } catch (Exception e) {
+            logger.error("Failer to get a collumn index");
+            return -1;
         }
-        return -1;
     }
 
     private void openLinkInBrowser(String link) {
