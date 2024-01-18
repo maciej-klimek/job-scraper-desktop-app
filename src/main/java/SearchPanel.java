@@ -28,13 +28,13 @@ public class SearchPanel extends JPanel {
         offerNameField.setText("java developer");
         nameLabel = new JLabel("Offer Name:", RIGHT);
 
-        locationDropdown = new JComboBox<>(new String[]{"dowolna", "remote", "warszawa", "krakow", "wroclaw", "gdansk", "poznan",
+        locationDropdown = new JComboBox<>(new String[]{"dowolna", "zdalnie", "warszawa", "krakow", "wroclaw", "gdansk", "poznan",
                 "katowice", "lodz", "bialystok", "gdynia", "lublin", "rzeszow",
                 "bydgoszcz", "gliwice", "czestochowa", "szczecin", "sopot"});
         locationLabel = new JLabel("Location:", RIGHT);
-        locationDropdown.setSelectedIndex(3);
+        locationDropdown.setSelectedIndex(2);
 
-        expLevelDropdown = new JComboBox<>(new String[]{"dowolny", "junior", "mid", "regular", "senior", "expert"});
+        expLevelDropdown = new JComboBox<>(new String[]{"dowolny", "junior", "mid", "senior", "expert"});
         expLevelDropdown.setSelectedIndex(4);
         expLabel = new JLabel("Exp Level:", RIGHT);
 

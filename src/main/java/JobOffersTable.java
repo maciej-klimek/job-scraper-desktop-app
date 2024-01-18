@@ -123,13 +123,15 @@ public class JobOffersTable extends JScrollPane {
             int totalWidth = getWidth();
 
             int offerNameColumnIndex = getColumnIndex("Name");
+            int salaryColumnIndex = getColumnIndex("Salary");
+            int linkColumnIndex = getColumnIndex("Link");
+
+
             if (offerNameColumnIndex != -1) {
                 int width = (int) (totalWidth * 0.3);
                 jobTable.getColumnModel().getColumn(offerNameColumnIndex).setPreferredWidth(width);
 
             }
-
-            int salaryColumnIndex = getColumnIndex("Salary");
 
 
             if (offerNameColumnIndex != -1) {
@@ -162,6 +164,25 @@ public class JobOffersTable extends JScrollPane {
                         Component comp = super.getTableCellRendererComponent(table, value,
                                 isSelected, hasFocus, row, column);
                         comp.setFont(font);
+                        return comp;
+                    }
+                });
+            }
+
+            if (linkColumnIndex != -1) {
+                jobTable.getColumnModel().getColumn(linkColumnIndex).setCellRenderer(new DefaultTableCellRenderer() {
+                    Font font = jobTable.getFont().deriveFont(Font.BOLD);
+                    Color linkColor = Color.BLUE;
+
+                    @Override
+                    public Component getTableCellRendererComponent(JTable table, Object value,
+                                                                   boolean isSelected, boolean hasFocus,
+                                                                   int row, int column) {
+                        Component comp = super.getTableCellRendererComponent(table, value,
+                                isSelected, hasFocus, row, column);
+                        comp.setFont(font);
+                        comp.setForeground(linkColor);
+
                         return comp;
                     }
                 });

@@ -172,3 +172,12 @@ java.lang.NullPointerException: Cannot invoke "org.jsoup.nodes.Document.select(S
 2024-01-18 23:05:50 ERROR Scraper:134 - Failed to load data fromhttps://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=asdasd
 2024-01-18 23:07:34 ERROR Scraper:135 - Failed to load data fromhttps://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=asdasd
 2024-01-18 23:07:55 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=asdas
+2024-01-18 23:10:19 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=123145
+2024-01-18 23:10:52 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=dfgsdfgdfs
+2024-01-18 23:11:15 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/remote/experience-level_senior/with-salary_yes?keyword=java
+2024-01-18 23:15:05 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/szczecin/experience-level_regular/with-salary_yes?keyword=java+developer
+2024-01-18 23:15:10 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/zdalnie/experience-level_regular/with-salary_yes?keyword=java+developer
+2024-01-18 23:15:38 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/krakow/experience-level_expert/with-salary_yes?keyword=java+developer
+2024-01-18 23:15:45 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/krakow/experience-level_expert/with-salary_yes?keyword=java+developer
+2024-01-18 23:16:09 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/experience-level_expert/with-salary_yes?keyword=python
+2024-01-18 23:20:22 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/krakow/experience-level_expert/with-salary_yes?keyword=java+developer
