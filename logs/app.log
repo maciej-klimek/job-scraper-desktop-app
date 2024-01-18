@@ -637,3 +637,514 @@
 2024-01-18 23:52:03 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/apzumi-senior-java-developer-poznan-336441
 2024-01-18 23:52:03 INFO  Scraper:139 - Successfully scraped 21 job offers from https://justjoin.it/experience-level_senior/with-salary_yes?
 
+2024-01-19 00:05:50 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=java+developer
+2024-01-19 00:05:51 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/j-labs-senior-java-developer-warszawa-346744
+2024-01-19 00:05:51 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/krakow?page=1&criteria=jobPosition%3D%27java+developer%27%20seniority%3Dsenior
+2024-01-19 00:05:51 INFO  Scraper:71 - Scraped offer Senior Java Developer from https://nofluffjobs.com/job/senior-java-developer-boldare-krakow-3
+2024-01-19 00:05:51 INFO  Scraper:125 - Scraped offer Java Developer from https://justjoin.it/offers/boldare-javascript-developer-react-js
+2024-01-19 00:05:51 INFO  Scraper:71 - Scraped offer Java Developer with AWS from https://nofluffjobs.com/job/java-developer-with-aws-hsbc-technology-poland-krakow
+2024-01-19 00:05:52 INFO  Scraper:71 - Scraped offer Senior Java Developer - Kraków from https://nofluffjobs.com/job/senior-java-developer-krakow-link-group-krakow
+2024-01-19 00:05:52 INFO  Scraper:71 - Scraped offer Backend Java Developer from https://nofluffjobs.com/job/backend-java-developer-novomatic-technologies-poland-krakow-1
+2024-01-19 00:05:52 INFO  Scraper:125 - Scraped offer Senior Java Developer - Commercial Digital from https://justjoin.it/offers/volvo-tech-hub-poland-senior-java-developer-commercial-digital-czarnochowice
+2024-01-19 00:05:52 INFO  Scraper:71 - Scraped offer Senior/Lead Java Developer from https://nofluffjobs.com/job/senior-lead-java-developer-spyrosoft-krakow-1
+2024-01-19 00:05:52 INFO  Scraper:71 - Scraped offer Senior Java Developer from https://nofluffjobs.com/job/senior-java-developer-sollers-consulting-krakow
+2024-01-19 00:05:52 INFO  Scraper:71 - Scraped offer Senior Java Software Engineer from https://nofluffjobs.com/job/senior-java-software-engineer-motorola-solutions-systems-polska-krakow-2
+2024-01-19 00:05:52 INFO  Scraper:71 - Scraped offer Software Development Engineer (Java & TypeScript) from https://nofluffjobs.com/job/software-development-engineer-java-typescript-apptio-krakow
+2024-01-19 00:05:52 INFO  Scraper:71 - Scraped offer Sr Software Development Engineer (Java) from https://nofluffjobs.com/job/sr-software-development-engineer-java-apptio-krakow
+2024-01-19 00:05:52 INFO  Scraper:71 - Scraped offer Senior Java Engineer from https://nofluffjobs.com/job/senior-java-engineer-kontakt-io-krakow
+2024-01-19 00:05:52 INFO  Scraper:125 - Scraped offer Senior Backend Java Developer (remote) from https://justjoin.it/offers/appfire-senior-backend-java-developer-remote-krakow-309794
+2024-01-19 00:05:52 INFO  Scraper:71 - Scraped offer Software Development Manager - Java from https://nofluffjobs.com/job/software-development-manager-java-tesco-technology-krakow-1
+2024-01-19 00:05:52 INFO  Scraper:83 - Successfully scraped 11 job offers from https://nofluffjobs.com/krakow?page=1&criteria=jobPosition%3D%27java+developer%27%20seniority%3Dsenior
+
+2024-01-19 00:05:53 INFO  Scraper:125 - Scraped offer Principal Java Full Stack Developer from https://justjoin.it/offers/sopra-steria-principal-java-full-stack-developer-krakow
+2024-01-19 00:05:53 INFO  Scraper:125 - Scraped offer Senior Java Developer (REMOTE from EU) from https://justjoin.it/offers/devsdata-llc-senior-java-developer-remote-from-eu
+2024-01-19 00:05:53 INFO  Scraper:125 - Scraped offer Senior Java Full Stack Developer from https://justjoin.it/offers/sopra-steria-senior-java-full-stack-developer-krakow
+2024-01-19 00:05:54 INFO  Scraper:125 - Scraped offer Senior JavaScript Developer from https://justjoin.it/offers/piwik-pro-senior-javascript-developer-warszawa
+2024-01-19 00:05:54 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/emagine-polska-senior-java-developer-warsaw
+2024-01-19 00:05:55 INFO  Scraper:125 - Scraped offer Senior Java Trading Systems Developer / Tech Lead from https://justjoin.it/offers/vistulo-senior-java-trading-systems-developer-tech-lead
+2024-01-19 00:05:56 INFO  Scraper:125 - Scraped offer Senior Full Stack Java Developer from https://justjoin.it/offers/tele-fonika-kable-s-a-senior-full-stack-java-developer-krakow-332274
+2024-01-19 00:05:56 INFO  Scraper:125 - Scraped offer FullStack Tech Lead: Typescript/Node.js from https://justjoin.it/offers/brytlyt-sp-zo-o-fullstack-tech-lead-typescript-node-js-wroclaw
+2024-01-19 00:05:56 INFO  Scraper:125 - Scraped offer Senior FullStack Developer: Typescript/React/Express.js from https://justjoin.it/offers/brytlyt-sp-zo-o-senior-fullstack-developer-typescript-react-express-js-wroclaw
+2024-01-19 00:05:57 INFO  Scraper:125 - Scraped offer Fullstack Javascript Developer from https://justjoin.it/offers/rigby-fullstack-javascript-developer-warszawa
+2024-01-19 00:05:57 INFO  Scraper:125 - Scraped offer Senior JavaScript Developer (React) from https://justjoin.it/offers/stx-next-senior-javascript-developer-react-warszawa-345922
+2024-01-19 00:05:58 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/mindpal-senior-java-developer-poznan
+2024-01-19 00:05:58 INFO  Scraper:125 - Scraped offer JS (React, Node.JS) Developer German* from https://justjoin.it/offers/mindpal-js-react-node-js-developer-german
+2024-01-19 00:05:59 INFO  Scraper:125 - Scraped offer Senior/Lead Java Developer from https://justjoin.it/offers/spyrosoft-senior-lead-java-developer-gdansk-345742
+2024-01-19 00:05:59 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/shift4-senior-java-developer-48f68a97-595a-42a9-a51c-bb202a36f763
+2024-01-19 00:06:00 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/sopra-steria-senior-java-developer-krakow-345468
+2024-01-19 00:06:00 INFO  Scraper:125 - Scraped offer Java Developer from https://justjoin.it/offers/emagine-polska-java-developer-krakow
+2024-01-19 00:06:00 INFO  Scraper:125 - Scraped offer Java Developer from https://justjoin.it/offers/novomatic-java-developer-krakow-341159
+2024-01-19 00:06:01 INFO  Scraper:125 - Scraped offer 👉 Senior/Principal Java Developer from https://justjoin.it/offers/xebia-senior-principal-java-developer
+2024-01-19 00:06:01 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/sollers-consulting-sp-z-o-o-senior-java-developer
+2024-01-19 00:06:01 INFO  Scraper:125 - Scraped offer Java Developer with German from https://justjoin.it/offers/spyrosoft-java-developer-with-german-krakow
+2024-01-19 00:06:02 INFO  Scraper:125 - Scraped offer Java Developer from https://justjoin.it/offers/hireone-it-recruitment-java-developer-krakow-338509
+2024-01-19 00:06:02 INFO  Scraper:125 - Scraped offer Senior Java Developer (Lead) from https://justjoin.it/offers/hireone-it-recruitment-senior-java-developer-lead-wroclaw
+2024-01-19 00:06:03 INFO  Scraper:125 - Scraped offer JS (React, Node.JS) Developer from https://justjoin.it/offers/mindpal-js-react-node-js-developer-krakow
+2024-01-19 00:06:03 INFO  Scraper:125 - Scraped offer Senior / Lead Full Stack Java Developer from https://justjoin.it/offers/epam-systems-senior-lead-full-stack-java-developer-krakow-328272
+2024-01-19 00:06:04 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/decerto-senior-backend-developer-warszawa
+2024-01-19 00:06:04 INFO  Scraper:139 - Successfully scraped 30 job offers from https://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=java+developer
+
+2024-01-19 00:06:12 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/experience-level_senior/with-salary_yes?keyword=c%23+developer
+2024-01-19 00:06:12 INFO  Scraper:125 - Scraped offer Senior Java Cloud Developer from https://justjoin.it/offers/dahliamatic-sp-z-o-o-senior-java-cloud-developer-warszawa-319787
+2024-01-19 00:06:13 INFO  Scraper:125 - Scraped offer Lead Autosar Engineer from https://justjoin.it/offers/dcg-lead-autosar-engineer-lodz
+2024-01-19 00:06:13 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27c%23+developer%27%20seniority%3Dsenior
+2024-01-19 00:06:13 INFO  Scraper:71 - Scraped offer Senior Full Stack (C# and C++ and JS) Developer from https://nofluffjobs.com/job/senior-full-stack-c-and-c-and-js-developer-digis-remote
+2024-01-19 00:06:13 INFO  Scraper:125 - Scraped offer Senior C++ Developer from https://justjoin.it/offers/keepit-senior-c-developer
+2024-01-19 00:06:14 INFO  Scraper:125 - Scraped offer Senior React Native Developer from https://justjoin.it/offers/callstack-senior-react-native-developer-wroclaw
+2024-01-19 00:06:14 INFO  Scraper:71 - Scraped offer SENIOR C#/.NET DEVELOPER from https://nofluffjobs.com/job/senior-c-net-developer-statscore-katowice
+2024-01-19 00:06:14 INFO  Scraper:125 - Scraped offer C# Developer from https://justjoin.it/offers/1dea-c-developer
+2024-01-19 00:06:14 INFO  Scraper:125 - Scraped offer Senior Proxy Product Owner from https://justjoin.it/offers/masterborn-sp-z-o-o-senior-proxy-product-owner-gdansk-344345
+2024-01-19 00:06:15 INFO  Scraper:125 - Scraped offer C++ Developer from https://justjoin.it/offers/avenga-c-developer-krakow-343228
+2024-01-19 00:06:15 INFO  Scraper:125 - Scraped offer C# Developer from https://justjoin.it/offers/savills-c-developer
+2024-01-19 00:06:15 INFO  Scraper:71 - Scraped offer Unity / C# Developer from https://nofluffjobs.com/job/unity-c-developer-sperasoft-warszawa
+2024-01-19 00:06:16 INFO  Scraper:125 - Scraped offer Senior .Net Core Developer from https://justjoin.it/offers/link-group-senior-net-core-developer
+2024-01-19 00:06:16 INFO  Scraper:125 - Scraped offer Senior Backend Engineer from https://justjoin.it/offers/backbase-senior-backend-engineer
+2024-01-19 00:06:16 INFO  Scraper:125 - Scraped offer .NET Developer from https://justjoin.it/offers/the-heart-r-d-lab-net-developer
+2024-01-19 00:06:17 INFO  Scraper:125 - Scraped offer Senior C++ Developer from https://justjoin.it/offers/rits-professional-services-senior-c-developer-katowice-324783
+2024-01-19 00:06:17 INFO  Scraper:71 - Scraped offer C# Developer from https://nofluffjobs.com/job/c-developer-meniga-warszawa-1
+2024-01-19 00:06:17 INFO  Scraper:125 - Scraped offer Senior C++ Engineer from https://justjoin.it/offers/link-group-senior-c-engineer
+2024-01-19 00:06:18 INFO  Scraper:125 - Scraped offer Senior Cloud Developera- SAPUI5 i SAP CAP from https://justjoin.it/offers/1dea-senior-cloud-developera-sapui5-i-sap-cap-gdansk
+2024-01-19 00:06:18 INFO  Scraper:125 - Scraped offer (Senior) Microsoft 365 Consultant/Architect from https://justjoin.it/offers/reply-polska-sp-z-o-o-senior-microsoft-365-consultant-architect-zielona-gora
+2024-01-19 00:06:19 INFO  Scraper:71 - Scraped offer C# Mobile Developer from https://nofluffjobs.com/job/c-mobile-developer-statica-remote
+2024-01-19 00:06:19 INFO  Scraper:125 - Scraped offer (Senior) SharePoint Consultant & Developer from https://justjoin.it/offers/reply-polska-sp-z-o-o-senior-sharepoint-consultant-developer-czestochowa
+2024-01-19 00:06:19 INFO  Scraper:125 - Scraped offer (Senior) Microsoft 365 Consultant/Architect from https://justjoin.it/offers/reply-polska-sp-z-o-o-senior-microsoft-365-consultant-architect
+2024-01-19 00:06:20 INFO  Scraper:125 - Scraped offer (Senior) SharePoint Consultant & Developer from https://justjoin.it/offers/reply-polska-sp-z-o-o-senior-sharepoint-consultant-developer
+2024-01-19 00:06:20 INFO  Scraper:125 - Scraped offer Senior Software Engineer from https://justjoin.it/offers/transition-technologies-psc-senior-software-engineer-1d2a1a98-a074-4b42-95ce-9365526e59e4
+2024-01-19 00:06:20 INFO  Scraper:125 - Scraped offer Senior Mendix Low-code Developer from https://justjoin.it/offers/netguru-senior-mendix-low-code-developer-krakow-345072
+2024-01-19 00:06:20 INFO  Scraper:71 - Scraped offer Senior C# Developer from https://nofluffjobs.com/job/senior-c-developer-code-poets-wroclaw
+2024-01-19 00:06:21 INFO  Scraper:125 - Scraped offer Senior AWS Cloud Architect from https://justjoin.it/offers/nordcloud-senior-aws-cloud-architect
+2024-01-19 00:06:21 INFO  Scraper:125 - Scraped offer C++ Developer from https://justjoin.it/offers/rits-professional-services-c-developer
+2024-01-19 00:06:22 INFO  Scraper:125 - Scraped offer C++ / Qt Senior/Expert Developer from https://justjoin.it/offers/siili-c-qt-senior-expert-developer
+2024-01-19 00:06:22 INFO  Scraper:125 - Scraped offer C# Developer from https://justjoin.it/offers/scalo-sp-z-o-o-c-developer-krakow
+2024-01-19 00:06:22 INFO  Scraper:125 - Scraped offer Senior Remote C++ Engineer from https://justjoin.it/offers/ligo-headhunters-senior-remote-c-engineer
+2024-01-19 00:06:23 INFO  Scraper:71 - Scraped offer Senior QA Automation Engineer (C#) from https://nofluffjobs.com/job/senior-qa-automation-engineer-c--reply-polska-katowice
+2024-01-19 00:06:23 INFO  Scraper:125 - Scraped offer C/C++ Developer, IoT from https://justjoin.it/offers/rmedison-sp-z-o-o-c-c-developer-iot
+2024-01-19 00:06:23 INFO  Scraper:139 - Successfully scraped 26 job offers from https://justjoin.it/experience-level_senior/with-salary_yes?keyword=c%23+developer
+
+2024-01-19 00:06:23 INFO  Scraper:71 - Scraped offer Senior .Net / C# Fullstack Engineer (Warsaw) from https://nofluffjobs.com/job/senior-net-c-fullstack-engineer-warsaw-link-group-warszawa
+2024-01-19 00:06:23 INFO  Scraper:71 - Scraped offer Software Engineer with C# from https://nofluffjobs.com/job/software-engineer-with-c--frends-remote
+2024-01-19 00:06:24 INFO  Scraper:71 - Scraped offer Lead .NET Developer from https://nofluffjobs.com/job/lead-net-developer-andea-solutions-krakow-1
+2024-01-19 00:06:25 INFO  Scraper:71 - Scraped offer Technical Architect (Azure and .NET) from https://nofluffjobs.com/job/technical-architect-azure-and-net-objectivity-part-of-accenture-remote
+2024-01-19 00:06:26 INFO  Scraper:71 - Scraped offer Team leader / .NET Developer from https://nofluffjobs.com/job/team-leader-net-developer-hitachi-energy-remote-1
+2024-01-19 00:06:27 INFO  Scraper:71 - Scraped offer Lead Fullstack .NET Developer from https://nofluffjobs.com/job/lead-fullstack-net-developer-avanade-poland-warszawa
+2024-01-19 00:06:27 INFO  Scraper:71 - Scraped offer Technical Lead/Senior .NET Developer with Angular from https://nofluffjobs.com/job/technical-lead-senior-net-developer-with-angular-objectivity-remote
+2024-01-19 00:06:27 INFO  Scraper:71 - Scraped offer MAUI .NET Developer from https://nofluffjobs.com/job/maui-net-developer-vumo-krakow
+2024-01-19 00:06:27 INFO  Scraper:83 - Successfully scraped 15 job offers from https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27c%23+developer%27%20seniority%3Dsenior
+
+2024-01-19 00:08:20 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27c%23%27%20seniority%3Dsenior
+2024-01-19 00:08:20 INFO  Scraper:71 - Scraped offer Senior QA Automation Engineer (C#) from https://nofluffjobs.com/job/senior-qa-automation-engineer-c--reply-polska-katowice
+2024-01-19 00:08:20 INFO  Scraper:71 - Scraped offer Senior .Net / C# Fullstack Engineer (Warsaw) from https://nofluffjobs.com/job/senior-net-c-fullstack-engineer-warsaw-link-group-warszawa
+2024-01-19 00:08:20 INFO  Scraper:71 - Scraped offer Senior Full Stack (C# and C++ and JS) Developer from https://nofluffjobs.com/job/senior-full-stack-c-and-c-and-js-developer-digis-remote
+2024-01-19 00:08:20 INFO  Scraper:71 - Scraped offer SENIOR C#/.NET DEVELOPER from https://nofluffjobs.com/job/senior-c-net-developer-statscore-katowice
+2024-01-19 00:08:20 INFO  Scraper:71 - Scraped offer Unity / C# Developer from https://nofluffjobs.com/job/unity-c-developer-sperasoft-warszawa
+2024-01-19 00:08:21 INFO  Scraper:71 - Scraped offer C# Developer from https://nofluffjobs.com/job/c-developer-meniga-warszawa-1
+2024-01-19 00:08:21 INFO  Scraper:71 - Scraped offer Software Engineer with C# from https://nofluffjobs.com/job/software-engineer-with-c--frends-remote
+2024-01-19 00:08:21 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/experience-level_senior/with-salary_yes?keyword=c%23
+2024-01-19 00:08:21 INFO  Scraper:71 - Scraped offer C# Mobile Developer from https://nofluffjobs.com/job/c-mobile-developer-statica-remote
+2024-01-19 00:08:21 INFO  Scraper:71 - Scraped offer Senior C# Developer from https://nofluffjobs.com/job/senior-c-developer-code-poets-wroclaw
+2024-01-19 00:08:21 INFO  Scraper:71 - Scraped offer Lead .NET Developer from https://nofluffjobs.com/job/lead-net-developer-andea-solutions-krakow-1
+2024-01-19 00:08:21 INFO  Scraper:71 - Scraped offer Technical Architect (Azure and .NET) from https://nofluffjobs.com/job/technical-architect-azure-and-net-objectivity-part-of-accenture-remote
+2024-01-19 00:08:21 INFO  Scraper:71 - Scraped offer Team leader / .NET Developer from https://nofluffjobs.com/job/team-leader-net-developer-hitachi-energy-remote-1
+2024-01-19 00:08:21 INFO  Scraper:125 - Scraped offer Senior DevOps Engineer (Azure) from https://justjoin.it/offers/future-processing-senior-devops-engineer-azure-warszawa
+2024-01-19 00:08:21 INFO  Scraper:71 - Scraped offer Lead Fullstack .NET Developer from https://nofluffjobs.com/job/lead-fullstack-net-developer-avanade-poland-warszawa
+2024-01-19 00:08:21 INFO  Scraper:71 - Scraped offer Technical Lead/Senior .NET Developer with Angular from https://nofluffjobs.com/job/technical-lead-senior-net-developer-with-angular-objectivity-remote
+2024-01-19 00:08:21 INFO  Scraper:71 - Scraped offer MAUI .NET Developer from https://nofluffjobs.com/job/maui-net-developer-vumo-krakow
+2024-01-19 00:08:21 INFO  Scraper:125 - Scraped offer DevOps Architect (Azure) from https://justjoin.it/offers/future-processing-devops-architect-azure-warszawa
+2024-01-19 00:08:22 INFO  Scraper:71 - Scraped offer Manager, Software Development Engineering (.NET) from https://nofluffjobs.com/job/manager-software-development-engineering-net-apptio-krakow
+2024-01-19 00:08:22 INFO  Scraper:125 - Scraped offer Senior CloudOps Engineer (Azure) from https://justjoin.it/offers/future-processing-senior-cloudops-engineer-azure-torun
+2024-01-19 00:08:23 INFO  Scraper:71 - Scraped offer Windows .Net Software Engineer from https://nofluffjobs.com/job/windows-net-software-engineer-corewillsoft-remote
+2024-01-19 00:08:23 INFO  Scraper:125 - Scraped offer Major Incident Manager with German from https://justjoin.it/offers/experis-manpower-group-major-incident-manager-with-german-wroclaw
+2024-01-19 00:08:23 INFO  Scraper:125 - Scraped offer CloudOps Architect (Azure) from https://justjoin.it/offers/future-processing-cloudops-architect-azure-warszawa
+2024-01-19 00:08:23 INFO  Scraper:71 - Scraped offer Senior / Lead Test Automation Engineer with .NET from https://nofluffjobs.com/job/senior-lead-test-automation-engineer-with-net-epam-wroclaw
+2024-01-19 00:08:24 INFO  Scraper:125 - Scraped offer Backend Engineer from https://justjoin.it/offers/focal-systems-backend-engineer
+2024-01-19 00:08:24 INFO  Scraper:71 - Scraped offer Senior .NET Developer from https://nofluffjobs.com/job/senior-net-developer-sigma-it-poland-remote
+2024-01-19 00:08:24 INFO  Scraper:125 - Scraped offer Senior Java Engineer (Kafka) from https://justjoin.it/offers/7n-senior-java-engineer-kafka
+2024-01-19 00:08:25 INFO  Scraper:125 - Scraped offer Senior Delphi Software Engineer from https://justjoin.it/offers/revalize-business-services-senior-delphi-software-engineer
+2024-01-19 00:08:25 INFO  Scraper:125 - Scraped offer Test Lead (IAM) from https://justjoin.it/offers/itds-test-lead-iam-lodz
+2024-01-19 00:08:25 INFO  Scraper:71 - Scraped offer Fullstack .NET engineer from https://nofluffjobs.com/job/fullstack-net-engineer-abesse-zrt--budapest-4
+2024-01-19 00:08:25 INFO  Scraper:83 - Successfully scraped 20 job offers from https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27c%23%27%20seniority%3Dsenior
+
+2024-01-19 00:08:25 INFO  Scraper:125 - Scraped offer JavaScript Front-end Developer from https://justjoin.it/offers/fru-pl-javascript-front-end-developer
+2024-01-19 00:08:26 INFO  Scraper:125 - Scraped offer Senior Project Manager from https://justjoin.it/offers/applover-senior-project-manager
+2024-01-19 00:08:27 INFO  Scraper:125 - Scraped offer Senior Business Analyst / Product Owner from https://justjoin.it/offers/ikor-polska-senior-business-analyst-product-owner-krakow
+2024-01-19 00:08:32 INFO  Scraper:125 - Scraped offer Senior Frontend Engineer from https://justjoin.it/offers/zeta-labs-senior-frontend-engineer-warszawa
+2024-01-19 00:08:32 INFO  Scraper:125 - Scraped offer Senior Business Analyst / Product Owner from https://justjoin.it/offers/ikor-polska-senior-business-analyst-product-owner-warszawa
+2024-01-19 00:08:34 INFO  Scraper:125 - Scraped offer Fullstack Engineer (.NET, ReactJS) from https://justjoin.it/offers/aperia-fullstack-engineer-net-reactjs
+2024-01-19 00:08:34 INFO  Scraper:125 - Scraped offer Solution Architect from https://justjoin.it/offers/aperia-solution-architect
+2024-01-19 00:08:35 INFO  Scraper:125 - Scraped offer Senior Java / Tech Lead Developer from https://justjoin.it/offers/talent-hills-senior-java-tech-lead-developer
+2024-01-19 00:08:35 INFO  Scraper:125 - Scraped offer Senior .NET Developer from https://justjoin.it/offers/macrix-technology-group-senior-net-developer-poznan-342743
+2024-01-19 00:08:36 INFO  Scraper:125 - Scraped offer PHP (Symfony) Developer from https://justjoin.it/offers/dac-digital-php-symfony-developer-warszawa-340898
+2024-01-19 00:08:36 INFO  Scraper:125 - Scraped offer Java Developer with Kafka from https://justjoin.it/offers/itds-java-developer-with-kafka-warszawa
+2024-01-19 00:08:36 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/apzumi-senior-java-developer-poznan-336441
+2024-01-19 00:08:36 INFO  Scraper:139 - Successfully scraped 21 job offers from https://justjoin.it/experience-level_senior/with-salary_yes?keyword=c%23
+
+2024-01-19 00:08:49 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/experience-level_senior/with-salary_yes?keyword=c%2B%2B
+2024-01-19 00:08:49 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27c%2B%2B%27%20seniority%3Dsenior
+2024-01-19 00:08:49 INFO  Scraper:71 - Scraped offer C++ Developer (UoP) from https://nofluffjobs.com/job/c-developer-uop-knowit-remote-1
+2024-01-19 00:08:49 INFO  Scraper:71 - Scraped offer C++ Developer (B2B) from https://nofluffjobs.com/job/c-developer-b2b-knowit-remote-1
+2024-01-19 00:08:49 INFO  Scraper:125 - Scraped offer Senior DevOps Engineer (Azure) from https://justjoin.it/offers/future-processing-senior-devops-engineer-azure-warszawa
+2024-01-19 00:08:50 INFO  Scraper:71 - Scraped offer C++ Developer - flight simulator from https://nofluffjobs.com/job/c-developer-flight-simulator-flytronic-gliwice
+2024-01-19 00:08:51 INFO  Scraper:71 - Scraped offer Senior C++ Engine Developer REMOTE from https://nofluffjobs.com/job/senior-c-engine-developer-remote-link-group
+2024-01-19 00:08:51 INFO  Scraper:71 - Scraped offer Senior C++ Engineer from https://nofluffjobs.com/job/senior-c-engineer-n-ix-remote
+2024-01-19 00:08:52 INFO  Scraper:125 - Scraped offer DevOps Architect (Azure) from https://justjoin.it/offers/future-processing-devops-architect-azure-warszawa
+2024-01-19 00:08:52 INFO  Scraper:71 - Scraped offer QNX or Linux Automotive C++ Software Architect from https://nofluffjobs.com/job/qnx-or-linux-automotive-c-software-architect-int2code-remote
+2024-01-19 00:08:52 INFO  Scraper:71 - Scraped offer Senior Full Stack (C# and C++ and JS) Developer from https://nofluffjobs.com/job/senior-full-stack-c-and-c-and-js-developer-digis-remote
+2024-01-19 00:08:53 INFO  Scraper:71 - Scraped offer C++ Embedded Developer (relocation) from https://nofluffjobs.com/job/c-embedded-developer-relocation-cinemo-karlsruhe
+2024-01-19 00:08:54 INFO  Scraper:71 - Scraped offer Senior C++ Software Engineer from https://nofluffjobs.com/job/senior-c-software-engineer-adaptiq-remote
+2024-01-19 00:08:54 INFO  Scraper:71 - Scraped offer C/C++ Senior Software Developer from https://nofluffjobs.com/job/c-c-senior-software-developer-fujitsu-technology-solutions-remote
+2024-01-19 00:08:55 INFO  Scraper:71 - Scraped offer C++ Developer with experience in security from https://nofluffjobs.com/job/c-developer-with-experience-in-security-infopulse-remote
+2024-01-19 00:08:55 INFO  Scraper:125 - Scraped offer Senior CloudOps Engineer (Azure) from https://justjoin.it/offers/future-processing-senior-cloudops-engineer-azure-torun
+2024-01-19 00:08:55 INFO  Scraper:125 - Scraped offer Major Incident Manager with German from https://justjoin.it/offers/experis-manpower-group-major-incident-manager-with-german-wroclaw
+2024-01-19 00:08:55 INFO  Scraper:71 - Scraped offer Senior AI & Math CUDA (C++) Developer from https://nofluffjobs.com/job/senior-ai-math-cuda-c-developer-camino-science-remote
+2024-01-19 00:08:56 INFO  Scraper:125 - Scraped offer CloudOps Architect (Azure) from https://justjoin.it/offers/future-processing-cloudops-architect-azure-warszawa
+2024-01-19 00:08:56 INFO  Scraper:125 - Scraped offer Backend Engineer from https://justjoin.it/offers/focal-systems-backend-engineer
+2024-01-19 00:08:56 INFO  Scraper:71 - Scraped offer Senior C++ Developer REMOTE from https://nofluffjobs.com/job/senior-c-developer-remote-link-group
+2024-01-19 00:08:56 INFO  Scraper:71 - Scraped offer Senior C++ Developer from https://nofluffjobs.com/job/senior-c-developer-code-poets-remote-2
+2024-01-19 00:08:56 INFO  Scraper:71 - Scraped offer Senior Embedded Software Engineer from https://nofluffjobs.com/job/senior-embedded-software-engineer-volvo-tech-hub-poland-krakow
+2024-01-19 00:08:56 INFO  Scraper:71 - Scraped offer Linux Embedded Senior Software Engineer from https://nofluffjobs.com/job/linux-embedded-senior-software-engineer-verkada-krakow-2
+2024-01-19 00:08:56 INFO  Scraper:71 - Scraped offer Embedded Software Engineer from https://nofluffjobs.com/job/embedded-software-engineer-swivl-remote-8
+2024-01-19 00:08:57 INFO  Scraper:125 - Scraped offer Senior Java Engineer (Kafka) from https://justjoin.it/offers/7n-senior-java-engineer-kafka
+2024-01-19 00:08:57 INFO  Scraper:125 - Scraped offer Senior Delphi Software Engineer from https://justjoin.it/offers/revalize-business-services-senior-delphi-software-engineer
+2024-01-19 00:08:57 INFO  Scraper:71 - Scraped offer Senior Developer Embedded Linux HW-support layers from https://nofluffjobs.com/job/senior-developer-embedded-linux-hw-support-layers-emerge-soft-remote
+2024-01-19 00:08:57 INFO  Scraper:125 - Scraped offer Test Lead (IAM) from https://justjoin.it/offers/itds-test-lead-iam-lodz
+2024-01-19 00:08:58 INFO  Scraper:125 - Scraped offer JavaScript Front-end Developer from https://justjoin.it/offers/fru-pl-javascript-front-end-developer
+2024-01-19 00:08:58 INFO  Scraper:71 - Scraped offer Embedded Linux Apps Developer from https://nofluffjobs.com/job/embedded-linux-apps-developer-kp-labs-gliwice-1
+2024-01-19 00:08:58 INFO  Scraper:125 - Scraped offer Senior Project Manager from https://justjoin.it/offers/applover-senior-project-manager
+2024-01-19 00:08:59 INFO  Scraper:71 - Scraped offer Principal Data Scientist Engineer from https://nofluffjobs.com/job/principal-data-scientist-engineer-avenga-remote
+2024-01-19 00:08:59 INFO  Scraper:83 - Successfully scraped 20 job offers from https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27c%2B%2B%27%20seniority%3Dsenior
+
+2024-01-19 00:09:00 INFO  Scraper:125 - Scraped offer Senior Business Analyst / Product Owner from https://justjoin.it/offers/ikor-polska-senior-business-analyst-product-owner-krakow
+2024-01-19 00:09:02 INFO  Scraper:125 - Scraped offer Senior Frontend Engineer from https://justjoin.it/offers/zeta-labs-senior-frontend-engineer-warszawa
+2024-01-19 00:09:03 INFO  Scraper:125 - Scraped offer Senior Business Analyst / Product Owner from https://justjoin.it/offers/ikor-polska-senior-business-analyst-product-owner-warszawa
+2024-01-19 00:09:05 INFO  Scraper:125 - Scraped offer Fullstack Engineer (.NET, ReactJS) from https://justjoin.it/offers/aperia-fullstack-engineer-net-reactjs
+2024-01-19 00:09:07 INFO  Scraper:125 - Scraped offer Solution Architect from https://justjoin.it/offers/aperia-solution-architect
+2024-01-19 00:09:08 INFO  Scraper:125 - Scraped offer Senior Java / Tech Lead Developer from https://justjoin.it/offers/talent-hills-senior-java-tech-lead-developer
+2024-01-19 00:09:10 INFO  Scraper:125 - Scraped offer Senior .NET Developer from https://justjoin.it/offers/macrix-technology-group-senior-net-developer-poznan-342743
+2024-01-19 00:09:10 INFO  Scraper:125 - Scraped offer PHP (Symfony) Developer from https://justjoin.it/offers/dac-digital-php-symfony-developer-warszawa-340898
+2024-01-19 00:09:12 INFO  Scraper:125 - Scraped offer Java Developer with Kafka from https://justjoin.it/offers/itds-java-developer-with-kafka-warszawa
+2024-01-19 00:09:13 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/apzumi-senior-java-developer-poznan-336441
+2024-01-19 00:09:13 INFO  Scraper:139 - Successfully scraped 21 job offers from https://justjoin.it/experience-level_senior/with-salary_yes?keyword=c%2B%2B
+
+2024-01-19 00:09:17 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/experience-level_senior/with-salary_yes?keyword=ruby
+2024-01-19 00:09:18 INFO  Scraper:125 - Scraped offer Senior Site Reliability Engineer (28057) from https://justjoin.it/offers/splunk-senior-site-reliability-engineer-28057-olkusz
+2024-01-19 00:09:18 INFO  Scraper:125 - Scraped offer Senior DevOps (Search Infrastructure) from https://justjoin.it/offers/relativity-senior-devops-search-infrastructure-wroclaw-346797
+2024-01-19 00:09:18 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27ruby%27%20seniority%3Dsenior
+2024-01-19 00:09:19 INFO  Scraper:71 - Scraped offer Senior Ruby Developer from https://nofluffjobs.com/job/senior-ruby-developer-datafeedwatch-by-cart-remote
+2024-01-19 00:09:20 INFO  Scraper:71 - Scraped offer Full Stack Engineer (Ruby/JS) from https://nofluffjobs.com/job/full-stack-engineer-ruby-js-railsware-remote-2
+2024-01-19 00:09:20 INFO  Scraper:71 - Scraped offer Senior Java Developer from https://nofluffjobs.com/job/senior-java-developer-devire-remote-26
+2024-01-19 00:09:21 INFO  Scraper:71 - Scraped offer Full Stack Engineer from https://nofluffjobs.com/job/full-stack-engineer-railsware-remote
+2024-01-19 00:09:21 INFO  Scraper:125 - Scraped offer Senior Ruby on Rails Software Engineer from https://justjoin.it/offers/constant-contact-senior-ruby-on-rails-software-engineer-warszawa-346460
+2024-01-19 00:09:23 INFO  Scraper:71 - Scraped offer Cloud Architect (Infrastructure) from https://nofluffjobs.com/job/cloud-architect-infrastructure-elitmind-remote-3
+2024-01-19 00:09:23 INFO  Scraper:125 - Scraped offer Senior Product Support Engineer – BugSnag from https://justjoin.it/offers/smartbear-senior-product-support-engineer-bugsnag-poznan
+2024-01-19 00:09:24 INFO  Scraper:71 - Scraped offer Senior Infrastructure (DevOps) Engineer from https://nofluffjobs.com/job/senior-infrastructure-devops-engineer-volt-io-open-banking-payments-warszawa
+2024-01-19 00:09:24 INFO  Scraper:125 - Scraped offer Senior Ruby on Rails developer from https://justjoin.it/offers/donkey-republic-senior-ruby-on-rails-developer-kobenhavn-346259
+2024-01-19 00:09:24 INFO  Scraper:125 - Scraped offer Senior Backend Engineer (Elixir) from https://justjoin.it/offers/dotlinkers-senior-backend-engineer-elixir-katowice
+2024-01-19 00:09:24 INFO  Scraper:71 - Scraped offer Senior Software Engineer, Relay from https://nofluffjobs.com/job/senior-software-engineer-relay-box-warsaw
+2024-01-19 00:09:25 INFO  Scraper:71 - Scraped offer Senior VR Experiences Engineer from https://nofluffjobs.com/job/senior-vr-experiences-engineer-big-human-remote
+2024-01-19 00:09:25 INFO  Scraper:83 - Successfully scraped 8 job offers from https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27ruby%27%20seniority%3Dsenior
+
+2024-01-19 00:09:25 INFO  Scraper:125 - Scraped offer Devops Engineer from https://justjoin.it/offers/dotlinkers-devops-engineer-krakow-317587
+2024-01-19 00:09:26 INFO  Scraper:125 - Scraped offer Senior Angular Software Engineer from https://justjoin.it/offers/cpl-jobs-senior-angular-software-engineer
+2024-01-19 00:09:27 INFO  Scraper:125 - Scraped offer Senior DevOps Engineer from https://justjoin.it/offers/statscore-sp-z-o-o-senior-devops-engineer-opole-314793
+2024-01-19 00:09:28 INFO  Scraper:125 - Scraped offer Software DevOps Engineer from https://justjoin.it/offers/visa-software-devops-engineer
+2024-01-19 00:09:30 INFO  Scraper:125 - Scraped offer Senior React Engineer from https://justjoin.it/offers/housecall-pro-senior-ruby-on-rails-engineer-warszawa-342563
+2024-01-19 00:09:30 INFO  Scraper:125 - Scraped offer Senior Ruby on Rails Engineer from https://justjoin.it/offers/housecall-pro-senior-ruby-on-rails-engineer-ebaa3171-ac63-4365-84d2-7c4b1d2920e1
+2024-01-19 00:09:31 INFO  Scraper:125 - Scraped offer Senior Ruby on Rails Dev [full-time] from https://justjoin.it/offers/gido-labs-senior-ruby-on-rails-dev-full-time-poznan-342770
+2024-01-19 00:09:31 INFO  Scraper:125 - Scraped offer Senior Node.js Developer from https://justjoin.it/offers/codequest-senior-node-js-developer-warszawa
+2024-01-19 00:09:32 INFO  Scraper:125 - Scraped offer Salesforce Architect from https://justjoin.it/offers/experis-manpower-group-salesforce-architect-krakow
+2024-01-19 00:09:33 INFO  Scraper:125 - Scraped offer Java Developer from https://justjoin.it/offers/hireone-it-recruitment-java-developer-krakow-338509
+2024-01-19 00:09:33 INFO  Scraper:125 - Scraped offer Senior Backend Engineer (Elixir) from https://justjoin.it/offers/dotlinkers-senior-backend-engineer-elixir-krakow
+2024-01-19 00:09:34 INFO  Scraper:125 - Scraped offer Senior Backend Engineer (Elixir) from https://justjoin.it/offers/dotlinkers-senior-backend-engineer-elixir-krakow-342755
+2024-01-19 00:09:35 INFO  Scraper:125 - Scraped offer Backend Engineer (RoR) from https://justjoin.it/offers/ligo-headhunters-backend-engineer-ror
+2024-01-19 00:09:36 INFO  Scraper:125 - Scraped offer Senior DevOps Engineer for Cloud Services from https://justjoin.it/offers/ligo-headhunters-senior-devops-engineer-for-cloud-services
+2024-01-19 00:09:36 INFO  Scraper:125 - Scraped offer Senior DevOps Engineer from https://justjoin.it/offers/ligo-headhunters-senior-devops-engineer-warsaw
+2024-01-19 00:09:37 INFO  Scraper:125 - Scraped offer Senior Vue.js Developer from https://justjoin.it/offers/monterail-senior-vue-js-developer-warszawa
+2024-01-19 00:09:39 INFO  Scraper:125 - Scraped offer DevOps from https://justjoin.it/offers/professnet-sp-z-o-o-devops
+2024-01-19 00:09:39 INFO  Scraper:125 - Scraped offer Tech Lead for Open Source from https://justjoin.it/offers/upside-tech-lead-for-open-source
+2024-01-19 00:09:40 INFO  Scraper:125 - Scraped offer Ruby on Rails Engineer from https://justjoin.it/offers/upside-senior-ruby-on-rails-engineer-bialystok
+2024-01-19 00:09:41 INFO  Scraper:125 - Scraped offer Python Engineer from https://justjoin.it/offers/upside-python-engineer-krakow
+2024-01-19 00:09:42 INFO  Scraper:125 - Scraped offer Reliability Engineer from https://justjoin.it/offers/team-up-reliability-engineer
+2024-01-19 00:09:42 INFO  Scraper:125 - Scraped offer Database Reliability Engineer from https://justjoin.it/offers/team-up-database-reliability-engineer
+2024-01-19 00:09:42 INFO  Scraper:125 - Scraped offer Senior Ruby Developer from https://justjoin.it/offers/click-it-group-senior-ruby-developer-krakow
+2024-01-19 00:09:43 INFO  Scraper:125 - Scraped offer Senior Ruby on Rails Engineer from https://justjoin.it/offers/physitrack-senior-ruby-on-rails-engineer
+2024-01-19 00:09:43 INFO  Scraper:125 - Scraped offer Ruby on Rails Developer from https://justjoin.it/offers/wellbeing-polska-ruby-on-rails-developer
+2024-01-19 00:09:43 INFO  Scraper:139 - Successfully scraped 31 job offers from https://justjoin.it/experience-level_senior/with-salary_yes?keyword=ruby
+
+2024-01-19 00:09:56 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27golang%27%20seniority%3Dsenior
+2024-01-19 00:09:56 INFO  Scraper:71 - Scraped offer Senior Software Engineer Golang from https://nofluffjobs.com/job/senior-software-engineer-golang-innovecs-remote
+2024-01-19 00:09:56 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/experience-level_senior/with-salary_yes?keyword=golang
+2024-01-19 00:09:56 INFO  Scraper:125 - Scraped offer Senior Site Reliability Engineer (28057) from https://justjoin.it/offers/splunk-senior-site-reliability-engineer-28057-olkusz
+2024-01-19 00:09:56 INFO  Scraper:71 - Scraped offer Senior Software Engineer (Golang) from https://nofluffjobs.com/job/senior-software-engineer-golang-spoton-remote
+2024-01-19 00:09:57 INFO  Scraper:125 - Scraped offer Senior Golang Engineer (eBPF focused) from https://justjoin.it/offers/on-the-spot-development-senior-golang-engineer-ebpf-focused-warszawa
+2024-01-19 00:09:57 INFO  Scraper:125 - Scraped offer Senior Frontend Engineer from https://justjoin.it/offers/fincompare-gmbh-senior-frontend-engineer-szczecin
+2024-01-19 00:09:57 INFO  Scraper:71 - Scraped offer Senior/Lead Golang Developer from https://nofluffjobs.com/job/senior-lead-golang-developer-spyrosoft-remote
+2024-01-19 00:09:58 INFO  Scraper:125 - Scraped offer DevOps Engineer from https://justjoin.it/offers/novomatic-devops-engineer
+2024-01-19 00:09:58 INFO  Scraper:71 - Scraped offer Full Stack Engineer React & Golang (f/m/d) from https://nofluffjobs.com/job/full-stack-engineer-react-golang-f-m-d-cinemo-budapest
+2024-01-19 00:09:59 INFO  Scraper:125 - Scraped offer Senior Devops Engineer from https://justjoin.it/offers/affirm-senior-devops-engineer-wroclaw
+2024-01-19 00:09:59 INFO  Scraper:71 - Scraped offer Senior Software Engineer/ Golang Developer (f/m/d) from https://nofluffjobs.com/job/senior-software-engineer-golang-developer-f-m-d-cinemo-budapest
+2024-01-19 00:09:59 INFO  Scraper:125 - Scraped offer Senior/Lead Golang Software Engineer from https://justjoin.it/offers/idt-corporation-senior-lead-golang-software-engineer
+2024-01-19 00:09:59 INFO  Scraper:125 - Scraped offer Data Engineer from https://justjoin.it/offers/start-io-data-engineer
+2024-01-19 00:10:00 INFO  Scraper:71 - Scraped offer Senior Backend Engineer, TypeScript / Go from https://nofluffjobs.com/job/senior-backend-engineer-typescript-go-showpad-wroclaw
+2024-01-19 00:10:00 INFO  Scraper:125 - Scraped offer Backend Engineering Manager from https://justjoin.it/offers/centra-backend-engineering-manager-wroclaw
+2024-01-19 00:10:00 INFO  Scraper:125 - Scraped offer Senior PHP Developer from https://justjoin.it/offers/centra-senior-php-developer
+2024-01-19 00:10:00 INFO  Scraper:71 - Scraped offer Senior Cloud Engineer (GCP) - Remote from https://nofluffjobs.com/job/senior-cloud-engineer-gcp-remote-link-group
+2024-01-19 00:10:01 INFO  Scraper:125 - Scraped offer Senior Frontened Developer (React.js) from https://justjoin.it/offers/xiag-ag-senior-frontened-developer-react-js
+2024-01-19 00:10:01 INFO  Scraper:125 - Scraped offer Lead Engineer (Elixir) from https://justjoin.it/offers/dotlinkers-lead-engineer-elixir-katowice
+2024-01-19 00:10:01 INFO  Scraper:71 - Scraped offer QA Engineer from https://nofluffjobs.com/job/qa-engineer-air-space-intelligence-gdansk
+2024-01-19 00:10:01 INFO  Scraper:71 - Scraped offer Embedded Senior Software Engineer from https://nofluffjobs.com/job/embedded-senior-software-engineer-verkada-krakow
+2024-01-19 00:10:01 INFO  Scraper:71 - Scraped offer Linux Embedded Senior Software Engineer from https://nofluffjobs.com/job/linux-embedded-senior-software-engineer-verkada-krakow-2
+2024-01-19 00:10:01 INFO  Scraper:125 - Scraped offer Senior DevOps Engineer from https://justjoin.it/offers/iceo-venture-builder-senior-devops-engineer-krakow
+2024-01-19 00:10:02 INFO  Scraper:125 - Scraped offer Lead Engineer (Elixir) from https://justjoin.it/offers/dotlinkers-lead-engineer-elixir-krakow-342761
+2024-01-19 00:10:02 INFO  Scraper:71 - Scraped offer Senior Backend Software Engineer - Cloud Security from https://nofluffjobs.com/job/senior-backend-software-engineer-cloud-security-sentinelone-remote
+2024-01-19 00:10:02 INFO  Scraper:125 - Scraped offer Lead Engineer (Elixir) from https://justjoin.it/offers/dotlinkers-lead-engineer-elixir-krakow-342762
+2024-01-19 00:10:03 INFO  Scraper:71 - Scraped offer Senior QA Automation Engineer from https://nofluffjobs.com/job/senior-qa-automation-engineer-spoton-krakow
+2024-01-19 00:10:03 INFO  Scraper:125 - Scraped offer Senior Golang Engineer from https://justjoin.it/offers/fincompare-gmbh-senior-golang-engineer
+2024-01-19 00:10:03 INFO  Scraper:125 - Scraped offer Lead Engineer (Elixir) from https://justjoin.it/offers/dotlinkers-lead-engineer-elixir-krakow-342760
+2024-01-19 00:10:04 INFO  Scraper:71 - Scraped offer Staff Software Development Engineer from https://nofluffjobs.com/job/staff-software-development-engineer-apptio-krakow-2
+2024-01-19 00:10:04 INFO  Scraper:125 - Scraped offer Lead Engineer (Elixir) from https://justjoin.it/offers/dotlinkers-lead-engineer-elixir-krakow
+2024-01-19 00:10:04 INFO  Scraper:125 - Scraped offer Software Architect from https://justjoin.it/offers/centra-software-architect
+2024-01-19 00:10:04 INFO  Scraper:71 - Scraped offer Senior Software Engineer from https://nofluffjobs.com/job/senior-software-engineer-air-space-intelligence-gdansk
+2024-01-19 00:10:05 INFO  Scraper:71 - Scraped offer Senior GCP Cloud Engineer from https://nofluffjobs.com/job/senior-gcp-cloud-engineer-codete-remote
+2024-01-19 00:10:06 INFO  Scraper:71 - Scraped offer Senior Unity Developer with iOS experience from https://nofluffjobs.com/job/senior-unity-developer-with-ios-experience-essentio-codelab-warsaw
+2024-01-19 00:10:06 INFO  Scraper:71 - Scraped offer Senior Fullstack Development Engineer from https://nofluffjobs.com/job/senior-fullstack-development-engineer-remitly-krakow
+2024-01-19 00:10:06 INFO  Scraper:125 - Scraped offer Senior Backend Developer from https://justjoin.it/offers/tv-development-gmbh-senior-backend-developer
+2024-01-19 00:10:07 INFO  Scraper:71 - Scraped offer Data Engineer from https://nofluffjobs.com/job/data-engineer-start-io-warsaw
+2024-01-19 00:10:07 INFO  Scraper:71 - Scraped offer Senior DevOps Engineer - 100% remote from https://nofluffjobs.com/job/senior-devops-engineer-100-remote-avenga-1
+2024-01-19 00:10:08 INFO  Scraper:71 - Scraped offer ML (Python + NLP) Engineer from https://nofluffjobs.com/job/ml-python-nlp-engineer-sfox-remote
+2024-01-19 00:10:09 INFO  Scraper:71 - Scraped offer DevOps Engineer from https://nofluffjobs.com/job/devops-engineer-harvey-nash-technology-warszawa-7
+2024-01-19 00:10:10 INFO  Scraper:125 - Scraped offer Senior Software Engineer (Golang) from https://justjoin.it/offers/spoton-senior-software-engineer-golang
+2024-01-19 00:10:10 INFO  Scraper:139 - Successfully scraped 20 job offers from https://justjoin.it/experience-level_senior/with-salary_yes?keyword=golang
+
+2024-01-19 00:10:10 INFO  Scraper:71 - Scraped offer QA Engineer with SW Dev skills from https://nofluffjobs.com/job/qa-engineer-with-sw-dev-skills-unikie-remote-2
+2024-01-19 00:10:10 INFO  Scraper:83 - Successfully scraped 22 job offers from https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27golang%27%20seniority%3Dsenior
+
+2024-01-19 00:10:31 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27c%2B%2B%27%20
+2024-01-19 00:10:31 INFO  Scraper:71 - Scraped offer C++ Developer (UoP) from https://nofluffjobs.com/job/c-developer-uop-knowit-remote-1
+2024-01-19 00:10:31 INFO  Scraper:71 - Scraped offer C++ Developer (B2B) from https://nofluffjobs.com/job/c-developer-b2b-knowit-remote-1
+2024-01-19 00:10:31 INFO  Scraper:71 - Scraped offer C++ Developer - flight simulator from https://nofluffjobs.com/job/c-developer-flight-simulator-flytronic-gliwice
+2024-01-19 00:10:31 INFO  Scraper:71 - Scraped offer Senior C++ Engine Developer REMOTE from https://nofluffjobs.com/job/senior-c-engine-developer-remote-link-group
+2024-01-19 00:10:31 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/with-salary_yes?keyword=c%2B%2B
+2024-01-19 00:10:31 INFO  Scraper:71 - Scraped offer Junior C++ developer from https://nofluffjobs.com/job/junior-c-developer-nix-tech-kft--budapest-1
+2024-01-19 00:10:31 INFO  Scraper:71 - Scraped offer Senior C++ Engineer from https://nofluffjobs.com/job/senior-c-engineer-n-ix-remote
+2024-01-19 00:10:31 INFO  Scraper:71 - Scraped offer Linux C/C++ Developer from https://nofluffjobs.com/job/linux-c-c-developer-enamor-international-remote
+2024-01-19 00:10:31 INFO  Scraper:125 - Scraped offer Software Consultant from https://justjoin.it/offers/andea-software-consultant-krakow-314858
+2024-01-19 00:10:32 INFO  Scraper:125 - Scraped offer Senior DevOps Engineer (Azure) from https://justjoin.it/offers/future-processing-senior-devops-engineer-azure-warszawa
+2024-01-19 00:10:32 INFO  Scraper:71 - Scraped offer C++ Developer from https://nofluffjobs.com/job/c-developer-keepit-krakow
+2024-01-19 00:10:32 INFO  Scraper:71 - Scraped offer QNX or Linux Automotive C++ Software Architect from https://nofluffjobs.com/job/qnx-or-linux-automotive-c-software-architect-int2code-remote
+2024-01-19 00:10:32 INFO  Scraper:71 - Scraped offer Senior Full Stack (C# and C++ and JS) Developer from https://nofluffjobs.com/job/senior-full-stack-c-and-c-and-js-developer-digis-remote
+2024-01-19 00:10:32 INFO  Scraper:125 - Scraped offer DevOps Architect (Azure) from https://justjoin.it/offers/future-processing-devops-architect-azure-warszawa
+2024-01-19 00:10:33 INFO  Scraper:125 - Scraped offer Major Incident Manager with German from https://justjoin.it/offers/experis-manpower-group-major-incident-manager-with-german-wroclaw
+2024-01-19 00:10:33 INFO  Scraper:71 - Scraped offer C++ Software Engineer from https://nofluffjobs.com/job/c-software-engineer-motorola-solutions-systems-polska-krakow-6
+2024-01-19 00:10:33 INFO  Scraper:71 - Scraped offer 5G Software Developer with C/C++ from https://nofluffjobs.com/job/5g-software-developer-with-c-c--capgemini-polska-katowice-2
+2024-01-19 00:10:33 INFO  Scraper:125 - Scraped offer Senior CloudOps Engineer (Azure) from https://justjoin.it/offers/future-processing-senior-cloudops-engineer-azure-torun
+2024-01-19 00:10:34 INFO  Scraper:125 - Scraped offer CloudOps Architect (Azure) from https://justjoin.it/offers/future-processing-cloudops-architect-azure-warszawa
+2024-01-19 00:10:34 INFO  Scraper:71 - Scraped offer Software Developer C++ / Linux / Buildroot from https://nofluffjobs.com/job/software-developer-c-linux-buildroot-recruit-europe-munich
+2024-01-19 00:10:34 INFO  Scraper:71 - Scraped offer C++ Embedded Developer (relocation) from https://nofluffjobs.com/job/c-embedded-developer-relocation-cinemo-karlsruhe
+2024-01-19 00:10:34 INFO  Scraper:71 - Scraped offer Senior C++ Software Engineer from https://nofluffjobs.com/job/senior-c-software-engineer-adaptiq-remote
+2024-01-19 00:10:34 INFO  Scraper:71 - Scraped offer Junior 5G Software Developer with C/C++ from https://nofluffjobs.com/job/junior-5g-software-developer-with-c-c--capgemini-polska-katowice
+2024-01-19 00:10:34 INFO  Scraper:125 - Scraped offer Project Owner from https://justjoin.it/offers/bpmriders-project-owner
+2024-01-19 00:10:34 INFO  Scraper:71 - Scraped offer C/C++ Senior Software Developer from https://nofluffjobs.com/job/c-c-senior-software-developer-fujitsu-technology-solutions-remote
+2024-01-19 00:10:34 INFO  Scraper:71 - Scraped offer C++ Developer with experience in security from https://nofluffjobs.com/job/c-developer-with-experience-in-security-infopulse-remote
+2024-01-19 00:10:35 INFO  Scraper:71 - Scraped offer C++ Architect for Video Management System from https://nofluffjobs.com/job/c-architect-for-video-management-system-motorola-solutions-systems-polska-krakow
+2024-01-19 00:10:35 INFO  Scraper:125 - Scraped offer Backend Engineer from https://justjoin.it/offers/focal-systems-backend-engineer
+2024-01-19 00:10:36 INFO  Scraper:71 - Scraped offer Junior C++ Developer (UoP) from https://nofluffjobs.com/job/junior-c-developer-uop-knowit-bydgoszcz
+2024-01-19 00:10:36 INFO  Scraper:83 - Successfully scraped 20 job offers from https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27c%2B%2B%27%20
+
+2024-01-19 00:10:36 INFO  Scraper:125 - Scraped offer ⚙️Junior Backend Developer (.net) 📺 from https://justjoin.it/offers/insys-video-technologies-junior-backend-developer-net-lodz
+2024-01-19 00:10:36 INFO  Scraper:125 - Scraped offer Technical Writer from https://justjoin.it/offers/insys-video-technologies-technical-writer-warszawa
+2024-01-19 00:10:37 INFO  Scraper:125 - Scraped offer ⚙️Senior Backend Developer (.net) 📺 from https://justjoin.it/offers/insys-video-technologies-senior-backend-developer-net-gdansk
+2024-01-19 00:10:37 INFO  Scraper:125 - Scraped offer DevOps Engineer from https://justjoin.it/offers/insys-video-technologies-devops-engineer-lodz-337390
+2024-01-19 00:10:38 INFO  Scraper:125 - Scraped offer Senior Java Engineer (Kafka) from https://justjoin.it/offers/7n-senior-java-engineer-kafka
+2024-01-19 00:10:38 INFO  Scraper:125 - Scraped offer Tester Automatyzujący from https://justjoin.it/offers/core3-tester-automatyzujacy-warszawa
+2024-01-19 00:10:39 INFO  Scraper:125 - Scraped offer IT Project Manager from https://justjoin.it/offers/fast-white-cat-it-project-manager-wroclaw
+2024-01-19 00:10:39 INFO  Scraper:125 - Scraped offer Senior Delphi Software Engineer from https://justjoin.it/offers/revalize-business-services-senior-delphi-software-engineer
+2024-01-19 00:10:40 INFO  Scraper:125 - Scraped offer Mobile Developer from https://justjoin.it/offers/appwise-flutter-developer-gdansk
+2024-01-19 00:10:40 INFO  Scraper:125 - Scraped offer JavaScript Front-end Developer from https://justjoin.it/offers/fru-pl-javascript-front-end-developer
+2024-01-19 00:10:41 INFO  Scraper:125 - Scraped offer Test Lead (IAM) from https://justjoin.it/offers/itds-test-lead-iam-lodz
+2024-01-19 00:10:41 INFO  Scraper:125 - Scraped offer Senior Project Manager from https://justjoin.it/offers/applover-senior-project-manager
+2024-01-19 00:10:41 INFO  Scraper:125 - Scraped offer IT Project Owner from https://justjoin.it/offers/macrix-technology-group-it-project-owner
+2024-01-19 00:10:41 INFO  Scraper:139 - Successfully scraped 21 job offers from https://justjoin.it/with-salary_yes?keyword=c%2B%2B
+
+2024-01-19 00:10:50 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/with-salary_yes?keyword=cpp
+2024-01-19 00:10:52 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27cpp%27%20
+2024-01-19 00:10:52 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/with-salary_yes?keyword=cpp
+2024-01-19 00:11:02 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27c%23%27%20
+2024-01-19 00:11:02 INFO  Scraper:71 - Scraped offer Senior QA Automation Engineer (C#) from https://nofluffjobs.com/job/senior-qa-automation-engineer-c--reply-polska-katowice
+2024-01-19 00:11:02 INFO  Scraper:71 - Scraped offer Senior .Net / C# Fullstack Engineer (Warsaw) from https://nofluffjobs.com/job/senior-net-c-fullstack-engineer-warsaw-link-group-warszawa
+2024-01-19 00:11:02 INFO  Scraper:71 - Scraped offer Senior Full Stack (C# and C++ and JS) Developer from https://nofluffjobs.com/job/senior-full-stack-c-and-c-and-js-developer-digis-remote
+2024-01-19 00:11:02 INFO  Scraper:71 - Scraped offer SENIOR C#/.NET DEVELOPER from https://nofluffjobs.com/job/senior-c-net-developer-statscore-katowice
+2024-01-19 00:11:02 INFO  Scraper:71 - Scraped offer Unity / C# Developer from https://nofluffjobs.com/job/unity-c-developer-sperasoft-warszawa
+2024-01-19 00:11:02 INFO  Scraper:71 - Scraped offer C# Developer from https://nofluffjobs.com/job/c-developer-meniga-warszawa-1
+2024-01-19 00:11:02 INFO  Scraper:71 - Scraped offer Software Engineer with C# from https://nofluffjobs.com/job/software-engineer-with-c--frends-remote
+2024-01-19 00:11:02 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/with-salary_yes?keyword=c%23
+2024-01-19 00:11:03 INFO  Scraper:125 - Scraped offer Software Consultant from https://justjoin.it/offers/andea-software-consultant-krakow-314858
+2024-01-19 00:11:03 INFO  Scraper:71 - Scraped offer Remote Mid C#/ .Net Developer from https://nofluffjobs.com/job/remote-mid-c-net-developer-appstronauts-1
+2024-01-19 00:11:03 INFO  Scraper:71 - Scraped offer C# Mobile Developer from https://nofluffjobs.com/job/c-mobile-developer-statica-remote
+2024-01-19 00:11:03 INFO  Scraper:125 - Scraped offer Senior DevOps Engineer (Azure) from https://justjoin.it/offers/future-processing-senior-devops-engineer-azure-warszawa
+2024-01-19 00:11:04 INFO  Scraper:125 - Scraped offer DevOps Architect (Azure) from https://justjoin.it/offers/future-processing-devops-architect-azure-warszawa
+2024-01-19 00:11:04 INFO  Scraper:71 - Scraped offer Test Automation .NET C# from https://nofluffjobs.com/job/test-automation-net-c--devire-warszawa
+2024-01-19 00:11:04 INFO  Scraper:71 - Scraped offer Programista .NET C# [Backend Developer] from https://nofluffjobs.com/job/programista-net-c-backend-developer-limur-remote
+2024-01-19 00:11:04 INFO  Scraper:125 - Scraped offer Major Incident Manager with German from https://justjoin.it/offers/experis-manpower-group-major-incident-manager-with-german-wroclaw
+2024-01-19 00:11:04 INFO  Scraper:125 - Scraped offer Senior CloudOps Engineer (Azure) from https://justjoin.it/offers/future-processing-senior-cloudops-engineer-azure-torun
+2024-01-19 00:11:05 INFO  Scraper:71 - Scraped offer Software Engineer C# from https://nofluffjobs.com/job/software-engineer-c--motorola-solutions-systems-polska-krakow-3
+2024-01-19 00:11:05 INFO  Scraper:125 - Scraped offer CloudOps Architect (Azure) from https://justjoin.it/offers/future-processing-cloudops-architect-azure-warszawa
+2024-01-19 00:11:05 INFO  Scraper:125 - Scraped offer Project Owner from https://justjoin.it/offers/bpmriders-project-owner
+2024-01-19 00:11:06 INFO  Scraper:71 - Scraped offer SQL C# .NET Automation Software Programmer from https://nofluffjobs.com/job/sql-c-net-automation-software-programmer-e80-group-krakow
+2024-01-19 00:11:06 INFO  Scraper:125 - Scraped offer Backend Engineer from https://justjoin.it/offers/focal-systems-backend-engineer
+2024-01-19 00:11:06 INFO  Scraper:125 - Scraped offer ⚙️Junior Backend Developer (.net) 📺 from https://justjoin.it/offers/insys-video-technologies-junior-backend-developer-net-lodz
+2024-01-19 00:11:06 INFO  Scraper:71 - Scraped offer App Developer (.NET MAUI / Xamarin / C#) from https://nofluffjobs.com/job/app-developer-net-maui-xamarin-c--dna325-remote-1
+2024-01-19 00:11:07 INFO  Scraper:125 - Scraped offer Technical Writer from https://justjoin.it/offers/insys-video-technologies-technical-writer-warszawa
+2024-01-19 00:11:07 INFO  Scraper:71 - Scraped offer Windows C# / .Net Developer from https://nofluffjobs.com/job/windows-c-net-developer-corewillsoft-remote
+2024-01-19 00:11:07 INFO  Scraper:125 - Scraped offer ⚙️Senior Backend Developer (.net) 📺 from https://justjoin.it/offers/insys-video-technologies-senior-backend-developer-net-gdansk
+2024-01-19 00:11:07 INFO  Scraper:71 - Scraped offer Senior C# Developer from https://nofluffjobs.com/job/senior-c-developer-code-poets-wroclaw
+2024-01-19 00:11:08 INFO  Scraper:125 - Scraped offer DevOps Engineer from https://justjoin.it/offers/insys-video-technologies-devops-engineer-lodz-337390
+2024-01-19 00:11:08 INFO  Scraper:71 - Scraped offer Mid Backend Developer with C++ / C# from https://nofluffjobs.com/job/mid-backend-developer-with-c-c--hirewize-eindhoven
+2024-01-19 00:11:08 INFO  Scraper:71 - Scraped offer Mid Fullstack .NET Developer from https://nofluffjobs.com/job/mid-fullstack-net-developer-itcenter-warszawa
+2024-01-19 00:11:08 INFO  Scraper:71 - Scraped offer Software Engineer (.NET) - Allegro Pay from https://nofluffjobs.com/job/software-engineer-net-allegro-pay-allegro-warszawa-7
+2024-01-19 00:11:08 INFO  Scraper:71 - Scraped offer Lead .NET Developer from https://nofluffjobs.com/job/lead-net-developer-andea-solutions-krakow-1
+2024-01-19 00:11:08 INFO  Scraper:83 - Successfully scraped 20 job offers from https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27c%23%27%20
+
+2024-01-19 00:11:08 INFO  Scraper:125 - Scraped offer Senior Java Engineer (Kafka) from https://justjoin.it/offers/7n-senior-java-engineer-kafka
+2024-01-19 00:11:09 INFO  Scraper:125 - Scraped offer Tester Automatyzujący from https://justjoin.it/offers/core3-tester-automatyzujacy-warszawa
+2024-01-19 00:11:10 INFO  Scraper:125 - Scraped offer IT Project Manager from https://justjoin.it/offers/fast-white-cat-it-project-manager-wroclaw
+2024-01-19 00:11:11 INFO  Scraper:125 - Scraped offer Senior Delphi Software Engineer from https://justjoin.it/offers/revalize-business-services-senior-delphi-software-engineer
+2024-01-19 00:11:12 INFO  Scraper:125 - Scraped offer Mobile Developer from https://justjoin.it/offers/appwise-flutter-developer-gdansk
+2024-01-19 00:11:12 INFO  Scraper:125 - Scraped offer JavaScript Front-end Developer from https://justjoin.it/offers/fru-pl-javascript-front-end-developer
+2024-01-19 00:11:13 INFO  Scraper:125 - Scraped offer Test Lead (IAM) from https://justjoin.it/offers/itds-test-lead-iam-lodz
+2024-01-19 00:11:13 INFO  Scraper:125 - Scraped offer Senior Project Manager from https://justjoin.it/offers/applover-senior-project-manager
+2024-01-19 00:11:13 INFO  Scraper:125 - Scraped offer IT Project Owner from https://justjoin.it/offers/macrix-technology-group-it-project-owner
+2024-01-19 00:11:13 INFO  Scraper:139 - Successfully scraped 21 job offers from https://justjoin.it/with-salary_yes?keyword=c%23
+
+2024-01-19 00:16:29 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=java+developer
+2024-01-19 00:16:30 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/krakow?page=1&criteria=jobPosition%3D%27java+developer%27%20seniority%3Dsenior
+2024-01-19 00:16:30 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/j-labs-senior-java-developer-warszawa-346744
+2024-01-19 00:16:30 INFO  Scraper:71 - Scraped offer Senior Java Developer from https://nofluffjobs.com/job/senior-java-developer-boldare-krakow-3
+2024-01-19 00:16:30 INFO  Scraper:71 - Scraped offer Java Developer with AWS from https://nofluffjobs.com/job/java-developer-with-aws-hsbc-technology-poland-krakow
+2024-01-19 00:16:30 INFO  Scraper:71 - Scraped offer Senior Java Developer - Kraków from https://nofluffjobs.com/job/senior-java-developer-krakow-link-group-krakow
+2024-01-19 00:16:30 INFO  Scraper:71 - Scraped offer Backend Java Developer from https://nofluffjobs.com/job/backend-java-developer-novomatic-technologies-poland-krakow-1
+2024-01-19 00:16:30 INFO  Scraper:71 - Scraped offer Senior/Lead Java Developer from https://nofluffjobs.com/job/senior-lead-java-developer-spyrosoft-krakow-1
+2024-01-19 00:16:30 INFO  Scraper:71 - Scraped offer Senior Java Developer from https://nofluffjobs.com/job/senior-java-developer-sollers-consulting-krakow
+2024-01-19 00:16:30 INFO  Scraper:71 - Scraped offer Senior Java Software Engineer from https://nofluffjobs.com/job/senior-java-software-engineer-motorola-solutions-systems-polska-krakow-2
+2024-01-19 00:16:30 INFO  Scraper:71 - Scraped offer Software Development Engineer (Java & TypeScript) from https://nofluffjobs.com/job/software-development-engineer-java-typescript-apptio-krakow
+2024-01-19 00:16:30 INFO  Scraper:71 - Scraped offer Sr Software Development Engineer (Java) from https://nofluffjobs.com/job/sr-software-development-engineer-java-apptio-krakow
+2024-01-19 00:16:30 INFO  Scraper:71 - Scraped offer Senior Java Engineer from https://nofluffjobs.com/job/senior-java-engineer-kontakt-io-krakow
+2024-01-19 00:16:30 INFO  Scraper:71 - Scraped offer Software Development Manager - Java from https://nofluffjobs.com/job/software-development-manager-java-tesco-technology-krakow-1
+2024-01-19 00:16:30 INFO  Scraper:83 - Successfully scraped 11 job offers from https://nofluffjobs.com/krakow?page=1&criteria=jobPosition%3D%27java+developer%27%20seniority%3Dsenior
+
+2024-01-19 00:16:31 INFO  Scraper:125 - Scraped offer Java Developer from https://justjoin.it/offers/boldare-javascript-developer-react-js
+2024-01-19 00:16:32 INFO  Scraper:125 - Scraped offer Senior Java Developer - Commercial Digital from https://justjoin.it/offers/volvo-tech-hub-poland-senior-java-developer-commercial-digital-czarnochowice
+2024-01-19 00:16:32 INFO  Scraper:125 - Scraped offer Senior Backend Java Developer (remote) from https://justjoin.it/offers/appfire-senior-backend-java-developer-remote-krakow-309794
+2024-01-19 00:16:33 INFO  Scraper:125 - Scraped offer Principal Java Full Stack Developer from https://justjoin.it/offers/sopra-steria-principal-java-full-stack-developer-krakow
+2024-01-19 00:16:33 INFO  Scraper:125 - Scraped offer Senior Java Developer (REMOTE from EU) from https://justjoin.it/offers/devsdata-llc-senior-java-developer-remote-from-eu
+2024-01-19 00:16:34 INFO  Scraper:125 - Scraped offer Senior Java Full Stack Developer from https://justjoin.it/offers/sopra-steria-senior-java-full-stack-developer-krakow
+2024-01-19 00:16:34 INFO  Scraper:125 - Scraped offer Senior JavaScript Developer from https://justjoin.it/offers/piwik-pro-senior-javascript-developer-warszawa
+2024-01-19 00:16:34 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/emagine-polska-senior-java-developer-warsaw
+2024-01-19 00:16:35 INFO  Scraper:125 - Scraped offer Senior Java Trading Systems Developer / Tech Lead from https://justjoin.it/offers/vistulo-senior-java-trading-systems-developer-tech-lead
+2024-01-19 00:16:35 INFO  Scraper:125 - Scraped offer Senior Full Stack Java Developer from https://justjoin.it/offers/tele-fonika-kable-s-a-senior-full-stack-java-developer-krakow-332274
+2024-01-19 00:16:36 INFO  Scraper:125 - Scraped offer FullStack Tech Lead: Typescript/Node.js from https://justjoin.it/offers/brytlyt-sp-zo-o-fullstack-tech-lead-typescript-node-js-wroclaw
+2024-01-19 00:16:36 INFO  Scraper:125 - Scraped offer Senior FullStack Developer: Typescript/React/Express.js from https://justjoin.it/offers/brytlyt-sp-zo-o-senior-fullstack-developer-typescript-react-express-js-wroclaw
+2024-01-19 00:16:37 INFO  Scraper:125 - Scraped offer Fullstack Javascript Developer from https://justjoin.it/offers/rigby-fullstack-javascript-developer-warszawa
+2024-01-19 00:16:37 INFO  Scraper:125 - Scraped offer Senior JavaScript Developer (React) from https://justjoin.it/offers/stx-next-senior-javascript-developer-react-warszawa-345922
+2024-01-19 00:16:38 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/mindpal-senior-java-developer-poznan
+2024-01-19 00:16:38 INFO  Scraper:125 - Scraped offer JS (React, Node.JS) Developer German* from https://justjoin.it/offers/mindpal-js-react-node-js-developer-german
+2024-01-19 00:16:38 INFO  Scraper:125 - Scraped offer Senior/Lead Java Developer from https://justjoin.it/offers/spyrosoft-senior-lead-java-developer-gdansk-345742
+2024-01-19 00:16:39 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/shift4-senior-java-developer-48f68a97-595a-42a9-a51c-bb202a36f763
+2024-01-19 00:16:39 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/sopra-steria-senior-java-developer-krakow-345468
+2024-01-19 00:16:40 INFO  Scraper:125 - Scraped offer Java Developer from https://justjoin.it/offers/emagine-polska-java-developer-krakow
+2024-01-19 00:16:40 INFO  Scraper:125 - Scraped offer Java Developer from https://justjoin.it/offers/novomatic-java-developer-krakow-341159
+2024-01-19 00:16:40 INFO  Scraper:125 - Scraped offer 👉 Senior/Principal Java Developer from https://justjoin.it/offers/xebia-senior-principal-java-developer
+2024-01-19 00:16:41 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/sollers-consulting-sp-z-o-o-senior-java-developer
+2024-01-19 00:16:41 INFO  Scraper:125 - Scraped offer Java Developer with German from https://justjoin.it/offers/spyrosoft-java-developer-with-german-krakow
+2024-01-19 00:16:41 INFO  Scraper:125 - Scraped offer Java Developer from https://justjoin.it/offers/hireone-it-recruitment-java-developer-krakow-338509
+2024-01-19 00:16:42 INFO  Scraper:125 - Scraped offer Senior Java Developer (Lead) from https://justjoin.it/offers/hireone-it-recruitment-senior-java-developer-lead-wroclaw
+2024-01-19 00:16:42 INFO  Scraper:125 - Scraped offer JS (React, Node.JS) Developer from https://justjoin.it/offers/mindpal-js-react-node-js-developer-krakow
+2024-01-19 00:16:43 INFO  Scraper:125 - Scraped offer Senior / Lead Full Stack Java Developer from https://justjoin.it/offers/epam-systems-senior-lead-full-stack-java-developer-krakow-328272
+2024-01-19 00:16:43 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/decerto-senior-backend-developer-warszawa
+2024-01-19 00:16:43 INFO  Scraper:139 - Successfully scraped 30 job offers from https://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=java+developer
+
+2024-01-19 00:16:49 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=python+developer
+2024-01-19 00:16:50 INFO  Scraper:125 - Scraped offer Fullstack Python/React Developer from https://justjoin.it/offers/rits-professional-services-fullstack-python-react-developer-wroclaw
+2024-01-19 00:16:50 INFO  Scraper:125 - Scraped offer Senior Python Developer from https://justjoin.it/offers/applover-senior-python-developer-wroclaw
+2024-01-19 00:16:50 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/krakow?page=1&criteria=jobPosition%3D%27python+developer%27%20seniority%3Dsenior
+2024-01-19 00:16:50 INFO  Scraper:71 - Scraped offer Senior Python Developer z wiedzą bio/ chemiczną from https://nofluffjobs.com/job/senior-python-developer-z-wiedza-bio-chemiczna-code-poets-krakow
+2024-01-19 00:16:50 INFO  Scraper:83 - Successfully scraped 1 job offers from https://nofluffjobs.com/krakow?page=1&criteria=jobPosition%3D%27python+developer%27%20seniority%3Dsenior
+
+2024-01-19 00:16:51 INFO  Scraper:125 - Scraped offer Senior Python Engineer from https://justjoin.it/offers/itsg-senior-python-engineer-bydgoszcz-310855
+2024-01-19 00:16:51 INFO  Scraper:125 - Scraped offer Senior Python Developer (with FinTech experience) from https://justjoin.it/offers/syberry-senior-python-developer-with-fintech-experience-lublin
+2024-01-19 00:16:51 INFO  Scraper:125 - Scraped offer Senior Fullstack (Python) Developer from https://justjoin.it/offers/flyps-senior-fullstack-python-developer-szczecin
+2024-01-19 00:16:52 INFO  Scraper:125 - Scraped offer Senior Fullstack Python/React Developer from https://justjoin.it/offers/grape-up-senior-fullstack-python-react-developer-bialystok-319666
+2024-01-19 00:16:52 INFO  Scraper:125 - Scraped offer Senior Python Developer from https://justjoin.it/offers/polcode-senior-python-developer-e0a428c4-af02-49b8-ad33-e7ee60a67245
+2024-01-19 00:16:53 INFO  Scraper:125 - Scraped offer Python Developer (99% remote) from https://justjoin.it/offers/square-one-python-developer-99-remote
+2024-01-19 00:16:53 INFO  Scraper:125 - Scraped offer Senior Python Developer from https://justjoin.it/offers/workitnow-python-developer
+2024-01-19 00:16:53 INFO  Scraper:125 - Scraped offer Senior Python Developer (Remote) from https://justjoin.it/offers/golem-foundation-senior-python-developer-remote-krakow
+2024-01-19 00:16:54 INFO  Scraper:125 - Scraped offer Python Developer from https://justjoin.it/offers/h2b-group-sp-z-o-o-python-developer-warszawa
+2024-01-19 00:16:54 INFO  Scraper:125 - Scraped offer Python Developer from https://justjoin.it/offers/scalo-sp-z-o-o-python-developer
+2024-01-19 00:16:55 INFO  Scraper:125 - Scraped offer Senior Python ( Django) Developer from https://justjoin.it/offers/talixo-senior-python-django-developer-krakow-335919
+2024-01-19 00:16:55 INFO  Scraper:125 - Scraped offer Senior Python Developer Remote from https://justjoin.it/offers/evertz-senior-python-developer-remote-krakow-335867
+2024-01-19 00:16:56 INFO  Scraper:125 - Scraped offer Senior Python Developer from https://justjoin.it/offers/hro-digital-python-developer
+2024-01-19 00:16:56 INFO  Scraper:139 - Successfully scraped 15 job offers from https://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=python+developer
+
+2024-01-19 00:19:30 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/krakow?page=1&criteria=seniority%3Dsenior
+2024-01-19 00:19:30 INFO  Scraper:71 - Scraped offer Senior PHP Engineer (Printify) from https://nofluffjobs.com/job/senior-php-engineer-printify-usoftware-krakow
+2024-01-19 00:19:30 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/krakow/experience-level_senior/with-salary_yes?
+2024-01-19 00:19:30 INFO  Scraper:125 - Scraped offer Senior CloudOps Engineer (Azure) from https://justjoin.it/offers/future-processing-senior-cloudops-engineer-azure-torun
+2024-01-19 00:19:30 INFO  Scraper:71 - Scraped offer Senior Network Test Automation Engineer from https://nofluffjobs.com/job/senior-network-test-automation-engineer-amartus-polska-krakow
+2024-01-19 00:19:31 INFO  Scraper:71 - Scraped offer IT Manager from https://nofluffjobs.com/job/it-manager-grape-up-krakow-2
+2024-01-19 00:19:31 INFO  Scraper:125 - Scraped offer Senior DevOps Engineer (Azure) from https://justjoin.it/offers/future-processing-senior-devops-engineer-azure-warszawa
+2024-01-19 00:19:31 INFO  Scraper:125 - Scraped offer DevOps Architect (Azure) from https://justjoin.it/offers/future-processing-devops-architect-azure-warszawa
+2024-01-19 00:19:31 INFO  Scraper:71 - Scraped offer Senior Network Automation Software Engineer from https://nofluffjobs.com/job/senior-network-automation-software-engineer-amartus-polska-krakow
+2024-01-19 00:19:31 INFO  Scraper:71 - Scraped offer Software Development Manager - Java from https://nofluffjobs.com/job/software-development-manager-java-tesco-technology-krakow-1
+2024-01-19 00:19:32 INFO  Scraper:71 - Scraped offer Product Owner from https://nofluffjobs.com/job/product-owner-hitachi-energy-krakow-8
+2024-01-19 00:19:32 INFO  Scraper:125 - Scraped offer Major Incident Manager with German from https://justjoin.it/offers/experis-manpower-group-major-incident-manager-with-german-wroclaw
+2024-01-19 00:19:32 INFO  Scraper:125 - Scraped offer CloudOps Architect (Azure) from https://justjoin.it/offers/future-processing-cloudops-architect-azure-warszawa
+2024-01-19 00:19:32 INFO  Scraper:71 - Scraped offer Application Domain Lead from https://nofluffjobs.com/job/application-domain-lead-elitmind-krakow
+2024-01-19 00:19:33 INFO  Scraper:125 - Scraped offer Backend Engineer from https://justjoin.it/offers/focal-systems-backend-engineer
+2024-01-19 00:19:33 INFO  Scraper:71 - Scraped offer Senior Data Engineer from https://nofluffjobs.com/job/senior-data-engineer-link-group-krakow
+2024-01-19 00:19:33 INFO  Scraper:71 - Scraped offer Senior Node.js Engineer from https://nofluffjobs.com/job/senior-node-js-engineer-ringier-axel-springer-tech-krakow-5
+2024-01-19 00:19:33 INFO  Scraper:71 - Scraped offer Lead .NET Developer from https://nofluffjobs.com/job/lead-net-developer-andea-solutions-krakow-1
+2024-01-19 00:19:33 INFO  Scraper:125 - Scraped offer Test Lead (IAM) from https://justjoin.it/offers/itds-test-lead-iam-lodz
+2024-01-19 00:19:33 INFO  Scraper:71 - Scraped offer Senior Fullstack Developer + Angular from https://nofluffjobs.com/job/senior-fullstack-developer-angular-mindbox-krakow
+2024-01-19 00:19:34 INFO  Scraper:71 - Scraped offer Technical Engineering Manager - ECH from https://nofluffjobs.com/job/technical-engineering-manager-ech-motorola-solutions-systems-polska-krakow
+2024-01-19 00:19:34 INFO  Scraper:71 - Scraped offer Senior Cloud Engineer (GCP) - Remote from https://nofluffjobs.com/job/senior-cloud-engineer-gcp-remote-link-group-krakow
+2024-01-19 00:19:34 INFO  Scraper:71 - Scraped offer Azure Administrator – IoT project from https://nofluffjobs.com/job/azure-administrator-iot-project-sii-polska-krakow
+2024-01-19 00:19:34 INFO  Scraper:71 - Scraped offer Azure DevOps Engineer from https://nofluffjobs.com/job/azure-devops-engineer-avanade-poland-krakow-4
+2024-01-19 00:19:35 INFO  Scraper:125 - Scraped offer Senior Delphi Software Engineer from https://justjoin.it/offers/revalize-business-services-senior-delphi-software-engineer
+2024-01-19 00:19:35 INFO  Scraper:71 - Scraped offer Senior Project Manager IT from https://nofluffjobs.com/job/senior-project-manager-it-vml-krakow
+2024-01-19 00:19:35 INFO  Scraper:125 - Scraped offer JavaScript Front-end Developer from https://justjoin.it/offers/fru-pl-javascript-front-end-developer
+2024-01-19 00:19:36 INFO  Scraper:125 - Scraped offer PHP (Symfony) Developer from https://justjoin.it/offers/dac-digital-php-symfony-developer-warszawa-340898
+2024-01-19 00:19:36 INFO  Scraper:71 - Scraped offer Senior C++ Engineer from https://nofluffjobs.com/job/senior-c-engineer-n-ix-krakow
+2024-01-19 00:19:36 INFO  Scraper:125 - Scraped offer Solution Architect from https://justjoin.it/offers/aperia-solution-architect
+2024-01-19 00:19:36 INFO  Scraper:125 - Scraped offer Senior Business Analyst / Product Owner from https://justjoin.it/offers/ikor-polska-senior-business-analyst-product-owner-krakow
+2024-01-19 00:19:37 INFO  Scraper:71 - Scraped offer Bazel Engineer (Senior) from https://nofluffjobs.com/job/bazel-engineer-senior-virtuslab-krakow
+2024-01-19 00:19:37 INFO  Scraper:71 - Scraped offer (Senior) FullStack Developer (Apps team) from https://nofluffjobs.com/job/senior-fullstack-developer-apps-team-kontakt-io-krakow-1
+2024-01-19 00:19:37 INFO  Scraper:125 - Scraped offer Fullstack Engineer (.NET, ReactJS) from https://justjoin.it/offers/aperia-fullstack-engineer-net-reactjs
+2024-01-19 00:19:37 INFO  Scraper:125 - Scraped offer Senior Analitycal Engineer from https://justjoin.it/offers/appfire-senior-analitycal-engineer-wroclaw
+2024-01-19 00:19:37 INFO  Scraper:71 - Scraped offer Senior Business Development Manager (NGO) from https://nofluffjobs.com/job/senior-business-development-manager-ngo-zwolnieni-z-teorii-krakow-1
+2024-01-19 00:19:37 INFO  Scraper:83 - Successfully scraped 20 job offers from https://nofluffjobs.com/krakow?page=1&criteria=seniority%3Dsenior
+
+2024-01-19 00:19:38 INFO  Scraper:125 - Scraped offer Principal Quality Assurance Engineer from https://justjoin.it/offers/stepwise-principal-quality-assurance-engineer-krakow
+2024-01-19 00:19:38 INFO  Scraper:125 - Scraped offer Senior Frontend Engineer from https://justjoin.it/offers/fincompare-gmbh-senior-frontend-engineer-szczecin
+2024-01-19 00:19:39 INFO  Scraper:125 - Scraped offer Senior Software Engineering Manager from https://justjoin.it/offers/relativity-senior-software-engineering-manager-krakow-345015
+2024-01-19 00:19:39 INFO  Scraper:125 - Scraped offer Product Manager from https://justjoin.it/offers/relativity-product-manager-krakow-345001
+2024-01-19 00:19:39 INFO  Scraper:125 - Scraped offer Senior Automation Tester from https://justjoin.it/offers/ikor-polska-senior-automation-tester-krakow
+2024-01-19 00:19:40 INFO  Scraper:125 - Scraped offer Data Controls Business Analyst from https://justjoin.it/offers/itds-data-controls-business-analyst
+2024-01-19 00:19:40 INFO  Scraper:125 - Scraped offer Big Data Developer from https://justjoin.it/offers/dac-digital-big-data-developer-katowice
+2024-01-19 00:19:40 INFO  Scraper:139 - Successfully scraped 21 job offers from https://justjoin.it/krakow/experience-level_senior/with-salary_yes?
+
+2024-01-19 00:19:45 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/krakow?page=1&criteria=seniority%3Dsenior
+2024-01-19 00:19:45 INFO  Scraper:71 - Scraped offer Senior PHP Engineer (Printify) from https://nofluffjobs.com/job/senior-php-engineer-printify-usoftware-krakow
+2024-01-19 00:19:46 INFO  Scraper:71 - Scraped offer Senior Network Test Automation Engineer from https://nofluffjobs.com/job/senior-network-test-automation-engineer-amartus-polska-krakow
+2024-01-19 00:19:46 INFO  Scraper:71 - Scraped offer IT Manager from https://nofluffjobs.com/job/it-manager-grape-up-krakow-2
+2024-01-19 00:19:46 INFO  Scraper:71 - Scraped offer Senior Network Automation Software Engineer from https://nofluffjobs.com/job/senior-network-automation-software-engineer-amartus-polska-krakow
+2024-01-19 00:19:46 INFO  Scraper:71 - Scraped offer Software Development Manager - Java from https://nofluffjobs.com/job/software-development-manager-java-tesco-technology-krakow-1
+2024-01-19 00:19:46 INFO  Scraper:71 - Scraped offer Product Owner from https://nofluffjobs.com/job/product-owner-hitachi-energy-krakow-8
+2024-01-19 00:19:46 INFO  Scraper:71 - Scraped offer Application Domain Lead from https://nofluffjobs.com/job/application-domain-lead-elitmind-krakow
+2024-01-19 00:19:46 INFO  Scraper:71 - Scraped offer Senior Data Engineer from https://nofluffjobs.com/job/senior-data-engineer-link-group-krakow
+2024-01-19 00:19:46 INFO  Scraper:71 - Scraped offer Senior Node.js Engineer from https://nofluffjobs.com/job/senior-node-js-engineer-ringier-axel-springer-tech-krakow-5
+2024-01-19 00:19:46 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/krakow/experience-level_senior/with-salary_yes?
+2024-01-19 00:19:46 INFO  Scraper:71 - Scraped offer Lead .NET Developer from https://nofluffjobs.com/job/lead-net-developer-andea-solutions-krakow-1
+2024-01-19 00:19:46 INFO  Scraper:71 - Scraped offer Senior Fullstack Developer + Angular from https://nofluffjobs.com/job/senior-fullstack-developer-angular-mindbox-krakow
+2024-01-19 00:19:46 INFO  Scraper:71 - Scraped offer Technical Engineering Manager - ECH from https://nofluffjobs.com/job/technical-engineering-manager-ech-motorola-solutions-systems-polska-krakow
+2024-01-19 00:19:46 INFO  Scraper:71 - Scraped offer Senior Cloud Engineer (GCP) - Remote from https://nofluffjobs.com/job/senior-cloud-engineer-gcp-remote-link-group-krakow
+2024-01-19 00:19:46 INFO  Scraper:71 - Scraped offer Azure Administrator – IoT project from https://nofluffjobs.com/job/azure-administrator-iot-project-sii-polska-krakow
+2024-01-19 00:19:46 INFO  Scraper:71 - Scraped offer Azure DevOps Engineer from https://nofluffjobs.com/job/azure-devops-engineer-avanade-poland-krakow-4

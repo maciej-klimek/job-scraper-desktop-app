@@ -1,3 +1,6 @@
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 import java.util.Objects;
 
 public class UrlModifier {
@@ -13,6 +16,11 @@ public class UrlModifier {
         }
 
         if (!Objects.equals(inputOffName, "")) {
+            try {
+                inputOffName = URLEncoder.encode(inputOffName, StandardCharsets.UTF_8.toString());
+            } catch (UnsupportedEncodingException e) {
+                throw new RuntimeException(e);
+            }
             inputOffName = inputOffName.replace(" ", "%20");
             nofluffjobsUrl += "&criteria=jobPosition%3D%27" + inputOffName + "%27%20";
         } else {
@@ -36,6 +44,11 @@ public class UrlModifier {
         }
 
         if (!Objects.equals(inputOffName, "")) {
+            try {
+                inputOffName = URLEncoder.encode(inputOffName, StandardCharsets.UTF_8.toString());
+            } catch (UnsupportedEncodingException e) {
+                throw new RuntimeException(e);
+            }
             inputOffName = inputOffName.replace(" ", "+");
             justjoinitUrl += "/with-salary_yes?keyword=" + inputOffName;
         } else {

@@ -11,7 +11,7 @@ import static javax.swing.SwingConstants.RIGHT;
 public class SearchPanel extends JPanel {
 
     private static final Logger logger = LogManager.getLogger(Scraper.class);
-    private final JTextField offerNameField;
+    private JTextField offerNameField;
     private final JLabel nameLabel;
     private final JComboBox<String> locationDropdown;
     private final JLabel locationLabel;
@@ -21,6 +21,7 @@ public class SearchPanel extends JPanel {
     private final JComboBox<String> sortingComboBox;
     private final JLabel sortingLabel;
     public static String selectedSorting;
+
     public SearchPanel() {
         setLayout(new GridLayout(1, 7, 10, 0));
 
