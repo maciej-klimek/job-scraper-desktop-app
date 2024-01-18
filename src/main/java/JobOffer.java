@@ -31,15 +31,20 @@ public class JobOffer {
 
     public double getMeanSalary() {
 
+        String[] salaryRange;
         try {
 
             String cleanedSalary = salary.replaceAll("–", "-");
-            String[] salaryRange = cleanedSalary.replaceAll("[^\\d-]+", "").split("-");
 
-            int lower = Integer.parseInt(salaryRange[0]);
-            int upper = Integer.parseInt(salaryRange[1]);
+            if (cleanedSalary.contains("-")) {
+                salaryRange = cleanedSalary.replaceAll("[^\\d-]+", "").split("-");
+                int lower = Integer.parseInt(salaryRange[0]);
+                int upper = Integer.parseInt(salaryRange[1]);
+                return (lower + upper) / 2.0;
+            } else {
+                return Integer.parseInt(cleanedSalary.replaceAll("[^\\d-]+", ""));
+            }
 
-            return (lower + upper) / 2.0;
         } catch (Exception e) {
             logger.error("Failed to get mean salary");
             return 1;

@@ -16,7 +16,7 @@ public class Scraper {
     private static Document jjitDocument;
     static ArrayList<JobOffer> jobOffers = new ArrayList<>();
 
-    static int maxNumOfOffers = 30;
+    static int maxNumOfOffers = 40;
 
     public static boolean nfjScrapingFlag = false;
     public static boolean jjitScrapingFlag = false;

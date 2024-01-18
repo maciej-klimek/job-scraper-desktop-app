@@ -1,183 +1,639 @@
-2024-01-11 10:39:53 ERROR Scraper:22 - test error
-2024-01-11 18:34:57 ERROR Scraper:22 - test error
-2024-01-11 18:45:43 ERROR Scraper:22 - test error
-2024-01-11 18:46:31 ERROR Scraper:22 - test error
-2024-01-11 18:49:32 ERROR Scraper:22 - test error
-2024-01-11 18:53:33 ERROR Scraper:22 - test error
-2024-01-11 18:54:12 ERROR Scraper:22 - test error
-2024-01-11 18:55:27 ERROR Scraper:22 - test error
-2024-01-11 18:57:57 ERROR Scraper:22 - test error
-2024-01-11 18:57:59 ERROR Scraper:115 - Failed to load data from nofluffjobs.com
-2024-01-11 19:07:30 ERROR Scraper:22 - test error
-2024-01-12 12:37:29 ERROR Scraper:22 - test error
-2024-01-12 12:37:30 ERROR Scraper:115 - Failed to load data from nofluffjobs.com
-2024-01-12 12:46:06 ERROR Scraper:22 - test error
-2024-01-12 12:47:50 ERROR Scraper:22 - test error
-2024-01-12 12:49:55 ERROR Scraper:22 - test error
-2024-01-12 14:37:16 ERROR Scraper:22 - test error
-2024-01-16 19:55:41 ERROR Scraper:114 - Failed to load data from nofluffjobs.com
-2024-01-16 19:56:18 ERROR Scraper:28 - Cannot connect to https://nofluffjobs.com/krakow?page=1&criteria=jobPosition%3D%27java%20developer%27%20seniority%3Dsenior: invalid link or website is not responding
-java.net.SocketTimeoutException: Read timed out
-	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:278) ~[?:?]
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304) ~[?:?]
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099) ~[?:?]
-	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:489) ~[?:?]
-	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:483) ~[?:?]
-	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70) ~[?:?]
-	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461) ~[?:?]
-	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1066) ~[?:?]
-	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:291) ~[?:?]
-	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:347) ~[?:?]
-	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:420) ~[?:?]
-	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399) ~[?:?]
-	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:827) ~[?:?]
-	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:759) ~[?:?]
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1690) ~[?:?]
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1599) ~[?:?]
-	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531) ~[?:?]
-	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307) ~[?:?]
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:856) ~[jsoup-1.17.1.jar:1.17.1]
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:818) ~[jsoup-1.17.1.jar:1.17.1]
-	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:346) ~[jsoup-1.17.1.jar:1.17.1]
-	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:331) ~[jsoup-1.17.1.jar:1.17.1]
-	at Scraper.getNfjData(Scraper.java:24) ~[classes/:?]
-	at MainInterface.lambda$searchJobOffers$0(MainInterface.java:65) ~[classes/:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
-	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
-2024-01-16 20:23:43 ERROR Scraper:28 - Cannot connect to https://nofluffjobs.com/krakow?page=1&criteria=jobPosition%3D%27java%20developer%27%20seniority%3Dsenior: invalid link or website is not responding
-java.net.SocketTimeoutException: Read timed out
-	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:278) ~[?:?]
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304) ~[?:?]
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099) ~[?:?]
-	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:489) ~[?:?]
-	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:483) ~[?:?]
-	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70) ~[?:?]
-	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461) ~[?:?]
-	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1066) ~[?:?]
-	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:291) ~[?:?]
-	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:347) ~[?:?]
-	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:420) ~[?:?]
-	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399) ~[?:?]
-	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:827) ~[?:?]
-	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:759) ~[?:?]
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1690) ~[?:?]
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1599) ~[?:?]
-	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531) ~[?:?]
-	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307) ~[?:?]
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:856) ~[jsoup-1.17.1.jar:1.17.1]
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:818) ~[jsoup-1.17.1.jar:1.17.1]
-	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:346) ~[jsoup-1.17.1.jar:1.17.1]
-	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:331) ~[jsoup-1.17.1.jar:1.17.1]
-	at Scraper.getNfjData(Scraper.java:24) ~[classes/:?]
-	at MainInterface.lambda$searchJobOffers$0(MainInterface.java:65) ~[classes/:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
-	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
-2024-01-16 20:23:43 ERROR Scraper:72 - An error occurred during data scraping from https://nofluffjobs.com/krakow?page=1&criteria=jobPosition%3D%27java%20developer%27%20seniority%3Dsenior
-java.lang.NullPointerException: Cannot invoke "org.jsoup.nodes.Document.select(String)" because "Scraper.nfjWebsite" is null
-	at Scraper.getNfjData(Scraper.java:33) ~[classes/:?]
-	at MainInterface.lambda$searchJobOffers$0(MainInterface.java:65) ~[classes/:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
-	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
-2024-01-17 10:05:34 ERROR Scraper:28 - Cannot connect to https://nofluffjobs.com/krakow?page=1&criteria=jobPosition%3D%27java%20developer%27%20seniority%3Dsenior: invalid link or website is not responding
-java.net.SocketTimeoutException: Read timed out
-	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:278) ~[?:?]
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304) ~[?:?]
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099) ~[?:?]
-	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:489) ~[?:?]
-	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:483) ~[?:?]
-	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70) ~[?:?]
-	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461) ~[?:?]
-	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1066) ~[?:?]
-	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:291) ~[?:?]
-	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:347) ~[?:?]
-	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:420) ~[?:?]
-	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399) ~[?:?]
-	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:827) ~[?:?]
-	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:759) ~[?:?]
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1690) ~[?:?]
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1599) ~[?:?]
-	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531) ~[?:?]
-	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307) ~[?:?]
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:856) ~[jsoup-1.17.1.jar:1.17.1]
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:818) ~[jsoup-1.17.1.jar:1.17.1]
-	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:346) ~[jsoup-1.17.1.jar:1.17.1]
-	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:331) ~[jsoup-1.17.1.jar:1.17.1]
-	at Scraper.getNfjData(Scraper.java:24) ~[classes/:?]
-	at MainInterface.lambda$searchJobOffers$0(MainInterface.java:100) ~[classes/:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
-	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
-2024-01-17 21:38:40 ERROR Scraper:114 - Failed to load data from nofluffjobs.com
-2024-01-17 21:54:57 ERROR Scraper:66 - Failed to load data from nofluffjobs.com
-2024-01-18 22:48:35 ERROR Scraper:125 - Failed to load data from nofluffjobs.com
-2024-01-18 22:49:38 ERROR Scraper:125 - Failed to load data from nofluffjobs.com
-2024-01-18 22:49:40 ERROR Scraper:72 - Failed to load data from nofluffjobs.com
-2024-01-18 22:50:01 ERROR Scraper:72 - Failed to load data from nofluffjobs.com
-2024-01-18 22:51:06 ERROR Scraper:125 - Failed to load data from nofluffjobs.com
-2024-01-18 22:51:20 ERROR Scraper:32 - Cannot connect to https://nofluffjobs.com/krakow?page=1&criteria=jobPosition%3D%27asdasd%27%20seniority%3Dsenior: invalid link or website is not responding
-java.net.SocketTimeoutException: Read timed out
-	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:278) ~[?:?]
-	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304) ~[?:?]
-	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346) ~[?:?]
-	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796) ~[?:?]
-	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099) ~[?:?]
-	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:489) ~[?:?]
-	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:483) ~[?:?]
-	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70) ~[?:?]
-	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1461) ~[?:?]
-	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1066) ~[?:?]
-	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:291) ~[?:?]
-	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:347) ~[?:?]
-	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:420) ~[?:?]
-	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399) ~[?:?]
-	at java.base/sun.net.www.http.HttpClient.parseHTTPHeader(HttpClient.java:827) ~[?:?]
-	at java.base/sun.net.www.http.HttpClient.parseHTTP(HttpClient.java:759) ~[?:?]
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1690) ~[?:?]
-	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1599) ~[?:?]
-	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531) ~[?:?]
-	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307) ~[?:?]
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:856) ~[jsoup-1.17.1.jar:1.17.1]
-	at org.jsoup.helper.HttpConnection$Response.execute(HttpConnection.java:818) ~[jsoup-1.17.1.jar:1.17.1]
-	at org.jsoup.helper.HttpConnection.execute(HttpConnection.java:346) ~[jsoup-1.17.1.jar:1.17.1]
-	at org.jsoup.helper.HttpConnection.get(HttpConnection.java:331) ~[jsoup-1.17.1.jar:1.17.1]
-	at Scraper.getNfjData(Scraper.java:28) ~[classes/:?]
-	at MainInterface.lambda$searchJobOffers$0(MainInterface.java:89) ~[classes/:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
-	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
-2024-01-18 22:51:20 ERROR Scraper:78 - An error occurred during data scraping from https://nofluffjobs.com/krakow?page=1&criteria=jobPosition%3D%27asdasd%27%20seniority%3Dsenior
-java.lang.NullPointerException: Cannot invoke "org.jsoup.nodes.Document.select(String)" because "Scraper.nfjWebsite" is null
-	at Scraper.getNfjData(Scraper.java:37) ~[classes/:?]
-	at MainInterface.lambda$searchJobOffers$0(MainInterface.java:89) ~[classes/:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
-	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?]
-2024-01-18 22:52:30 ERROR Scraper:125 - Failed to load data from nofluffjobs.com
-2024-01-18 22:58:38 ERROR Scraper:128 - Failed to load data fromhttps://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=asdas
-2024-01-18 22:59:41 ERROR Scraper:129 - Failed to load data fromhttps://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=gfjhf
-2024-01-18 23:00:17 ERROR Scraper:129 - Failed to load data fromhttps://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=jgfjh
-2024-01-18 23:01:04 ERROR Scraper:129 - Failed to load data fromhttps://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=jhgvhjk
-2024-01-18 23:01:29 ERROR Scraper:130 - Failed to load data fromhttps://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=asdasdeas
-2024-01-18 23:01:58 ERROR Scraper:130 - Failed to load data fromhttps://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=asdas
-2024-01-18 23:04:29 ERROR Scraper:134 - Failed to load data fromhttps://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=asda
-2024-01-18 23:05:50 ERROR Scraper:134 - Failed to load data fromhttps://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=asdasd
-2024-01-18 23:07:34 ERROR Scraper:135 - Failed to load data fromhttps://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=asdasd
-2024-01-18 23:07:55 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=asdas
-2024-01-18 23:10:19 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=123145
-2024-01-18 23:10:52 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=dfgsdfgdfs
-2024-01-18 23:11:15 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/remote/experience-level_senior/with-salary_yes?keyword=java
-2024-01-18 23:15:05 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/szczecin/experience-level_regular/with-salary_yes?keyword=java+developer
-2024-01-18 23:15:10 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/zdalnie/experience-level_regular/with-salary_yes?keyword=java+developer
-2024-01-18 23:15:38 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/krakow/experience-level_expert/with-salary_yes?keyword=java+developer
-2024-01-18 23:15:45 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/krakow/experience-level_expert/with-salary_yes?keyword=java+developer
-2024-01-18 23:16:09 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/experience-level_expert/with-salary_yes?keyword=python
-2024-01-18 23:20:22 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/krakow/experience-level_expert/with-salary_yes?keyword=java+developer
+2024-01-18 23:28:34 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=java+developer
+2024-01-18 23:28:34 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/j-labs-senior-java-developer-warszawa-346744
+2024-01-18 23:28:35 INFO  Scraper:125 - Scraped offer Java Developer from https://justjoin.it/offers/boldare-javascript-developer-react-js
+2024-01-18 23:28:35 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/krakow?page=1&criteria=jobPosition%3D%27java%20developer%27%20seniority%3Dsenior
+2024-01-18 23:28:35 INFO  Scraper:71 - Scraped offer Senior Java Developer from https://nofluffjobs.com/job/senior-java-developer-boldare-krakow-3
+2024-01-18 23:28:35 INFO  Scraper:71 - Scraped offer Java Developer with AWS from https://nofluffjobs.com/job/java-developer-with-aws-hsbc-technology-poland-krakow
+2024-01-18 23:28:35 INFO  Scraper:71 - Scraped offer Senior Java Developer - Kraków from https://nofluffjobs.com/job/senior-java-developer-krakow-link-group-krakow
+2024-01-18 23:28:35 INFO  Scraper:71 - Scraped offer Backend Java Developer from https://nofluffjobs.com/job/backend-java-developer-novomatic-technologies-poland-krakow-1
+2024-01-18 23:28:35 INFO  Scraper:125 - Scraped offer Senior Java Developer - Commercial Digital from https://justjoin.it/offers/volvo-tech-hub-poland-senior-java-developer-commercial-digital-czarnochowice
+2024-01-18 23:28:35 INFO  Scraper:71 - Scraped offer Senior/Lead Java Developer from https://nofluffjobs.com/job/senior-lead-java-developer-spyrosoft-krakow-1
+2024-01-18 23:28:35 INFO  Scraper:71 - Scraped offer Senior Java Developer from https://nofluffjobs.com/job/senior-java-developer-sollers-consulting-krakow
+2024-01-18 23:28:35 INFO  Scraper:71 - Scraped offer Senior Java Software Engineer from https://nofluffjobs.com/job/senior-java-software-engineer-motorola-solutions-systems-polska-krakow-2
+2024-01-18 23:28:35 INFO  Scraper:71 - Scraped offer Software Development Engineer (Java & TypeScript) from https://nofluffjobs.com/job/software-development-engineer-java-typescript-apptio-krakow
+2024-01-18 23:28:35 INFO  Scraper:71 - Scraped offer Sr Software Development Engineer (Java) from https://nofluffjobs.com/job/sr-software-development-engineer-java-apptio-krakow
+2024-01-18 23:28:35 INFO  Scraper:71 - Scraped offer Senior Java Engineer from https://nofluffjobs.com/job/senior-java-engineer-kontakt-io-krakow
+2024-01-18 23:28:35 INFO  Scraper:71 - Scraped offer Software Development Manager - Java from https://nofluffjobs.com/job/software-development-manager-java-tesco-technology-krakow-1
+2024-01-18 23:28:35 INFO  Scraper:83 - Successfully scraped 11 job offers from https://nofluffjobs.com/krakow?page=1&criteria=jobPosition%3D%27java%20developer%27%20seniority%3Dsenior
+
+2024-01-18 23:28:35 INFO  Scraper:125 - Scraped offer Senior Backend Java Developer (remote) from https://justjoin.it/offers/appfire-senior-backend-java-developer-remote-krakow-309794
+2024-01-18 23:28:36 INFO  Scraper:125 - Scraped offer Principal Java Full Stack Developer from https://justjoin.it/offers/sopra-steria-principal-java-full-stack-developer-krakow
+2024-01-18 23:28:36 INFO  Scraper:125 - Scraped offer Senior Java Developer (REMOTE from EU) from https://justjoin.it/offers/devsdata-llc-senior-java-developer-remote-from-eu
+2024-01-18 23:28:37 INFO  Scraper:125 - Scraped offer Senior Java Full Stack Developer from https://justjoin.it/offers/sopra-steria-senior-java-full-stack-developer-krakow
+2024-01-18 23:28:37 INFO  Scraper:125 - Scraped offer Senior JavaScript Developer from https://justjoin.it/offers/piwik-pro-senior-javascript-developer-warszawa
+2024-01-18 23:28:38 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/emagine-polska-senior-java-developer-warsaw
+2024-01-18 23:28:38 INFO  Scraper:125 - Scraped offer Senior Java Trading Systems Developer / Tech Lead from https://justjoin.it/offers/vistulo-senior-java-trading-systems-developer-tech-lead
+2024-01-18 23:28:39 INFO  Scraper:125 - Scraped offer Senior Full Stack Java Developer from https://justjoin.it/offers/tele-fonika-kable-s-a-senior-full-stack-java-developer-krakow-332274
+2024-01-18 23:28:39 INFO  Scraper:125 - Scraped offer FullStack Tech Lead: Typescript/Node.js from https://justjoin.it/offers/brytlyt-sp-zo-o-fullstack-tech-lead-typescript-node-js-wroclaw
+2024-01-18 23:28:40 INFO  Scraper:125 - Scraped offer Senior FullStack Developer: Typescript/React/Express.js from https://justjoin.it/offers/brytlyt-sp-zo-o-senior-fullstack-developer-typescript-react-express-js-wroclaw
+2024-01-18 23:28:41 INFO  Scraper:125 - Scraped offer Fullstack Javascript Developer from https://justjoin.it/offers/rigby-fullstack-javascript-developer-warszawa
+2024-01-18 23:28:41 INFO  Scraper:125 - Scraped offer Senior JavaScript Developer (React) from https://justjoin.it/offers/stx-next-senior-javascript-developer-react-warszawa-345922
+2024-01-18 23:28:41 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/mindpal-senior-java-developer-poznan
+2024-01-18 23:28:42 INFO  Scraper:125 - Scraped offer JS (React, Node.JS) Developer German* from https://justjoin.it/offers/mindpal-js-react-node-js-developer-german
+2024-01-18 23:28:42 INFO  Scraper:125 - Scraped offer Senior/Lead Java Developer from https://justjoin.it/offers/spyrosoft-senior-lead-java-developer-gdansk-345742
+2024-01-18 23:28:43 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/shift4-senior-java-developer-48f68a97-595a-42a9-a51c-bb202a36f763
+2024-01-18 23:28:43 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/sopra-steria-senior-java-developer-krakow-345468
+2024-01-18 23:28:43 INFO  Scraper:139 - Successfully scraped 20 job offers from https://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=java+developer
+
+2024-01-18 23:29:10 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/experience-level_junior/with-salary_yes?keyword=java+developer
+2024-01-18 23:29:11 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27java%20developer%27%20seniority%3Djunior
+2024-01-18 23:29:11 INFO  Scraper:125 - Scraped offer Junior Java Developer from https://justjoin.it/offers/reply-polska-sp-z-o-o-junior-java-developer-katowice-344768
+2024-01-18 23:29:11 INFO  Scraper:125 - Scraped offer Java Developer with French/German from https://justjoin.it/offers/sollers-consulting-sp-z-o-o-java-developer-with-french-german
+2024-01-18 23:29:11 INFO  Scraper:71 - Scraped offer Junior Java Developer from https://nofluffjobs.com/job/junior-java-developer-nix-tech-kft--budapest-2
+2024-01-18 23:29:12 INFO  Scraper:71 - Scraped offer Młodszy Programista Java from https://nofluffjobs.com/job/mlodszy-programista-java-reply-polska-katowice
+2024-01-18 23:29:12 INFO  Scraper:71 - Scraped offer Junior Java Developer from https://nofluffjobs.com/job/junior-java-developer-devire-remote-3
+2024-01-18 23:29:12 INFO  Scraper:125 - Scraped offer Java Developer from https://justjoin.it/offers/skills-java-developer
+2024-01-18 23:29:12 INFO  Scraper:125 - Scraped offer Junior java developer from https://justjoin.it/offers/bersi-junior-java-developer
+2024-01-18 23:29:12 INFO  Scraper:139 - Successfully scraped 4 job offers from https://justjoin.it/experience-level_junior/with-salary_yes?keyword=java+developer
+
+2024-01-18 23:29:12 INFO  Scraper:71 - Scraped offer Java Developer from https://nofluffjobs.com/job/java-developer-netcompany-poland-warsaw
+2024-01-18 23:29:13 INFO  Scraper:71 - Scraped offer Programista Java / JavaScript from https://nofluffjobs.com/job/programista-java-javascript-firmao-lodz
+2024-01-18 23:29:14 INFO  Scraper:71 - Scraped offer Junior Java Fullstack Developer from https://nofluffjobs.com/job/junior-java-fullstack-developer-bnp-paribas-group-service-center-warszawa
+2024-01-18 23:29:14 INFO  Scraper:71 - Scraped offer Junior Full Stack Java Developer from https://nofluffjobs.com/job/junior-full-stack-java-developer-look4it-remote
+2024-01-18 23:29:14 INFO  Scraper:71 - Scraped offer Junior Java/JS Developer (SAP Projects) from https://nofluffjobs.com/job/junior-java-js-developer-sap-projects-look4it-remote
+2024-01-18 23:29:14 INFO  Scraper:83 - Successfully scraped 8 job offers from https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27java%20developer%27%20seniority%3Djunior
+
+2024-01-18 23:30:10 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/krakow/experience-level_junior/with-salary_yes?
+2024-01-18 23:30:11 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/krakow?page=1&criteria=seniority%3Djunior
+2024-01-18 23:30:11 INFO  Scraper:125 - Scraped offer Junior Developer / QA Engineer from https://justjoin.it/offers/data-lake-junior-developer-qa-engineer-krakow
+2024-01-18 23:30:12 INFO  Scraper:71 - Scraped offer Remote Junior Mobile Developer from https://nofluffjobs.com/job/remote-junior-mobile-developer-appstronauts-krakow
+2024-01-18 23:30:12 INFO  Scraper:125 - Scraped offer Junior IT Support from https://justjoin.it/offers/eva-dywaniki-junior-it-support-krakow
+2024-01-18 23:30:12 INFO  Scraper:71 - Scraped offer IT Service Cloud Engineer from https://nofluffjobs.com/job/it-service-cloud-engineer-braver-it-krakow
+2024-01-18 23:30:13 INFO  Scraper:71 - Scraped offer Junior Presales Engineer from https://nofluffjobs.com/job/junior-presales-engineer-avsystem-krakow
+2024-01-18 23:30:13 INFO  Scraper:71 - Scraped offer MAUI .NET Developer Junior from https://nofluffjobs.com/job/maui-net-developer-junior-vumo-krakow
+2024-01-18 23:30:13 INFO  Scraper:125 - Scraped offer Software Engineer from https://justjoin.it/offers/affirm-software-engineer-wroclaw
+2024-01-18 23:30:14 INFO  Scraper:125 - Scraped offer Integration Software Engineer (onsite) from https://justjoin.it/offers/avsystem-integration-software-engineer-onsite
+2024-01-18 23:30:14 INFO  Scraper:71 - Scraped offer Junior Employer Branding Researcher from https://nofluffjobs.com/job/junior-employer-branding-researcher-grupa-mbe-krakow
+2024-01-18 23:30:14 INFO  Scraper:125 - Scraped offer Junior Technical Support Engineer from https://justjoin.it/offers/mpc-junior-technical-support-engineer
+2024-01-18 23:30:15 INFO  Scraper:71 - Scraped offer Specjalista ds. Administracji from https://nofluffjobs.com/job/specjalista-ds-administracji-femmemed-krakow
+2024-01-18 23:30:15 INFO  Scraper:125 - Scraped offer Java Developer with French/German from https://justjoin.it/offers/sollers-consulting-sp-z-o-o-java-developer-with-french-german
+2024-01-18 23:30:15 INFO  Scraper:125 - Scraped offer Cyber Security Consultant from https://justjoin.it/offers/mazaj-poland-cyber-security-consultant-warszawa
+2024-01-18 23:30:16 INFO  Scraper:71 - Scraped offer Junior Associate from https://nofluffjobs.com/job/junior-associate-ck-legal-chabasiewicz-kowalska-i-wspolnicy-krakow
+2024-01-18 23:30:16 INFO  Scraper:71 - Scraped offer Sales Account Representative with German from https://nofluffjobs.com/job/sales-account-representative-with-german-ahoy-career-krakow
+2024-01-18 23:30:16 INFO  Scraper:125 - Scraped offer Cloud DevOps Engieer from https://justjoin.it/offers/mazaj-poland-cloud-devops-engieer-warszawa
+2024-01-18 23:30:17 INFO  Scraper:125 - Scraped offer Junior IDN Consultant / Developer from https://justjoin.it/offers/itrun-consulting-junior-idn-consultant-developer
+2024-01-18 23:30:17 INFO  Scraper:125 - Scraped offer Technical Support Engineer from https://justjoin.it/offers/leon-software-technical-support-engineer
+2024-01-18 23:30:17 INFO  Scraper:71 - Scraped offer Doradca Techniczno-Handlowy OZE from https://nofluffjobs.com/job/doradca-techniczno-handlowy-oze-hr-instytut-krakow
+2024-01-18 23:30:18 INFO  Scraper:125 - Scraped offer Junior Project Manager from https://justjoin.it/offers/fingoweb-junior-project-manager-krakow
+2024-01-18 23:30:18 INFO  Scraper:125 - Scraped offer Remote DevOps / System Administrator from https://justjoin.it/offers/t2g-europe-remote-devops-system-administrator-krakow-344286
+2024-01-18 23:30:18 INFO  Scraper:71 - Scraped offer Sales Representative with German from https://nofluffjobs.com/job/sales-representative-with-german-ahoy-career-krakow-1
+2024-01-18 23:30:18 INFO  Scraper:125 - Scraped offer Junior QA Engineer (własny produkt) from https://justjoin.it/offers/infakt-junior-qa-engineer-wlasny-produkt-krakow-341799
+2024-01-18 23:30:19 INFO  Scraper:71 - Scraped offer Digital Marketing Sales Representative from https://nofluffjobs.com/job/digital-marketing-sales-representative-ahoy-career-krakow-2
+2024-01-18 23:30:19 INFO  Scraper:125 - Scraped offer Digital Innovation Summer 2024 Internship from https://justjoin.it/offers/hsbc-service-delivery-digital-innovation-summer-2024-internship
+2024-01-18 23:30:19 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:19 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:19 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:19 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:19 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:19 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:19 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:19 INFO  Scraper:125 - Scraped offer Operating Excellence Summer Internship from https://justjoin.it/offers/hsbc-service-delivery-operating-excellence-internship-krakow
+2024-01-18 23:30:20 INFO  Scraper:71 - Scraped offer Junior Sales Representative from https://nofluffjobs.com/job/junior-sales-representative-fresh-facility-krakow
+2024-01-18 23:30:20 INFO  Scraper:125 - Scraped offer Junior Technical Project Manager from https://justjoin.it/offers/pearson-junior-technical-project-manager-bydgoszcz
+2024-01-18 23:30:20 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:20 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:20 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:20 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:20 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:20 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:20 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:20 INFO  Scraper:125 - Scraped offer Junior IT Specialist from https://justjoin.it/offers/finitec-pl-junior-it-specialist-warszawa
+2024-01-18 23:30:20 INFO  Scraper:71 - Scraped offer Junior QA Specialist from https://nofluffjobs.com/job/junior-qa-specialist-pcmi-krakow-1
+2024-01-18 23:30:20 INFO  Scraper:125 - Scraped offer Tester(-ka) Manualny(-a) (100% REMOTE) from https://justjoin.it/offers/innovation-software-tester-ka-manualny-a-100-remote-warszawa
+2024-01-18 23:30:20 INFO  Scraper:139 - Successfully scraped 18 job offers from https://justjoin.it/krakow/experience-level_junior/with-salary_yes?
+
+2024-01-18 23:30:21 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:21 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:21 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:21 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:21 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:21 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:21 INFO  Scraper:71 - Scraped offer Tester(-ka) Manualny(-a) from https://nofluffjobs.com/job/tester-ka-manualny-a-innovation-software-krakow-1
+2024-01-18 23:30:21 INFO  Scraper:83 - Successfully scraped 14 job offers from https://nofluffjobs.com/krakow?page=1&criteria=seniority%3Djunior
+
+2024-01-18 23:30:22 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:22 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:22 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:22 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:22 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:22 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:22 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:23 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:23 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:23 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:23 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:23 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:24 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:24 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:24 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:24 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:24 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:25 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:25 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:25 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:25 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:25 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:26 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:26 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:26 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:26 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:26 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:27 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:27 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:27 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:27 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:27 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:28 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:28 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:28 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:28 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:28 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:29 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:29 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:29 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:29 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:29 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:30 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:30 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:30 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:30 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:30 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:31 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:31 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:31 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:31 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:31 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:32 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:32 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:32 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:32 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:32 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:33 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:33 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:33 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:33 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:33 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:34 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:34 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:34 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:34 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:30:34 ERROR Scraper:44 - Failed to get mean salary
+2024-01-18 23:33:53 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/experience-level_junior/with-salary_yes?
+2024-01-18 23:33:53 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/?page=1&criteria=seniority%3Djunior
+2024-01-18 23:33:53 INFO  Scraper:125 - Scraped offer Project Owner from https://justjoin.it/offers/bpmriders-project-owner
+2024-01-18 23:33:54 INFO  Scraper:125 - Scraped offer ⚙️Junior Backend Developer (.net) 📺 from https://justjoin.it/offers/insys-video-technologies-junior-backend-developer-net-lodz
+2024-01-18 23:33:54 INFO  Scraper:71 - Scraped offer Specjalista ds. obsługi klienta z j. niemieckim from https://nofluffjobs.com/job/specjalista-ds-obslugi-klienta-z-j-niemieckim-teleperformance-polska-warszawa
+2024-01-18 23:33:54 INFO  Scraper:125 - Scraped offer UX/UI Trainee from https://justjoin.it/offers/procter-gamble-ux-ui-trainee
+2024-01-18 23:33:55 INFO  Scraper:125 - Scraped offer Quality Assurance Engineer from https://justjoin.it/offers/softkraft-quality-assurance-engineer
+2024-01-18 23:33:55 INFO  Scraper:71 - Scraped offer Młodszy Specjalista ds. Zakupów IT from https://nofluffjobs.com/job/mlodszy-specjalista-ds-zakupow-it-biuro-teleinformatyki-cba-warszawa
+2024-01-18 23:33:55 INFO  Scraper:71 - Scraped offer Młodszy Programista / Web Developer from https://nofluffjobs.com/job/mlodszy-programista-web-developer-talent-partners-tychy
+2024-01-18 23:33:55 INFO  Scraper:125 - Scraped offer Junior Python / DevOps Engineer from https://justjoin.it/offers/digatus-junior-python-devops-engineer-rzeszow
+2024-01-18 23:33:56 INFO  Scraper:71 - Scraped offer Analityk finansowy from https://nofluffjobs.com/job/analityk-finansowy-abalone-poland-rzeszow
+2024-01-18 23:33:57 INFO  Scraper:71 - Scraped offer Junior Ruby on Rails developer from https://nofluffjobs.com/job/junior-ruby-on-rails-developer-rascasone-s-r-o--remote
+2024-01-18 23:33:57 INFO  Scraper:125 - Scraped offer Junior Risk Analytics Coordinator from https://justjoin.it/offers/itds-junior-risk-analytics-coordinator
+2024-01-18 23:33:57 INFO  Scraper:71 - Scraped offer Remote Junior Mobile Developer from https://nofluffjobs.com/job/remote-junior-mobile-developer-appstronauts
+2024-01-18 23:33:58 INFO  Scraper:125 - Scraped offer Remote UX/UI Designer from https://justjoin.it/offers/montrose-software-remote-ux-ui-designer-warszawa
+2024-01-18 23:33:58 INFO  Scraper:125 - Scraped offer Junior Data Scientist from https://justjoin.it/offers/johnnybros-junior-data-scientist
+2024-01-18 23:33:58 INFO  Scraper:71 - Scraped offer Junior Copywriter from https://nofluffjobs.com/job/junior-copywriter-digitlabs-warszawa-1
+2024-01-18 23:33:59 INFO  Scraper:71 - Scraped offer Junior Project Manager - Automatyk from https://nofluffjobs.com/job/junior-project-manager-automatyk-passion-hr-warszawa
+2024-01-18 23:33:59 INFO  Scraper:71 - Scraped offer Scrum Master from https://nofluffjobs.com/job/scrum-master-kapsys-pte-ltd-remote-2
+2024-01-18 23:33:59 INFO  Scraper:125 - Scraped offer Junior Developer / QA Engineer from https://justjoin.it/offers/data-lake-junior-developer-qa-engineer-krakow
+2024-01-18 23:34:00 INFO  Scraper:125 - Scraped offer Junior Java Developer from https://justjoin.it/offers/reply-polska-sp-z-o-o-junior-java-developer-katowice-344768
+2024-01-18 23:34:00 INFO  Scraper:71 - Scraped offer Asystent ds. sprzedaży from https://nofluffjobs.com/job/asystent-ds-sprzedazy-omnioxy-gdynia
+2024-01-18 23:34:00 INFO  Scraper:125 - Scraped offer Konsultant ds. wdrożeń from https://justjoin.it/offers/inn4tech-recruitment-konsultant-ds-wdrozen-warszawa
+2024-01-18 23:34:01 INFO  Scraper:71 - Scraped offer Telefoniczny doradca klienta biznesowego from https://nofluffjobs.com/job/telefoniczny-doradca-klienta-biznesowego-lex-capital-warszawa
+2024-01-18 23:34:01 INFO  Scraper:71 - Scraped offer IT Service Cloud Engineer from https://nofluffjobs.com/job/it-service-cloud-engineer-braver-it-krakow
+2024-01-18 23:34:01 INFO  Scraper:125 - Scraped offer Junior IT Support from https://justjoin.it/offers/eva-dywaniki-junior-it-support-krakow
+2024-01-18 23:34:01 INFO  Scraper:71 - Scraped offer Junior IT Project Manager from https://nofluffjobs.com/job/junior-it-project-manager-dentsu-polska-warszawa
+2024-01-18 23:34:01 INFO  Scraper:71 - Scraped offer Junior Presales Engineer from https://nofluffjobs.com/job/junior-presales-engineer-avsystem-krakow
+2024-01-18 23:34:02 INFO  Scraper:125 - Scraped offer Reverse Engineer from https://justjoin.it/offers/cognizant-technology-solutions-reverse-engineer
+2024-01-18 23:36:12 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/?page=1&criteria=seniority%3Djunior
+2024-01-18 23:36:13 INFO  Scraper:71 - Scraped offer Specjalista ds. obsługi klienta z j. niemieckim from https://nofluffjobs.com/job/specjalista-ds-obslugi-klienta-z-j-niemieckim-teleperformance-polska-warszawa
+2024-01-18 23:36:13 INFO  Scraper:71 - Scraped offer Młodszy Specjalista ds. Zakupów IT from https://nofluffjobs.com/job/mlodszy-specjalista-ds-zakupow-it-biuro-teleinformatyki-cba-warszawa
+2024-01-18 23:36:13 INFO  Scraper:71 - Scraped offer Młodszy Programista / Web Developer from https://nofluffjobs.com/job/mlodszy-programista-web-developer-talent-partners-tychy
+2024-01-18 23:36:13 INFO  Scraper:71 - Scraped offer Analityk finansowy from https://nofluffjobs.com/job/analityk-finansowy-abalone-poland-rzeszow
+2024-01-18 23:36:13 INFO  Scraper:71 - Scraped offer Junior Ruby on Rails developer from https://nofluffjobs.com/job/junior-ruby-on-rails-developer-rascasone-s-r-o--remote
+2024-01-18 23:36:13 INFO  Scraper:71 - Scraped offer Remote Junior Mobile Developer from https://nofluffjobs.com/job/remote-junior-mobile-developer-appstronauts
+2024-01-18 23:36:13 INFO  Scraper:71 - Scraped offer Junior Copywriter from https://nofluffjobs.com/job/junior-copywriter-digitlabs-warszawa-1
+2024-01-18 23:36:13 INFO  Scraper:71 - Scraped offer Junior Project Manager - Automatyk from https://nofluffjobs.com/job/junior-project-manager-automatyk-passion-hr-warszawa
+2024-01-18 23:36:13 INFO  Scraper:71 - Scraped offer Scrum Master from https://nofluffjobs.com/job/scrum-master-kapsys-pte-ltd-remote-2
+2024-01-18 23:36:13 INFO  Scraper:71 - Scraped offer Asystent ds. sprzedaży from https://nofluffjobs.com/job/asystent-ds-sprzedazy-omnioxy-gdynia
+2024-01-18 23:36:13 INFO  Scraper:71 - Scraped offer Telefoniczny doradca klienta biznesowego from https://nofluffjobs.com/job/telefoniczny-doradca-klienta-biznesowego-lex-capital-warszawa
+2024-01-18 23:36:13 INFO  Scraper:71 - Scraped offer IT Service Cloud Engineer from https://nofluffjobs.com/job/it-service-cloud-engineer-braver-it-krakow
+2024-01-18 23:36:13 INFO  Scraper:71 - Scraped offer Junior IT Project Manager from https://nofluffjobs.com/job/junior-it-project-manager-dentsu-polska-warszawa
+2024-01-18 23:36:13 INFO  Scraper:71 - Scraped offer Junior Presales Engineer from https://nofluffjobs.com/job/junior-presales-engineer-avsystem-krakow
+2024-01-18 23:36:14 INFO  Scraper:71 - Scraped offer Spedytor międzynarodowy from https://nofluffjobs.com/job/spedytor-miedzynarodowy-magistral-transport-warszawa
+2024-01-18 23:36:14 INFO  Scraper:71 - Scraped offer Account Manager - Sprzedawca from https://nofluffjobs.com/job/account-manager-sprzedawca-netin-warszawa
+2024-01-18 23:36:15 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/experience-level_junior/with-salary_yes?
+2024-01-18 23:36:15 INFO  Scraper:71 - Scraped offer Junior Project Manager from https://nofluffjobs.com/job/junior-project-manager--huncwot-warszawa
+2024-01-18 23:36:15 INFO  Scraper:71 - Scraped offer MAUI .NET Developer Junior from https://nofluffjobs.com/job/maui-net-developer-junior-vumo-krakow
+2024-01-18 23:36:16 INFO  Scraper:71 - Scraped offer Elektryk from https://nofluffjobs.com/job/elektryk-r11-automation-monachium
+2024-01-18 23:36:17 INFO  Scraper:71 - Scraped offer Junior Software Engineer from https://nofluffjobs.com/job/junior-software-engineer-devnet-high-performance-solutions-wroclaw-2
+2024-01-18 23:36:17 INFO  Scraper:83 - Successfully scraped 20 job offers from https://nofluffjobs.com/?page=1&criteria=seniority%3Djunior
+
+2024-01-18 23:36:19 INFO  Scraper:125 - Scraped offer Project Owner from https://justjoin.it/offers/bpmriders-project-owner
+2024-01-18 23:36:20 INFO  Scraper:125 - Scraped offer ⚙️Junior Backend Developer (.net) 📺 from https://justjoin.it/offers/insys-video-technologies-junior-backend-developer-net-lodz
+2024-01-18 23:36:21 INFO  Scraper:125 - Scraped offer UX/UI Trainee from https://justjoin.it/offers/procter-gamble-ux-ui-trainee
+2024-01-18 23:36:22 INFO  Scraper:125 - Scraped offer Quality Assurance Engineer from https://justjoin.it/offers/softkraft-quality-assurance-engineer
+2024-01-18 23:36:22 INFO  Scraper:125 - Scraped offer Junior Python / DevOps Engineer from https://justjoin.it/offers/digatus-junior-python-devops-engineer-rzeszow
+2024-01-18 23:36:23 INFO  Scraper:125 - Scraped offer Junior Risk Analytics Coordinator from https://justjoin.it/offers/itds-junior-risk-analytics-coordinator
+2024-01-18 23:36:23 INFO  Scraper:125 - Scraped offer Remote UX/UI Designer from https://justjoin.it/offers/montrose-software-remote-ux-ui-designer-warszawa
+2024-01-18 23:36:23 INFO  Scraper:125 - Scraped offer Junior Data Scientist from https://justjoin.it/offers/johnnybros-junior-data-scientist
+2024-01-18 23:36:24 INFO  Scraper:125 - Scraped offer Junior Developer / QA Engineer from https://justjoin.it/offers/data-lake-junior-developer-qa-engineer-krakow
+2024-01-18 23:36:24 INFO  Scraper:125 - Scraped offer Junior Java Developer from https://justjoin.it/offers/reply-polska-sp-z-o-o-junior-java-developer-katowice-344768
+2024-01-18 23:36:24 INFO  Scraper:125 - Scraped offer Konsultant ds. wdrożeń from https://justjoin.it/offers/inn4tech-recruitment-konsultant-ds-wdrozen-warszawa
+2024-01-18 23:36:24 INFO  Scraper:139 - Successfully scraped 11 job offers from https://justjoin.it/experience-level_junior/with-salary_yes?
+
+2024-01-18 23:39:40 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=asdasdasr
+2024-01-18 23:39:41 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/krakow?page=1&criteria=jobPosition%3D%27asdasdasr%27%20seniority%3Dsenior
+2024-01-18 23:39:44 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=asdasdasr
+2024-01-18 23:39:49 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=java
+2024-01-18 23:39:49 INFO  Scraper:125 - Scraped offer Senior DevOps Engineer (Azure) from https://justjoin.it/offers/future-processing-senior-devops-engineer-azure-warszawa
+2024-01-18 23:39:49 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/krakow?page=1&criteria=jobPosition%3D%27java%27%20seniority%3Dsenior
+2024-01-18 23:39:49 INFO  Scraper:71 - Scraped offer Software Development Manager - Java from https://nofluffjobs.com/job/software-development-manager-java-tesco-technology-krakow-1
+2024-01-18 23:39:49 INFO  Scraper:71 - Scraped offer Senior Java Developer from https://nofluffjobs.com/job/senior-java-developer-boldare-krakow-3
+2024-01-18 23:39:49 INFO  Scraper:71 - Scraped offer Java Developer with AWS from https://nofluffjobs.com/job/java-developer-with-aws-hsbc-technology-poland-krakow
+2024-01-18 23:39:49 INFO  Scraper:71 - Scraped offer Senior Java Software Engineer from https://nofluffjobs.com/job/senior-java-software-engineer-motorola-solutions-systems-polska-krakow-2
+2024-01-18 23:39:49 INFO  Scraper:71 - Scraped offer Software Development Engineer (Java & TypeScript) from https://nofluffjobs.com/job/software-development-engineer-java-typescript-apptio-krakow
+2024-01-18 23:39:49 INFO  Scraper:71 - Scraped offer Sr Software Development Engineer (Java) from https://nofluffjobs.com/job/sr-software-development-engineer-java-apptio-krakow
+2024-01-18 23:39:50 INFO  Scraper:71 - Scraped offer Senior Java Developer - Kraków from https://nofluffjobs.com/job/senior-java-developer-krakow-link-group-krakow
+2024-01-18 23:39:50 INFO  Scraper:71 - Scraped offer Senior Java Engineer from https://nofluffjobs.com/job/senior-java-engineer-kontakt-io-krakow
+2024-01-18 23:39:50 INFO  Scraper:71 - Scraped offer Backend Java Developer from https://nofluffjobs.com/job/backend-java-developer-novomatic-technologies-poland-krakow-1
+2024-01-18 23:39:50 INFO  Scraper:71 - Scraped offer Senior/Lead Java Developer from https://nofluffjobs.com/job/senior-lead-java-developer-spyrosoft-krakow-1
+2024-01-18 23:39:50 INFO  Scraper:125 - Scraped offer JavaScript Front-end Developer from https://justjoin.it/offers/fru-pl-javascript-front-end-developer
+2024-01-18 23:39:50 INFO  Scraper:71 - Scraped offer Senior Java Developer from https://nofluffjobs.com/job/senior-java-developer-sollers-consulting-krakow
+2024-01-18 23:39:50 INFO  Scraper:71 - Scraped offer (Senior) FullStack Developer (Apps team) from https://nofluffjobs.com/job/senior-fullstack-developer-apps-team-kontakt-io-krakow-1
+2024-01-18 23:39:50 INFO  Scraper:71 - Scraped offer Senior Backend Software Engineer from https://nofluffjobs.com/job/senior-backend-software-engineer-smartrecruiters-krakow
+2024-01-18 23:39:50 INFO  Scraper:71 - Scraped offer Senior/Staff Distributed Systems Engineer from https://nofluffjobs.com/job/senior-staff-distributed-systems-engineer-rtb-house-krakow
+2024-01-18 23:39:50 INFO  Scraper:71 - Scraped offer Engineering Team Lead (Internal Engineering) from https://nofluffjobs.com/job/engineering-team-lead-internal-engineering-smartrecruiters-krakow
+2024-01-18 23:39:50 INFO  Scraper:71 - Scraped offer Senior Fullstack Developer + Angular from https://nofluffjobs.com/job/senior-fullstack-developer-angular-mindbox-krakow
+2024-01-18 23:39:50 INFO  Scraper:71 - Scraped offer Senior Cloud Engineer (GCP) - Remote from https://nofluffjobs.com/job/senior-cloud-engineer-gcp-remote-link-group-krakow
+2024-01-18 23:39:50 INFO  Scraper:71 - Scraped offer RPA Developer from https://nofluffjobs.com/job/rpa-developer-mindbox-cracow
+2024-01-18 23:39:50 INFO  Scraper:71 - Scraped offer Solution Architect from https://nofluffjobs.com/job/solution-architect-hsbc-technology-poland-krakow-1
+2024-01-18 23:39:50 INFO  Scraper:71 - Scraped offer Senior Machine Learning Engineer from https://nofluffjobs.com/job/senior-machine-learning-engineer-numlabs-krakow
+2024-01-18 23:39:50 INFO  Scraper:71 - Scraped offer Senior Data Engineer from https://nofluffjobs.com/job/senior-data-engineer-mindbox-krakow
+2024-01-18 23:39:50 INFO  Scraper:71 - Scraped offer Data Science Engineer from https://nofluffjobs.com/job/data-science-engineer-infogain-technologies-krakow
+2024-01-18 23:39:51 INFO  Scraper:71 - Scraped offer Big Data / Scala Developer from https://nofluffjobs.com/job/big-data-scala-developer-sii-polska-krakow-1
+2024-01-18 23:39:51 INFO  Scraper:71 - Scraped offer Principal Digital Architekt from https://nofluffjobs.com/job/principal-digital-architekt-apreel-krakow
+2024-01-18 23:39:51 INFO  Scraper:71 - Scraped offer Senior Fullstack Development Engineer from https://nofluffjobs.com/job/senior-fullstack-development-engineer-remitly-krakow
+2024-01-18 23:39:51 INFO  Scraper:71 - Scraped offer Developer Patterns from https://nofluffjobs.com/job/developer-patterns-mindbox-cracow
+2024-01-18 23:39:52 INFO  Scraper:71 - Scraped offer Production Engineering Specialist from https://nofluffjobs.com/job/production-engineering-specialist-mindbox-krakow
+2024-01-18 23:39:52 INFO  Scraper:125 - Scraped offer Fullstack Engineer (.NET, ReactJS) from https://justjoin.it/offers/aperia-fullstack-engineer-net-reactjs
+2024-01-18 23:39:52 INFO  Scraper:125 - Scraped offer PHP (Symfony) Developer from https://justjoin.it/offers/dac-digital-php-symfony-developer-warszawa-340898
+2024-01-18 23:39:52 INFO  Scraper:139 - Successfully scraped 4 job offers from https://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=java
+
+2024-01-18 23:39:52 INFO  Scraper:71 - Scraped offer Remote CyberArk Implementation Engineer from https://nofluffjobs.com/job/remote-cyberark-implementation-engineer-link-group-krakow-1
+2024-01-18 23:39:52 INFO  Scraper:83 - Successfully scraped 28 job offers from https://nofluffjobs.com/krakow?page=1&criteria=jobPosition%3D%27java%27%20seniority%3Dsenior
+
+2024-01-18 23:44:53 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=java+developer
+2024-01-18 23:44:53 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/krakow?page=1&criteria=jobPosition%3D%27java%20developer%27%20seniority%3Dsenior
+2024-01-18 23:44:53 INFO  Scraper:71 - Scraped offer Senior Java Developer from https://nofluffjobs.com/job/senior-java-developer-boldare-krakow-3
+2024-01-18 23:44:54 INFO  Scraper:71 - Scraped offer Java Developer with AWS from https://nofluffjobs.com/job/java-developer-with-aws-hsbc-technology-poland-krakow
+2024-01-18 23:44:54 INFO  Scraper:71 - Scraped offer Senior Java Developer - Kraków from https://nofluffjobs.com/job/senior-java-developer-krakow-link-group-krakow
+2024-01-18 23:44:54 INFO  Scraper:71 - Scraped offer Backend Java Developer from https://nofluffjobs.com/job/backend-java-developer-novomatic-technologies-poland-krakow-1
+2024-01-18 23:44:54 INFO  Scraper:71 - Scraped offer Senior/Lead Java Developer from https://nofluffjobs.com/job/senior-lead-java-developer-spyrosoft-krakow-1
+2024-01-18 23:44:54 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/j-labs-senior-java-developer-warszawa-346744
+2024-01-18 23:44:54 INFO  Scraper:71 - Scraped offer Senior Java Developer from https://nofluffjobs.com/job/senior-java-developer-sollers-consulting-krakow
+2024-01-18 23:44:54 INFO  Scraper:71 - Scraped offer Senior Java Software Engineer from https://nofluffjobs.com/job/senior-java-software-engineer-motorola-solutions-systems-polska-krakow-2
+2024-01-18 23:44:54 INFO  Scraper:71 - Scraped offer Software Development Engineer (Java & TypeScript) from https://nofluffjobs.com/job/software-development-engineer-java-typescript-apptio-krakow
+2024-01-18 23:44:54 INFO  Scraper:71 - Scraped offer Sr Software Development Engineer (Java) from https://nofluffjobs.com/job/sr-software-development-engineer-java-apptio-krakow
+2024-01-18 23:44:54 INFO  Scraper:71 - Scraped offer Senior Java Engineer from https://nofluffjobs.com/job/senior-java-engineer-kontakt-io-krakow
+2024-01-18 23:44:54 INFO  Scraper:71 - Scraped offer Software Development Manager - Java from https://nofluffjobs.com/job/software-development-manager-java-tesco-technology-krakow-1
+2024-01-18 23:44:54 INFO  Scraper:83 - Successfully scraped 11 job offers from https://nofluffjobs.com/krakow?page=1&criteria=jobPosition%3D%27java%20developer%27%20seniority%3Dsenior
+
+2024-01-18 23:44:54 INFO  Scraper:125 - Scraped offer Java Developer from https://justjoin.it/offers/boldare-javascript-developer-react-js
+2024-01-18 23:44:55 INFO  Scraper:125 - Scraped offer Senior Java Developer - Commercial Digital from https://justjoin.it/offers/volvo-tech-hub-poland-senior-java-developer-commercial-digital-czarnochowice
+2024-01-18 23:44:56 INFO  Scraper:125 - Scraped offer Senior Backend Java Developer (remote) from https://justjoin.it/offers/appfire-senior-backend-java-developer-remote-krakow-309794
+2024-01-18 23:44:58 INFO  Scraper:125 - Scraped offer Principal Java Full Stack Developer from https://justjoin.it/offers/sopra-steria-principal-java-full-stack-developer-krakow
+2024-01-18 23:44:59 INFO  Scraper:125 - Scraped offer Senior Java Developer (REMOTE from EU) from https://justjoin.it/offers/devsdata-llc-senior-java-developer-remote-from-eu
+2024-01-18 23:44:59 INFO  Scraper:125 - Scraped offer Senior Java Full Stack Developer from https://justjoin.it/offers/sopra-steria-senior-java-full-stack-developer-krakow
+2024-01-18 23:45:01 INFO  Scraper:125 - Scraped offer Senior JavaScript Developer from https://justjoin.it/offers/piwik-pro-senior-javascript-developer-warszawa
+2024-01-18 23:45:02 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/emagine-polska-senior-java-developer-warsaw
+2024-01-18 23:45:02 INFO  Scraper:125 - Scraped offer Senior Java Trading Systems Developer / Tech Lead from https://justjoin.it/offers/vistulo-senior-java-trading-systems-developer-tech-lead
+2024-01-18 23:45:04 INFO  Scraper:125 - Scraped offer Senior Full Stack Java Developer from https://justjoin.it/offers/tele-fonika-kable-s-a-senior-full-stack-java-developer-krakow-332274
+2024-01-18 23:45:04 INFO  Scraper:125 - Scraped offer FullStack Tech Lead: Typescript/Node.js from https://justjoin.it/offers/brytlyt-sp-zo-o-fullstack-tech-lead-typescript-node-js-wroclaw
+2024-01-18 23:45:05 INFO  Scraper:125 - Scraped offer Senior FullStack Developer: Typescript/React/Express.js from https://justjoin.it/offers/brytlyt-sp-zo-o-senior-fullstack-developer-typescript-react-express-js-wroclaw
+2024-01-18 23:45:05 INFO  Scraper:125 - Scraped offer Fullstack Javascript Developer from https://justjoin.it/offers/rigby-fullstack-javascript-developer-warszawa
+2024-01-18 23:45:07 INFO  Scraper:125 - Scraped offer Senior JavaScript Developer (React) from https://justjoin.it/offers/stx-next-senior-javascript-developer-react-warszawa-345922
+2024-01-18 23:45:07 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/mindpal-senior-java-developer-poznan
+2024-01-18 23:45:07 INFO  Scraper:125 - Scraped offer JS (React, Node.JS) Developer German* from https://justjoin.it/offers/mindpal-js-react-node-js-developer-german
+2024-01-18 23:45:08 INFO  Scraper:125 - Scraped offer Senior/Lead Java Developer from https://justjoin.it/offers/spyrosoft-senior-lead-java-developer-gdansk-345742
+2024-01-18 23:45:08 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/shift4-senior-java-developer-48f68a97-595a-42a9-a51c-bb202a36f763
+2024-01-18 23:45:09 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/sopra-steria-senior-java-developer-krakow-345468
+2024-01-18 23:45:09 INFO  Scraper:139 - Successfully scraped 20 job offers from https://justjoin.it/krakow/experience-level_senior/with-salary_yes?keyword=java+developer
+
+2024-01-18 23:45:13 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/wroclaw/experience-level_senior/with-salary_yes?keyword=java+developer
+2024-01-18 23:45:14 INFO  Scraper:125 - Scraped offer Senior / Lead Java Developer from https://justjoin.it/offers/epam-systems-senior-lead-java-developer-wroclaw-315458
+2024-01-18 23:45:14 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/wroclaw?page=1&criteria=jobPosition%3D%27java%20developer%27%20seniority%3Dsenior
+2024-01-18 23:45:14 INFO  Scraper:71 - Scraped offer Senior Fullstack Developer (Java + Angular) from https://nofluffjobs.com/job/senior-fullstack-developer-java-angular-infor-wroclaw
+2024-01-18 23:45:14 INFO  Scraper:71 - Scraped offer Senior Java Developer from https://nofluffjobs.com/job/senior-java-developer-boldare-wroclaw-3
+2024-01-18 23:45:14 INFO  Scraper:125 - Scraped offer Java Developer from https://justjoin.it/offers/boldare-javascript-developer-react-js
+2024-01-18 23:45:14 INFO  Scraper:71 - Scraped offer Java Developer with German from https://nofluffjobs.com/job/java-developer-with-german-spyrosoft-wroclaw-3
+2024-01-18 23:45:15 INFO  Scraper:71 - Scraped offer Senior Java Developer from https://nofluffjobs.com/job/senior-java-developer-sportradar-wroclaw
+2024-01-18 23:45:15 INFO  Scraper:125 - Scraped offer Senior Backend Java Developer (remote) from https://justjoin.it/offers/appfire-senior-backend-java-developer-remote-wroclaw-309790
+2024-01-18 23:45:15 INFO  Scraper:71 - Scraped offer Mid / Senior Full Stack Developer (Java) from https://nofluffjobs.com/job/mid-senior-full-stack-developer-java-exso-wroclaw
+2024-01-18 23:45:15 INFO  Scraper:125 - Scraped offer Principal Java Full Stack Developer from https://justjoin.it/offers/sopra-steria-principal-java-full-stack-developer-krakow
+2024-01-18 23:45:16 INFO  Scraper:125 - Scraped offer Senior Java Full Stack Developer from https://justjoin.it/offers/sopra-steria-senior-java-full-stack-developer-krakow
+2024-01-18 23:45:16 INFO  Scraper:71 - Scraped offer Senior Full Stack Java Developer from https://nofluffjobs.com/job/senior-full-stack-java-developer-oferteo-wroclaw
+2024-01-18 23:45:16 INFO  Scraper:125 - Scraped offer Senior Java Developer (REMOTE from EU) from https://justjoin.it/offers/devsdata-llc-senior-java-developer-remote-from-eu
+2024-01-18 23:45:17 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/experis-manpower-group-senior-java-developer-wroclaw
+2024-01-18 23:45:17 INFO  Scraper:71 - Scraped offer Senior/Lead Java Developer from https://nofluffjobs.com/job/senior-lead-java-developer-spyrosoft-wroclaw-1
+2024-01-18 23:45:17 INFO  Scraper:125 - Scraped offer Senior JavaScript Developer from https://justjoin.it/offers/piwik-pro-senior-javascript-developer-warszawa
+2024-01-18 23:45:17 INFO  Scraper:125 - Scraped offer Senior Java Trading Systems Developer / Tech Lead from https://justjoin.it/offers/vistulo-senior-java-trading-systems-developer-tech-lead
+2024-01-18 23:45:18 INFO  Scraper:71 - Scraped offer Senior Java Developer from https://nofluffjobs.com/job/senior-java-developer-sollers-consulting-wroclaw
+2024-01-18 23:45:18 INFO  Scraper:71 - Scraped offer Java Developer from https://nofluffjobs.com/job/java-developer-sni-wroclaw-1
+2024-01-18 23:45:18 INFO  Scraper:125 - Scraped offer Senior FullStack Developer: Typescript/React/Express.js from https://justjoin.it/offers/brytlyt-sp-zo-o-senior-fullstack-developer-typescript-react-express-js-wroclaw
+2024-01-18 23:45:18 INFO  Scraper:125 - Scraped offer FullStack Tech Lead: Typescript/Node.js from https://justjoin.it/offers/brytlyt-sp-zo-o-fullstack-tech-lead-typescript-node-js-wroclaw
+2024-01-18 23:45:19 INFO  Scraper:71 - Scraped offer Senior IBM Integration Bus Developer (+ Java) from https://nofluffjobs.com/job/senior-ibm-integration-bus-developer-java-volvo-group-wroclaw
+2024-01-18 23:45:19 INFO  Scraper:125 - Scraped offer Fullstack Javascript Developer from https://justjoin.it/offers/rigby-fullstack-javascript-developer-warszawa
+2024-01-18 23:45:19 INFO  Scraper:125 - Scraped offer Senior JavaScript Developer (React) from https://justjoin.it/offers/stx-next-senior-javascript-developer-react-warszawa-345922
+2024-01-18 23:45:19 INFO  Scraper:71 - Scraped offer Senior Java Developer from https://nofluffjobs.com/job/senior-java-developer-power-media-wroclaw
+2024-01-18 23:45:19 INFO  Scraper:71 - Scraped offer Senior Java Software Engineer (Tech Lead) from https://nofluffjobs.com/job/senior-java-software-engineer-tech-lead-volvo-group-wroclaw
+2024-01-18 23:45:20 INFO  Scraper:125 - Scraped offer Senior JavaScript Developer from https://justjoin.it/offers/ciklum-senior-javascript-developer-gdansk-345820
+2024-01-18 23:45:20 INFO  Scraper:125 - Scraped offer Expert JavaScript Developer from https://justjoin.it/offers/ciklum-expert-javascript-developer-wroclaw-345819
+2024-01-18 23:45:20 INFO  Scraper:71 - Scraped offer Remote Java Engineer from https://nofluffjobs.com/job/remote-java-engineer-fox-heap-wroclaw
+2024-01-18 23:45:20 INFO  Scraper:83 - Successfully scraped 13 job offers from https://nofluffjobs.com/wroclaw?page=1&criteria=jobPosition%3D%27java%20developer%27%20seniority%3Dsenior
+
+2024-01-18 23:45:20 INFO  Scraper:125 - Scraped offer JS (React, Node.JS) Developer German* from https://justjoin.it/offers/mindpal-js-react-node-js-developer-german
+2024-01-18 23:45:21 INFO  Scraper:125 - Scraped offer Senior/Lead Java Developer from https://justjoin.it/offers/spyrosoft-senior-lead-java-developer-gdansk-345742
+2024-01-18 23:45:21 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/shift4-senior-java-developer-48f68a97-595a-42a9-a51c-bb202a36f763
+2024-01-18 23:45:21 INFO  Scraper:139 - Successfully scraped 18 job offers from https://justjoin.it/wroclaw/experience-level_senior/with-salary_yes?keyword=java+developer
+
+2024-01-18 23:45:28 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/szczecin/experience-level_senior/with-salary_yes?keyword=java+developer
+2024-01-18 23:45:28 INFO  Scraper:125 - Scraped offer Senior Backend Java Developer (remote) from https://justjoin.it/offers/appfire-senior-backend-java-developer-remote-wroclaw-309790
+2024-01-18 23:45:29 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/sollers-consulting-sp-z-o-o-senior-java-developer
+2024-01-18 23:45:29 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/szczecin?page=1&criteria=jobPosition%3D%27java%20developer%27%20seniority%3Dsenior
+2024-01-18 23:45:29 INFO  Scraper:71 - Scraped offer Senior Java Developer from https://nofluffjobs.com/job/senior-java-developer-sollers-consulting-szczecin
+2024-01-18 23:45:29 INFO  Scraper:83 - Successfully scraped 1 job offers from https://nofluffjobs.com/szczecin?page=1&criteria=jobPosition%3D%27java%20developer%27%20seniority%3Dsenior
+
+2024-01-18 23:45:29 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/decerto-senior-backend-developer-warszawa
+2024-01-18 23:45:30 INFO  Scraper:125 - Scraped offer Java Developer from https://justjoin.it/offers/ework-group-java-developer-wroclaw
+2024-01-18 23:45:30 INFO  Scraper:139 - Successfully scraped 4 job offers from https://justjoin.it/szczecin/experience-level_senior/with-salary_yes?keyword=java+developer
+
+2024-01-18 23:45:52 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/experience-level_expert/with-salary_yes?
+2024-01-18 23:45:53 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/?page=1&criteria=seniority%3Dexpert
+2024-01-18 23:45:53 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/experience-level_expert/with-salary_yes?
+2024-01-18 23:45:53 INFO  Scraper:71 - Scraped offer Java Engineer from https://nofluffjobs.com/job/java-engineer-avenga-remote-4
+2024-01-18 23:45:53 INFO  Scraper:71 - Scraped offer Release Manager from https://nofluffjobs.com/job/release-manager-amartus-polska-remote
+2024-01-18 23:45:53 INFO  Scraper:71 - Scraped offer Test Manager from https://nofluffjobs.com/job/test-manager-amartus-polska-remote
+2024-01-18 23:45:53 INFO  Scraper:71 - Scraped offer Lead Data Scientist Engineer (1/517) from https://nofluffjobs.com/job/lead-data-scientist-engineer-1-517-infolet-remote
+2024-01-18 23:45:54 INFO  Scraper:71 - Scraped offer Senior Python Developer from https://nofluffjobs.com/job/senior-python-developer-lingaro-remote-3
+2024-01-18 23:45:54 INFO  Scraper:71 - Scraped offer Lead MLOps Engineer (Nvidia AI Stack Expert) from https://nofluffjobs.com/job/lead-mlops-engineer-nvidia-ai-stack-expert-softserve-remote
+2024-01-18 23:45:54 INFO  Scraper:71 - Scraped offer PHP Engineering Manager from https://nofluffjobs.com/job/php-engineering-manager-cloudflight-remote
+2024-01-18 23:45:54 INFO  Scraper:71 - Scraped offer Cloud Network Engineer from https://nofluffjobs.com/job/cloud-network-engineer-motorola-solutions-systems-polska-remote-1
+2024-01-18 23:45:55 INFO  Scraper:71 - Scraped offer Load&Performance Test Automation Architect from https://nofluffjobs.com/job/load-performance-test-automation-architect-avenga-remote
+2024-01-18 23:45:55 INFO  Scraper:71 - Scraped offer Java Developer (Tech Lead) from https://nofluffjobs.com/job/java-developer-tech-lead-avenga-remote
+2024-01-18 23:45:55 INFO  Scraper:71 - Scraped offer Senior/ Tech Lead Data Scientist from https://nofluffjobs.com/job/senior-tech-lead-data-scientist-avenga-remote
+2024-01-18 23:45:55 INFO  Scraper:71 - Scraped offer Principal Java Fullstack Developer from https://nofluffjobs.com/job/principal-java-fullstack-developer-sopra-steria-apps-services-katowice
+2024-01-18 23:45:56 INFO  Scraper:71 - Scraped offer Engineering Manager JavaScript from https://nofluffjobs.com/job/engineering-manager-javascript-cloudflight-remote
+2024-01-18 23:45:56 INFO  Scraper:71 - Scraped offer Director of Data Science from https://nofluffjobs.com/job/director-of-data-science-ardigen-remote-1
+2024-01-18 23:45:56 INFO  Scraper:71 - Scraped offer MS Dynamics Architect from https://nofluffjobs.com/job/ms-dynamics-architect-team-connect-remote
+2024-01-18 23:45:56 INFO  Scraper:71 - Scraped offer Senior Principal/Principal SAP FI / CO Consultant from https://nofluffjobs.com/job/senior-principal-principal-sap-fi-co-consultant-antal-remote-2
+2024-01-18 23:45:56 INFO  Scraper:71 - Scraped offer Senior Principal / Principal SAP SD Consultant from https://nofluffjobs.com/job/senior-principal-principal-sap-sd-consultant-antal-remote-1
+2024-01-18 23:45:57 INFO  Scraper:71 - Scraped offer Senior Principal/Principal EWM S4/HANA Consultant from https://nofluffjobs.com/job/senior-principal-principal-ewm-s4-hana-consultant-antal-remote-1
+2024-01-18 23:45:57 INFO  Scraper:71 - Scraped offer Solution Architect from https://nofluffjobs.com/job/solution-architect-euristiq-remote-2
+2024-01-18 23:45:57 INFO  Scraper:71 - Scraped offer Cyber Security Architect from https://nofluffjobs.com/job/cyber-security-architect-hitachi-energy-krakow-2
+2024-01-18 23:45:57 INFO  Scraper:83 - Successfully scraped 20 job offers from https://nofluffjobs.com/?page=1&criteria=seniority%3Dexpert
+
+2024-01-18 23:46:24 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/experience-level_expert/with-salary_yes?keyword=python
+2024-01-18 23:46:25 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27python%27%20seniority%3Dexpert
+2024-01-18 23:46:25 INFO  Scraper:71 - Scraped offer Senior Python Developer from https://nofluffjobs.com/job/senior-python-developer-lingaro-remote-3
+2024-01-18 23:46:25 INFO  Scraper:71 - Scraped offer Python Tech Lead from https://nofluffjobs.com/job/python-tech-lead--apreel-remote
+2024-01-18 23:46:25 INFO  Scraper:71 - Scraped offer Tech Squad Lead / Senior Engineer from https://nofluffjobs.com/job/tech-squad-lead-senior-engineer-integral-vision-remote
+2024-01-18 23:46:25 INFO  Scraper:71 - Scraped offer Test Manager from https://nofluffjobs.com/job/test-manager-amartus-polska-remote
+2024-01-18 23:46:25 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/experience-level_expert/with-salary_yes?keyword=python
+2024-01-18 23:46:25 INFO  Scraper:71 - Scraped offer Lead MLOps Engineer (Nvidia AI Stack Expert) from https://nofluffjobs.com/job/lead-mlops-engineer-nvidia-ai-stack-expert-softserve-remote
+2024-01-18 23:46:25 INFO  Scraper:71 - Scraped offer Senior/ Tech Lead Data Scientist from https://nofluffjobs.com/job/senior-tech-lead-data-scientist-avenga-remote
+2024-01-18 23:46:25 INFO  Scraper:71 - Scraped offer Director of Data Science from https://nofluffjobs.com/job/director-of-data-science-ardigen-remote-1
+2024-01-18 23:46:25 INFO  Scraper:71 - Scraped offer Senior AI Engineer (GenerativeAI) from https://nofluffjobs.com/job/senior-ai-engineer-generativeai-lingaro-remote
+2024-01-18 23:46:25 INFO  Scraper:71 - Scraped offer Lead DevOps Engineer from https://nofluffjobs.com/job/lead-devops-engineer-n-ix-remote
+2024-01-18 23:46:25 INFO  Scraper:71 - Scraped offer Principal Software Engineer from https://nofluffjobs.com/job/principal-software-engineer-ai-rev-remote
+2024-01-18 23:46:25 INFO  Scraper:71 - Scraped offer Data Scientist from https://nofluffjobs.com/job/data-scientist-start-io-warsaw
+2024-01-18 23:46:25 INFO  Scraper:71 - Scraped offer Senior AI Engineer from https://nofluffjobs.com/job/senior-ai-engineer-lingaro-remote-1
+2024-01-18 23:46:25 INFO  Scraper:71 - Scraped offer Test Automation Infra Architect/ Aut. Guild Master from https://nofluffjobs.com/job/test-automation-infra-architect-aut-guild-master-sentinelone-remote-1
+2024-01-18 23:46:25 INFO  Scraper:71 - Scraped offer Data Engineer from https://nofluffjobs.com/job/data-engineer-virtuslab-remote
+2024-01-18 23:46:25 INFO  Scraper:71 - Scraped offer Principal Deep Learning Engineer from https://nofluffjobs.com/job/principal-deep-learning-engineer-focal-systems-remote-2
+2024-01-18 23:46:25 INFO  Scraper:71 - Scraped offer Expert Backend Engineer from https://nofluffjobs.com/job/expert-backend-engineer-secret-sauce-partners-remote
+2024-01-18 23:46:25 INFO  Scraper:71 - Scraped offer Release Manager from https://nofluffjobs.com/job/release-manager-amartus-polska-remote
+2024-01-18 23:46:26 INFO  Scraper:71 - Scraped offer Lead Data Scientist Engineer (1/517) from https://nofluffjobs.com/job/lead-data-scientist-engineer-1-517-infolet-remote
+2024-01-18 23:46:26 INFO  Scraper:71 - Scraped offer Solution Architect from https://nofluffjobs.com/job/solution-architect-euristiq-remote-2
+2024-01-18 23:46:26 INFO  Scraper:71 - Scraped offer Chief Embedded Developer in HVDC from https://nofluffjobs.com/job/chief-embedded-developer-in-hvdc-hitachi-energy-krakow-1
+2024-01-18 23:46:26 INFO  Scraper:83 - Successfully scraped 20 job offers from https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27python%27%20seniority%3Dexpert
+
+2024-01-18 23:46:43 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27python%27%20seniority%3Dexpert
+2024-01-18 23:46:43 INFO  Scraper:71 - Scraped offer Senior Python Developer from https://nofluffjobs.com/job/senior-python-developer-lingaro-remote-3
+2024-01-18 23:46:43 INFO  Scraper:71 - Scraped offer Python Tech Lead from https://nofluffjobs.com/job/python-tech-lead--apreel-remote
+2024-01-18 23:46:43 INFO  Scraper:71 - Scraped offer Tech Squad Lead / Senior Engineer from https://nofluffjobs.com/job/tech-squad-lead-senior-engineer-integral-vision-remote
+2024-01-18 23:46:43 INFO  Scraper:71 - Scraped offer Test Manager from https://nofluffjobs.com/job/test-manager-amartus-polska-remote
+2024-01-18 23:46:43 INFO  Scraper:71 - Scraped offer Lead MLOps Engineer (Nvidia AI Stack Expert) from https://nofluffjobs.com/job/lead-mlops-engineer-nvidia-ai-stack-expert-softserve-remote
+2024-01-18 23:46:43 INFO  Scraper:71 - Scraped offer Senior/ Tech Lead Data Scientist from https://nofluffjobs.com/job/senior-tech-lead-data-scientist-avenga-remote
+2024-01-18 23:46:43 INFO  Scraper:71 - Scraped offer Director of Data Science from https://nofluffjobs.com/job/director-of-data-science-ardigen-remote-1
+2024-01-18 23:46:44 INFO  Scraper:71 - Scraped offer Senior AI Engineer (GenerativeAI) from https://nofluffjobs.com/job/senior-ai-engineer-generativeai-lingaro-remote
+2024-01-18 23:46:44 INFO  Scraper:71 - Scraped offer Lead DevOps Engineer from https://nofluffjobs.com/job/lead-devops-engineer-n-ix-remote
+2024-01-18 23:46:44 INFO  Scraper:71 - Scraped offer Principal Software Engineer from https://nofluffjobs.com/job/principal-software-engineer-ai-rev-remote
+2024-01-18 23:46:44 INFO  Scraper:71 - Scraped offer Data Scientist from https://nofluffjobs.com/job/data-scientist-start-io-warsaw
+2024-01-18 23:46:44 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/experience-level_expert/with-salary_yes?keyword=python
+2024-01-18 23:46:44 INFO  Scraper:139 - Successfully scraped 0 job offers from https://justjoin.it/experience-level_expert/with-salary_yes?keyword=python
+
+2024-01-18 23:46:44 INFO  Scraper:71 - Scraped offer Senior AI Engineer from https://nofluffjobs.com/job/senior-ai-engineer-lingaro-remote-1
+2024-01-18 23:46:44 INFO  Scraper:71 - Scraped offer Test Automation Infra Architect/ Aut. Guild Master from https://nofluffjobs.com/job/test-automation-infra-architect-aut-guild-master-sentinelone-remote-1
+2024-01-18 23:46:44 INFO  Scraper:71 - Scraped offer Data Engineer from https://nofluffjobs.com/job/data-engineer-virtuslab-remote
+2024-01-18 23:46:44 INFO  Scraper:71 - Scraped offer Principal Deep Learning Engineer from https://nofluffjobs.com/job/principal-deep-learning-engineer-focal-systems-remote-2
+2024-01-18 23:46:44 INFO  Scraper:71 - Scraped offer Expert Backend Engineer from https://nofluffjobs.com/job/expert-backend-engineer-secret-sauce-partners-remote
+2024-01-18 23:46:44 INFO  Scraper:71 - Scraped offer Release Manager from https://nofluffjobs.com/job/release-manager-amartus-polska-remote
+2024-01-18 23:46:44 INFO  Scraper:71 - Scraped offer Lead Data Scientist Engineer (1/517) from https://nofluffjobs.com/job/lead-data-scientist-engineer-1-517-infolet-remote
+2024-01-18 23:46:44 INFO  Scraper:71 - Scraped offer Solution Architect from https://nofluffjobs.com/job/solution-architect-euristiq-remote-2
+2024-01-18 23:46:44 INFO  Scraper:71 - Scraped offer Chief Embedded Developer in HVDC from https://nofluffjobs.com/job/chief-embedded-developer-in-hvdc-hitachi-energy-krakow-1
+2024-01-18 23:46:44 INFO  Scraper:83 - Successfully scraped 20 job offers from https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27python%27%20seniority%3Dexpert
+
+2024-01-18 23:46:54 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/zdalnie/experience-level_expert/with-salary_yes?keyword=python
+2024-01-18 23:46:55 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/zdalnie?page=1&criteria=jobPosition%3D%27python%27%20seniority%3Dexpert
+2024-01-18 23:46:55 INFO  Scraper:71 - Scraped offer Senior Python Developer from https://nofluffjobs.com/job/senior-python-developer-lingaro-remote-3
+2024-01-18 23:46:55 INFO  Scraper:71 - Scraped offer Python Tech Lead from https://nofluffjobs.com/job/python-tech-lead--apreel-remote
+2024-01-18 23:46:55 INFO  Scraper:71 - Scraped offer Tech Squad Lead / Senior Engineer from https://nofluffjobs.com/job/tech-squad-lead-senior-engineer-integral-vision-remote
+2024-01-18 23:46:55 INFO  Scraper:71 - Scraped offer Test Manager from https://nofluffjobs.com/job/test-manager-amartus-polska-remote
+2024-01-18 23:46:55 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/zdalnie/experience-level_expert/with-salary_yes?keyword=python
+2024-01-18 23:46:55 INFO  Scraper:71 - Scraped offer Lead MLOps Engineer (Nvidia AI Stack Expert) from https://nofluffjobs.com/job/lead-mlops-engineer-nvidia-ai-stack-expert-softserve-remote
+2024-01-18 23:46:55 INFO  Scraper:71 - Scraped offer Senior/ Tech Lead Data Scientist from https://nofluffjobs.com/job/senior-tech-lead-data-scientist-avenga-remote
+2024-01-18 23:46:55 INFO  Scraper:71 - Scraped offer Director of Data Science from https://nofluffjobs.com/job/director-of-data-science-ardigen-remote-1
+2024-01-18 23:46:55 INFO  Scraper:71 - Scraped offer Senior AI Engineer (GenerativeAI) from https://nofluffjobs.com/job/senior-ai-engineer-generativeai-lingaro-remote
+2024-01-18 23:46:55 INFO  Scraper:71 - Scraped offer Lead DevOps Engineer from https://nofluffjobs.com/job/lead-devops-engineer-n-ix-remote
+2024-01-18 23:46:56 INFO  Scraper:71 - Scraped offer Principal Software Engineer from https://nofluffjobs.com/job/principal-software-engineer-ai-rev-remote
+2024-01-18 23:46:56 INFO  Scraper:71 - Scraped offer Senior AI Engineer from https://nofluffjobs.com/job/senior-ai-engineer-lingaro-remote-1
+2024-01-18 23:46:56 INFO  Scraper:71 - Scraped offer Test Automation Infra Architect/ Aut. Guild Master from https://nofluffjobs.com/job/test-automation-infra-architect-aut-guild-master-sentinelone-remote-1
+2024-01-18 23:46:56 INFO  Scraper:71 - Scraped offer Data Engineer from https://nofluffjobs.com/job/data-engineer-virtuslab-remote
+2024-01-18 23:46:56 INFO  Scraper:71 - Scraped offer Principal Deep Learning Engineer from https://nofluffjobs.com/job/principal-deep-learning-engineer-focal-systems-remote-2
+2024-01-18 23:46:56 INFO  Scraper:71 - Scraped offer Expert Backend Engineer from https://nofluffjobs.com/job/expert-backend-engineer-secret-sauce-partners-remote
+2024-01-18 23:46:56 INFO  Scraper:71 - Scraped offer Release Manager from https://nofluffjobs.com/job/release-manager-amartus-polska-remote
+2024-01-18 23:46:56 INFO  Scraper:71 - Scraped offer Lead Data Scientist Engineer (1/517) from https://nofluffjobs.com/job/lead-data-scientist-engineer-1-517-infolet-remote
+2024-01-18 23:46:56 INFO  Scraper:71 - Scraped offer Solution Architect from https://nofluffjobs.com/job/solution-architect-euristiq-remote-2
+2024-01-18 23:46:56 INFO  Scraper:71 - Scraped offer Tech Lead Data Engineer from https://nofluffjobs.com/job/tech-lead-data-engineer-nordcloud-remote
+2024-01-18 23:46:56 INFO  Scraper:71 - Scraped offer Devops Engineer With Go Experience from https://nofluffjobs.com/job/devops-engineer-with-go-experience-innovecs-remote
+2024-01-18 23:46:56 INFO  Scraper:83 - Successfully scraped 20 job offers from https://nofluffjobs.com/zdalnie?page=1&criteria=jobPosition%3D%27python%27%20seniority%3Dexpert
+
+2024-01-18 23:47:22 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/warszawa/experience-level_expert/with-salary_yes?keyword=python
+2024-01-18 23:47:23 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/warszawa?page=1&criteria=jobPosition%3D%27python%27%20seniority%3Dexpert
+2024-01-18 23:47:23 INFO  Scraper:71 - Scraped offer Senior Python Developer from https://nofluffjobs.com/job/senior-python-developer-lingaro-warsaw-2
+2024-01-18 23:47:23 INFO  Scraper:71 - Scraped offer Python Tech Lead from https://nofluffjobs.com/job/python-tech-lead--apreel-warsaw
+2024-01-18 23:47:23 INFO  Scraper:71 - Scraped offer Senior AI Engineer (GenerativeAI) from https://nofluffjobs.com/job/senior-ai-engineer-generativeai-lingaro-warsaw
+2024-01-18 23:47:23 INFO  Scraper:71 - Scraped offer Data Scientist from https://nofluffjobs.com/job/data-scientist-start-io-warsaw
+2024-01-18 23:47:23 INFO  Scraper:71 - Scraped offer Senior AI Engineer from https://nofluffjobs.com/job/senior-ai-engineer-lingaro-warsaw
+2024-01-18 23:47:23 INFO  Scraper:71 - Scraped offer Tech Lead Data Engineer from https://nofluffjobs.com/job/tech-lead-data-engineer-nordcloud-warszawa
+2024-01-18 23:47:23 INFO  Scraper:71 - Scraped offer DevOps Lead from https://nofluffjobs.com/job/devops-lead-falck-it-poland-warsaw
+2024-01-18 23:47:23 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/warszawa/experience-level_expert/with-salary_yes?keyword=python
+2024-01-18 23:47:23 INFO  Scraper:71 - Scraped offer Lead Cloud Engineer from https://nofluffjobs.com/job/lead-cloud-engineer-ework-group-warsaw
+2024-01-18 23:47:23 INFO  Scraper:71 - Scraped offer Lead Data Engineer from https://nofluffjobs.com/job/lead-data-engineer-ework-group-warsaw
+2024-01-18 23:47:23 INFO  Scraper:83 - Successfully scraped 9 job offers from https://nofluffjobs.com/warszawa?page=1&criteria=jobPosition%3D%27python%27%20seniority%3Dexpert
+
+2024-01-18 23:47:45 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27python%27%20seniority%3Dexpert
+2024-01-18 23:47:45 INFO  Scraper:71 - Scraped offer Senior Python Developer from https://nofluffjobs.com/job/senior-python-developer-lingaro-remote-3
+2024-01-18 23:47:45 INFO  Scraper:71 - Scraped offer Python Tech Lead from https://nofluffjobs.com/job/python-tech-lead--apreel-remote
+2024-01-18 23:47:45 INFO  Scraper:71 - Scraped offer Tech Squad Lead / Senior Engineer from https://nofluffjobs.com/job/tech-squad-lead-senior-engineer-integral-vision-remote
+2024-01-18 23:47:45 INFO  Scraper:71 - Scraped offer Test Manager from https://nofluffjobs.com/job/test-manager-amartus-polska-remote
+2024-01-18 23:47:45 INFO  Scraper:71 - Scraped offer Lead MLOps Engineer (Nvidia AI Stack Expert) from https://nofluffjobs.com/job/lead-mlops-engineer-nvidia-ai-stack-expert-softserve-remote
+2024-01-18 23:47:45 INFO  Scraper:71 - Scraped offer Senior/ Tech Lead Data Scientist from https://nofluffjobs.com/job/senior-tech-lead-data-scientist-avenga-remote
+2024-01-18 23:47:45 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/experience-level_expert/with-salary_yes?keyword=python
+2024-01-18 23:47:45 INFO  Scraper:139 - Successfully scraped 0 job offers from https://justjoin.it/experience-level_expert/with-salary_yes?keyword=python
+
+2024-01-18 23:47:45 INFO  Scraper:71 - Scraped offer Director of Data Science from https://nofluffjobs.com/job/director-of-data-science-ardigen-remote-1
+2024-01-18 23:47:45 INFO  Scraper:71 - Scraped offer Senior AI Engineer (GenerativeAI) from https://nofluffjobs.com/job/senior-ai-engineer-generativeai-lingaro-remote
+2024-01-18 23:47:45 INFO  Scraper:71 - Scraped offer Lead DevOps Engineer from https://nofluffjobs.com/job/lead-devops-engineer-n-ix-remote
+2024-01-18 23:47:45 INFO  Scraper:71 - Scraped offer Principal Software Engineer from https://nofluffjobs.com/job/principal-software-engineer-ai-rev-remote
+2024-01-18 23:47:45 INFO  Scraper:71 - Scraped offer Data Scientist from https://nofluffjobs.com/job/data-scientist-start-io-warsaw
+2024-01-18 23:47:45 INFO  Scraper:71 - Scraped offer Senior AI Engineer from https://nofluffjobs.com/job/senior-ai-engineer-lingaro-remote-1
+2024-01-18 23:47:45 INFO  Scraper:71 - Scraped offer Test Automation Infra Architect/ Aut. Guild Master from https://nofluffjobs.com/job/test-automation-infra-architect-aut-guild-master-sentinelone-remote-1
+2024-01-18 23:47:45 INFO  Scraper:71 - Scraped offer Data Engineer from https://nofluffjobs.com/job/data-engineer-virtuslab-remote
+2024-01-18 23:47:45 INFO  Scraper:71 - Scraped offer Principal Deep Learning Engineer from https://nofluffjobs.com/job/principal-deep-learning-engineer-focal-systems-remote-2
+2024-01-18 23:47:45 INFO  Scraper:71 - Scraped offer Expert Backend Engineer from https://nofluffjobs.com/job/expert-backend-engineer-secret-sauce-partners-remote
+2024-01-18 23:47:45 INFO  Scraper:71 - Scraped offer Release Manager from https://nofluffjobs.com/job/release-manager-amartus-polska-remote
+2024-01-18 23:47:45 INFO  Scraper:71 - Scraped offer Lead Data Scientist Engineer (1/517) from https://nofluffjobs.com/job/lead-data-scientist-engineer-1-517-infolet-remote
+2024-01-18 23:47:45 INFO  Scraper:71 - Scraped offer Solution Architect from https://nofluffjobs.com/job/solution-architect-euristiq-remote-2
+2024-01-18 23:47:45 INFO  Scraper:71 - Scraped offer Chief Embedded Developer in HVDC from https://nofluffjobs.com/job/chief-embedded-developer-in-hvdc-hitachi-energy-krakow-1
+2024-01-18 23:47:45 INFO  Scraper:83 - Successfully scraped 20 job offers from https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27python%27%20seniority%3Dexpert
+
+2024-01-18 23:49:07 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27python%27%20seniority%3Dexpert
+2024-01-18 23:49:07 INFO  Scraper:71 - Scraped offer Senior Python Developer from https://nofluffjobs.com/job/senior-python-developer-lingaro-remote-3
+2024-01-18 23:49:07 INFO  Scraper:71 - Scraped offer Python Tech Lead from https://nofluffjobs.com/job/python-tech-lead--apreel-remote
+2024-01-18 23:49:07 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/experience-level_expert/with-salary_yes?keyword=python
+2024-01-18 23:49:07 INFO  Scraper:139 - Successfully scraped 0 job offers from https://justjoin.it/experience-level_expert/with-salary_yes?keyword=python
+
+2024-01-18 23:49:07 INFO  Scraper:71 - Scraped offer Tech Squad Lead / Senior Engineer from https://nofluffjobs.com/job/tech-squad-lead-senior-engineer-integral-vision-remote
+2024-01-18 23:49:07 INFO  Scraper:71 - Scraped offer Test Manager from https://nofluffjobs.com/job/test-manager-amartus-polska-remote
+2024-01-18 23:49:07 INFO  Scraper:71 - Scraped offer Lead MLOps Engineer (Nvidia AI Stack Expert) from https://nofluffjobs.com/job/lead-mlops-engineer-nvidia-ai-stack-expert-softserve-remote
+2024-01-18 23:49:07 INFO  Scraper:71 - Scraped offer Senior/ Tech Lead Data Scientist from https://nofluffjobs.com/job/senior-tech-lead-data-scientist-avenga-remote
+2024-01-18 23:49:07 INFO  Scraper:71 - Scraped offer Director of Data Science from https://nofluffjobs.com/job/director-of-data-science-ardigen-remote-1
+2024-01-18 23:49:07 INFO  Scraper:71 - Scraped offer Senior AI Engineer (GenerativeAI) from https://nofluffjobs.com/job/senior-ai-engineer-generativeai-lingaro-remote
+2024-01-18 23:49:07 INFO  Scraper:71 - Scraped offer Lead DevOps Engineer from https://nofluffjobs.com/job/lead-devops-engineer-n-ix-remote
+2024-01-18 23:49:07 INFO  Scraper:71 - Scraped offer Principal Software Engineer from https://nofluffjobs.com/job/principal-software-engineer-ai-rev-remote
+2024-01-18 23:49:07 INFO  Scraper:71 - Scraped offer Data Scientist from https://nofluffjobs.com/job/data-scientist-start-io-warsaw
+2024-01-18 23:49:07 INFO  Scraper:71 - Scraped offer Senior AI Engineer from https://nofluffjobs.com/job/senior-ai-engineer-lingaro-remote-1
+2024-01-18 23:49:07 INFO  Scraper:71 - Scraped offer Test Automation Infra Architect/ Aut. Guild Master from https://nofluffjobs.com/job/test-automation-infra-architect-aut-guild-master-sentinelone-remote-1
+2024-01-18 23:49:07 INFO  Scraper:71 - Scraped offer Data Engineer from https://nofluffjobs.com/job/data-engineer-virtuslab-remote
+2024-01-18 23:49:07 INFO  Scraper:71 - Scraped offer Principal Deep Learning Engineer from https://nofluffjobs.com/job/principal-deep-learning-engineer-focal-systems-remote-2
+2024-01-18 23:49:08 INFO  Scraper:71 - Scraped offer Expert Backend Engineer from https://nofluffjobs.com/job/expert-backend-engineer-secret-sauce-partners-remote
+2024-01-18 23:49:08 INFO  Scraper:71 - Scraped offer Release Manager from https://nofluffjobs.com/job/release-manager-amartus-polska-remote
+2024-01-18 23:49:08 INFO  Scraper:71 - Scraped offer Lead Data Scientist Engineer (1/517) from https://nofluffjobs.com/job/lead-data-scientist-engineer-1-517-infolet-remote
+2024-01-18 23:49:08 INFO  Scraper:71 - Scraped offer Solution Architect from https://nofluffjobs.com/job/solution-architect-euristiq-remote-2
+2024-01-18 23:49:08 INFO  Scraper:71 - Scraped offer Chief Embedded Developer in HVDC from https://nofluffjobs.com/job/chief-embedded-developer-in-hvdc-hitachi-energy-krakow-1
+2024-01-18 23:49:08 INFO  Scraper:83 - Successfully scraped 20 job offers from https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27python%27%20seniority%3Dexpert
+
+2024-01-18 23:50:49 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/experience-level_expert/with-salary_yes?keyword=principal
+2024-01-18 23:50:50 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27principal%27%20seniority%3Dexpert
+2024-01-18 23:50:50 INFO  Scraper:71 - Scraped offer Principal Java Fullstack Developer from https://nofluffjobs.com/job/principal-java-fullstack-developer-sopra-steria-apps-services-katowice
+2024-01-18 23:50:51 INFO  Scraper:71 - Scraped offer Senior Principal/Principal SAP FI / CO Consultant from https://nofluffjobs.com/job/senior-principal-principal-sap-fi-co-consultant-antal-remote-2
+2024-01-18 23:50:51 INFO  Scraper:71 - Scraped offer Senior Principal / Principal SAP SD Consultant from https://nofluffjobs.com/job/senior-principal-principal-sap-sd-consultant-antal-remote-1
+2024-01-18 23:50:51 INFO  Scraper:71 - Scraped offer Senior Principal/Principal EWM S4/HANA Consultant from https://nofluffjobs.com/job/senior-principal-principal-ewm-s4-hana-consultant-antal-remote-1
+2024-01-18 23:50:51 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/experience-level_expert/with-salary_yes?keyword=principal
+2024-01-18 23:50:51 INFO  Scraper:71 - Scraped offer Principal Backend Developer Remote (Node.js) from https://nofluffjobs.com/job/principal-backend-developer-remote-node-js-hyland
+2024-01-18 23:50:51 INFO  Scraper:71 - Scraped offer Principal Software Engineer from https://nofluffjobs.com/job/principal-software-engineer-ai-rev-remote
+2024-01-18 23:50:52 INFO  Scraper:71 - Scraped offer Principal Autosar Developer from https://nofluffjobs.com/job/principal-autosar-developer-harman-connected-services-remote
+2024-01-18 23:50:53 INFO  Scraper:71 - Scraped offer Principal R&D engineer (FPGA Developer) from https://nofluffjobs.com/job/principal-r-d-engineer-fpga-developer-hitachi-energy-krakow
+2024-01-18 23:50:53 INFO  Scraper:71 - Scraped offer Principal Deep Learning Engineer from https://nofluffjobs.com/job/principal-deep-learning-engineer-focal-systems-remote-2
+2024-01-18 23:50:55 INFO  Scraper:71 - Scraped offer Principal Fullstack Engineer from https://nofluffjobs.com/job/principal-fullstack-engineer-fluke-reliability-remote
+2024-01-18 23:50:55 INFO  Scraper:83 - Successfully scraped 10 job offers from https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27principal%27%20seniority%3Dexpert
+
+2024-01-18 23:51:06 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27vice%27%20seniority%3Dexpert
+2024-01-18 23:51:06 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/experience-level_expert/with-salary_yes?keyword=vice
+2024-01-18 23:51:06 INFO  Scraper:71 - Scraped offer Vice President of Engineering from https://nofluffjobs.com/job/vice-president-of-engineering-focal-systems-remote
+2024-01-18 23:51:06 INFO  Scraper:83 - Successfully scraped 1 job offers from https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27vice%27%20seniority%3Dexpert
+
+2024-01-18 23:51:07 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/experience-level_expert/with-salary_yes?keyword=vice
+2024-01-18 23:51:16 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/experience-level_expert/with-salary_yes?keyword=president
+2024-01-18 23:51:17 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27president%27%20seniority%3Dexpert
+2024-01-18 23:51:17 ERROR Scraper:136 - Failed to load data fromhttps://justjoin.it/experience-level_expert/with-salary_yes?keyword=president
+2024-01-18 23:51:17 INFO  Scraper:71 - Scraped offer Head of Product Engineering from https://nofluffjobs.com/job/head-of-product-engineering-railsware-remote-1
+2024-01-18 23:51:18 INFO  Scraper:71 - Scraped offer Tech Lead .Net/JavaScript (SaaS product) from https://nofluffjobs.com/job/tech-lead-net-javascript-saas-product-aqua-cloud-remote
+2024-01-18 23:51:18 INFO  Scraper:83 - Successfully scraped 2 job offers from https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27president%27%20seniority%3Dexpert
+
+2024-01-18 23:51:28 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27vice%27%20seniority%3Dexpert
+2024-01-18 23:51:28 INFO  Scraper:71 - Scraped offer Vice President of Engineering from https://nofluffjobs.com/job/vice-president-of-engineering-focal-systems-remote
+2024-01-18 23:51:28 INFO  Scraper:83 - Successfully scraped 1 job offers from https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27vice%27%20seniority%3Dexpert
+
+2024-01-18 23:51:28 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/experience-level_expert/with-salary_yes?keyword=vice
+2024-01-18 23:51:28 INFO  Scraper:139 - Successfully scraped 0 job offers from https://justjoin.it/experience-level_expert/with-salary_yes?keyword=vice
+
+2024-01-18 23:51:29 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27vice%27%20seniority%3Dexpert
+2024-01-18 23:51:29 INFO  Scraper:71 - Scraped offer Vice President of Engineering from https://nofluffjobs.com/job/vice-president-of-engineering-focal-systems-remote
+2024-01-18 23:51:29 INFO  Scraper:83 - Successfully scraped 1 job offers from https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27vice%27%20seniority%3Dexpert
+
+2024-01-18 23:51:29 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/experience-level_expert/with-salary_yes?keyword=vice
+2024-01-18 23:51:29 INFO  Scraper:139 - Successfully scraped 0 job offers from https://justjoin.it/experience-level_expert/with-salary_yes?keyword=vice
+
+2024-01-18 23:51:38 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27vice%27%20
+2024-01-18 23:51:38 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/with-salary_yes?keyword=vice
+2024-01-18 23:51:39 INFO  Scraper:125 - Scraped offer Mobile Developer from https://justjoin.it/offers/getresponse-mobile-developer
+2024-01-18 23:51:39 INFO  Scraper:71 - Scraped offer Senior Vice President, Full-Stack Developer from https://nofluffjobs.com/job/senior-vice-president-full-stack-developer-bny-mellon-wroclaw
+2024-01-18 23:51:39 INFO  Scraper:125 - Scraped offer Senior Mobile Developer from https://justjoin.it/offers/getresponse-senior-mobile-developer-warszawa
+2024-01-18 23:51:39 INFO  Scraper:71 - Scraped offer Vice President of Engineering from https://nofluffjobs.com/job/vice-president-of-engineering-focal-systems-remote
+2024-01-18 23:51:39 INFO  Scraper:83 - Successfully scraped 2 job offers from https://nofluffjobs.com/?page=1&criteria=jobPosition%3D%27vice%27%20
+
+2024-01-18 23:51:40 INFO  Scraper:125 - Scraped offer Analityk from https://justjoin.it/offers/speedapp-analityk
+2024-01-18 23:51:40 INFO  Scraper:139 - Successfully scraped 3 job offers from https://justjoin.it/with-salary_yes?keyword=vice
+
+2024-01-18 23:51:53 INFO  Scraper:97 - Successfully connected to  https://justjoin.it/experience-level_senior/with-salary_yes?
+2024-01-18 23:51:53 INFO  Scraper:31 - Successfully connected to https://nofluffjobs.com/?page=1&criteria=seniority%3Dsenior
+2024-01-18 23:51:54 INFO  Scraper:125 - Scraped offer Senior DevOps Engineer (Azure) from https://justjoin.it/offers/future-processing-senior-devops-engineer-azure-warszawa
+2024-01-18 23:51:54 INFO  Scraper:125 - Scraped offer DevOps Architect (Azure) from https://justjoin.it/offers/future-processing-devops-architect-azure-warszawa
+2024-01-18 23:51:54 INFO  Scraper:71 - Scraped offer Head of Accounting from https://nofluffjobs.com/job/head-of-accounting-idea-hr-group-szczecin
+2024-01-18 23:51:54 INFO  Scraper:71 - Scraped offer C++ Developer (UoP) from https://nofluffjobs.com/job/c-developer-uop-knowit-remote-1
+2024-01-18 23:51:54 INFO  Scraper:71 - Scraped offer Software Engineer/Senior Software Engineer (UoP) from https://nofluffjobs.com/job/software-engineer-senior-software-engineer-uop-knowit-remote
+2024-01-18 23:51:54 INFO  Scraper:71 - Scraped offer React Native Developer from https://nofluffjobs.com/job/react-native-developer-codete-remote-4
+2024-01-18 23:51:54 INFO  Scraper:71 - Scraped offer C Developer (UoP) from https://nofluffjobs.com/job/c-developer-uop-knowit-remote
+2024-01-18 23:51:54 INFO  Scraper:125 - Scraped offer Senior CloudOps Engineer (Azure) from https://justjoin.it/offers/future-processing-senior-cloudops-engineer-azure-torun
+2024-01-18 23:51:55 INFO  Scraper:125 - Scraped offer Major Incident Manager with German from https://justjoin.it/offers/experis-manpower-group-major-incident-manager-with-german-wroclaw
+2024-01-18 23:51:55 INFO  Scraper:71 - Scraped offer C++ Developer (B2B) from https://nofluffjobs.com/job/c-developer-b2b-knowit-remote-1
+2024-01-18 23:51:55 INFO  Scraper:71 - Scraped offer Java Developer from https://nofluffjobs.com/job/java-developer-devire-warsaw-5
+2024-01-18 23:51:55 INFO  Scraper:125 - Scraped offer CloudOps Architect (Azure) from https://justjoin.it/offers/future-processing-cloudops-architect-azure-warszawa
+2024-01-18 23:51:56 INFO  Scraper:71 - Scraped offer Senior Technical Program Manager from https://nofluffjobs.com/job/senior-technical-program-manager-snowflake-warszawa
+2024-01-18 23:51:56 INFO  Scraper:71 - Scraped offer Computer Vision Algorithm Developer (AI) from https://nofluffjobs.com/job/computer-vision-algorithm-developer-ai-unit-group-remote
+2024-01-18 23:51:56 INFO  Scraper:71 - Scraped offer MLOps Engineer from https://nofluffjobs.com/job/mlops-engineer-spyrosoft-remote
+2024-01-18 23:51:56 INFO  Scraper:71 - Scraped offer Salesforce Team Lead (German Speaking) from https://nofluffjobs.com/job/salesforce-team-lead-german-speaking-primescale-remote
+2024-01-18 23:51:57 INFO  Scraper:125 - Scraped offer Backend Engineer from https://justjoin.it/offers/focal-systems-backend-engineer
+2024-01-18 23:51:57 INFO  Scraper:125 - Scraped offer Senior Java Engineer (Kafka) from https://justjoin.it/offers/7n-senior-java-engineer-kafka
+2024-01-18 23:51:58 INFO  Scraper:125 - Scraped offer Senior Delphi Software Engineer from https://justjoin.it/offers/revalize-business-services-senior-delphi-software-engineer
+2024-01-18 23:51:58 INFO  Scraper:125 - Scraped offer Test Lead (IAM) from https://justjoin.it/offers/itds-test-lead-iam-lodz
+2024-01-18 23:51:58 INFO  Scraper:125 - Scraped offer JavaScript Front-end Developer from https://justjoin.it/offers/fru-pl-javascript-front-end-developer
+2024-01-18 23:51:59 INFO  Scraper:71 - Scraped offer Senior QA Engineer from https://nofluffjobs.com/job/senior-qa-engineer-focal-systems-remote
+2024-01-18 23:51:59 INFO  Scraper:125 - Scraped offer Senior Project Manager from https://justjoin.it/offers/applover-senior-project-manager
+2024-01-18 23:51:59 INFO  Scraper:125 - Scraped offer Senior Business Analyst / Product Owner from https://justjoin.it/offers/ikor-polska-senior-business-analyst-product-owner-krakow
+2024-01-18 23:51:59 INFO  Scraper:71 - Scraped offer Senior PHP Engineer (Printify) from https://nofluffjobs.com/job/senior-php-engineer-printify-usoftware-remote
+2024-01-18 23:52:00 INFO  Scraper:125 - Scraped offer Senior Frontend Engineer from https://justjoin.it/offers/zeta-labs-senior-frontend-engineer-warszawa
+2024-01-18 23:52:00 INFO  Scraper:125 - Scraped offer Senior Business Analyst / Product Owner from https://justjoin.it/offers/ikor-polska-senior-business-analyst-product-owner-warszawa
+2024-01-18 23:52:01 INFO  Scraper:125 - Scraped offer Fullstack Engineer (.NET, ReactJS) from https://justjoin.it/offers/aperia-fullstack-engineer-net-reactjs
+2024-01-18 23:52:01 INFO  Scraper:71 - Scraped offer Analityk Biznesowo Systemowy from https://nofluffjobs.com/job/analityk-biznesowo-systemowy-ness-solution-warszawa-3
+2024-01-18 23:52:01 INFO  Scraper:71 - Scraped offer Project Manager – AI Platform Development from https://nofluffjobs.com/job/project-manager-ai-platform-development-sky-engine-ai-warszawa
+2024-01-18 23:52:01 INFO  Scraper:125 - Scraped offer Solution Architect from https://justjoin.it/offers/aperia-solution-architect
+2024-01-18 23:52:02 INFO  Scraper:125 - Scraped offer Senior Java / Tech Lead Developer from https://justjoin.it/offers/talent-hills-senior-java-tech-lead-developer
+2024-01-18 23:52:02 INFO  Scraper:71 - Scraped offer MuleSoft System Administrator from https://nofluffjobs.com/job/mulesoft-system-administrator-devire-remote-1
+2024-01-18 23:52:02 INFO  Scraper:71 - Scraped offer Java Developer - Senior Search Engineer from https://nofluffjobs.com/job/java-developer-senior-search-engineer-knowde-remote
+2024-01-18 23:52:02 INFO  Scraper:71 - Scraped offer Data Architect from https://nofluffjobs.com/job/data-architect-objectivity-part-of-accenture-remote
+2024-01-18 23:52:02 INFO  Scraper:71 - Scraped offer Senior Big Data Engineer (Scala/Python) - Data&AI from https://nofluffjobs.com/job/senior-big-data-engineer-scala-python-data-ai-allegro-warszawa
+2024-01-18 23:52:02 INFO  Scraper:71 - Scraped offer Senior Big Data Engineer (Scala) - Data & AI from https://nofluffjobs.com/job/senior-big-data-engineer-scala-data-ai-allegro-warszawa
+2024-01-18 23:52:02 INFO  Scraper:83 - Successfully scraped 20 job offers from https://nofluffjobs.com/?page=1&criteria=seniority%3Dsenior
+
+2024-01-18 23:52:02 INFO  Scraper:125 - Scraped offer Senior .NET Developer from https://justjoin.it/offers/macrix-technology-group-senior-net-developer-poznan-342743
+2024-01-18 23:52:03 INFO  Scraper:125 - Scraped offer PHP (Symfony) Developer from https://justjoin.it/offers/dac-digital-php-symfony-developer-warszawa-340898
+2024-01-18 23:52:03 INFO  Scraper:125 - Scraped offer Java Developer with Kafka from https://justjoin.it/offers/itds-java-developer-with-kafka-warszawa
+2024-01-18 23:52:03 INFO  Scraper:125 - Scraped offer Senior Java Developer from https://justjoin.it/offers/apzumi-senior-java-developer-poznan-336441
+2024-01-18 23:52:03 INFO  Scraper:139 - Successfully scraped 21 job offers from https://justjoin.it/experience-level_senior/with-salary_yes?
+

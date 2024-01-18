@@ -32,10 +32,10 @@ public class SearchPanel extends JPanel {
                 "katowice", "lodz", "bialystok", "gdynia", "lublin", "rzeszow",
                 "bydgoszcz", "gliwice", "czestochowa", "szczecin", "sopot"});
         locationLabel = new JLabel("Location:", RIGHT);
-        locationDropdown.setSelectedIndex(2);
+        locationDropdown.setSelectedIndex(3);
 
         expLevelDropdown = new JComboBox<>(new String[]{"dowolny", "junior", "mid", "senior", "expert"});
-        expLevelDropdown.setSelectedIndex(4);
+        expLevelDropdown.setSelectedIndex(3);
         expLabel = new JLabel("Exp Level:", RIGHT);
 
         sortingComboBox = new JComboBox<>(new String[]{
