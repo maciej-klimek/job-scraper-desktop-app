@@ -54,6 +54,8 @@ public class MainInterface extends JFrame {
         if (Scraper.nfjScrapingFlag  || Scraper.jjitScrapingFlag) {
 
             //TUTAJ ZEBY PIEKNE OKIENKO WYSKOCZYLO
+            JOptionPane.showMessageDialog(null, "Can't scrape new data while previous scraping process is still active", "Warning", JOptionPane.WARNING_MESSAGE);
+    
             logger.warn("Can't scrape new data while previous scraping process is still active");
             return;
         }
