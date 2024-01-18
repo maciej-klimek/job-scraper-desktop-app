@@ -1,3 +1,6 @@
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -7,6 +10,7 @@ import static javax.swing.SwingConstants.RIGHT;
 
 public class SearchPanel extends JPanel {
 
+    private static final Logger logger = LogManager.getLogger(Scraper.class);
     private final JTextField offerNameField;
     private final JLabel nameLabel;
     private final JComboBox<String> locationDropdown;
@@ -70,40 +74,45 @@ public class SearchPanel extends JPanel {
     }
 
     private void customizeAppearance() {
+        try {
 
-        setBackground(UIVariables.backgroundColor2);
+            setBackground(UIVariables.backgroundColor2);
 
-        offerNameField.setFont(UIVariables.mainFont);
-        offerNameField.setBackground(UIVariables.backgroundColor1);
-        offerNameField.setForeground(UIVariables.foregroundColor);
-        nameLabel.setForeground(UIVariables.foregroundColor);
-        nameLabel.setFont(UIVariables.mainFont);
-        offerNameField.setBorder(UIVariables.getButtonBorder(5, 5, 5, 5, 2));
+            offerNameField.setFont(UIVariables.mainFont);
+            offerNameField.setBackground(UIVariables.backgroundColor1);
+            offerNameField.setForeground(UIVariables.foregroundColor);
+            nameLabel.setForeground(UIVariables.foregroundColor);
+            nameLabel.setFont(UIVariables.mainFont);
+            offerNameField.setBorder(UIVariables.getButtonBorder(5, 5, 5, 5, 2));
 
-        locationDropdown.setFont(UIVariables.mainFont);
-        locationDropdown.setBackground(UIVariables.backgroundColor1);
-        locationDropdown.setForeground(UIVariables.foregroundColor);
-        locationLabel.setForeground(UIVariables.foregroundColor);
-        locationLabel.setFont(UIVariables.mainFont);
+            locationDropdown.setFont(UIVariables.mainFont);
+            locationDropdown.setBackground(UIVariables.backgroundColor1);
+            locationDropdown.setForeground(UIVariables.foregroundColor);
+            locationLabel.setForeground(UIVariables.foregroundColor);
+            locationLabel.setFont(UIVariables.mainFont);
 
-        expLevelDropdown.setFont(UIVariables.mainFont);
-        expLevelDropdown.setBackground(UIVariables.backgroundColor1);
-        expLevelDropdown.setForeground(UIVariables.foregroundColor);
-        expLabel.setForeground(UIVariables.foregroundColor);
-        expLabel.setFont(UIVariables.mainFont);
+            expLevelDropdown.setFont(UIVariables.mainFont);
+            expLevelDropdown.setBackground(UIVariables.backgroundColor1);
+            expLevelDropdown.setForeground(UIVariables.foregroundColor);
+            expLabel.setForeground(UIVariables.foregroundColor);
+            expLabel.setFont(UIVariables.mainFont);
 
-        searchButton.setFont(UIVariables.mainFont);
-        searchButton.setBackground(new Color(235, 235, 235));
-        searchButton.setForeground(UIVariables.foregroundColor);
-        searchButton.setFont(UIVariables.mainFont);
-        searchButton.setBorder(UIVariables.getButtonBorder(10, 0, 10, 0, 2));
-        searchButton.setBorder(BorderFactory.createLineBorder(new Color(74, 115, 148), 3));
+            searchButton.setFont(UIVariables.mainFont);
+            searchButton.setBackground(new Color(235, 235, 235));
+            searchButton.setForeground(UIVariables.foregroundColor);
+            searchButton.setFont(UIVariables.mainFont);
+            searchButton.setBorder(UIVariables.getButtonBorder(10, 0, 10, 0, 2));
+            searchButton.setBorder(BorderFactory.createLineBorder(new Color(74, 115, 148), 3));
 
-        sortingComboBox.setFont(UIVariables.mainFont);
-        sortingComboBox.setBackground(UIVariables.backgroundColor1);
-        sortingComboBox.setForeground(UIVariables.foregroundColor);
-        sortingLabel.setForeground(UIVariables.foregroundColor);
-        sortingLabel.setFont(UIVariables.mainFont);
+            sortingComboBox.setFont(UIVariables.mainFont);
+            sortingComboBox.setBackground(UIVariables.backgroundColor1);
+            sortingComboBox.setForeground(UIVariables.foregroundColor);
+            sortingLabel.setForeground(UIVariables.foregroundColor);
+            sortingLabel.setFont(UIVariables.mainFont);
+
+        } catch (Exception e) {
+            logger.error("Failed to customize search panel appearance");
+        }
     }
 
     public String getOfferName() {

@@ -32,7 +32,6 @@ public class MainInterface extends JFrame {
         add(searchBar, BorderLayout.NORTH);
         add(jobOffersTable, BorderLayout.CENTER);
 
-        // Customize appearance
         customizeAppearance();
 
         pack();
@@ -41,20 +40,26 @@ public class MainInterface extends JFrame {
     }
 
     private void customizeAppearance() {
+        try {
+            getContentPane().setBackground(UIVariables.backgroundColor2);
+            setForeground(UIVariables.foregroundColor);
 
-        getContentPane().setBackground(UIVariables.backgroundColor2);
-        setForeground(UIVariables.foregroundColor);
+            searchBar.setForeground(UIVariables.foregroundColor);
+            jobOffersTable.setForeground(UIVariables.foregroundColor);
+        } catch (Exception e) {
+            logger.error("Failed to customize appearance");
+        }
 
-        searchBar.setForeground(UIVariables.foregroundColor);
-        jobOffersTable.setForeground(UIVariables.foregroundColor);
     }
 
     public static void searchJobOffers() {
 
-        if (Scraper.nfjScrapingFlag  || Scraper.jjitScrapingFlag) {
-
-            //TUTAJ ZEBY PIEKNE OKIENKO WYSKOCZYLO
-            JOptionPane.showMessageDialog(null, "Nie można szukać nowych ofert podczas scrapowania", "Uwaga", JOptionPane.WARNING_MESSAGE);
+        if (Scraper.nfjScrapingFlag || Scraper.jjitScrapingFlag) {
+            try {
+                JOptionPane.showMessageDialog(null, "Nie można szukać nowych ofert podczas scrapowania", "Uwaga", JOptionPane.WARNING_MESSAGE);
+            } catch (Exception e) {
+                logger.error("Cant open dialog window");
+            }
 
             logger.warn("Can't scrape new data while previous scraping process is still active");
             return;
@@ -62,30 +67,37 @@ public class MainInterface extends JFrame {
 
         jobOffers.clear();
 
-        String inputOfferName = searchBar.getOfferName();
-        String inputLocation = searchBar.getOfferLocation();
-        String inputExpLevel = searchBar.getExpLevel();
 
-        if ("dowolna".equals(inputLocation)) {
-            inputLocation = "";
+        try {
+            String inputOfferName = searchBar.getOfferName();
+            String inputLocation = searchBar.getOfferLocation();
+            String inputExpLevel = searchBar.getExpLevel();
+
+            if ("dowolna".equals(inputLocation)) {
+                inputLocation = "";
+            }
+            if ("dowolny".equals(inputExpLevel)) {
+                inputExpLevel = "";
+            }
+
+            String[] urls = UrlModifier.getModifiedUrls(inputLocation, inputOfferName, inputExpLevel);
+            String nofluffjobsUrl = urls[0];
+            String justjoinitUrl = urls[1];
+
+
+            ExecutorService executor = Executors.newFixedThreadPool(2);
+            executor.execute(() -> Scraper.getNfjData(nofluffjobsUrl));
+            executor.execute(() -> Scraper.getJjitData(justjoinitUrl));
+
+            Timer timer = new Timer(1000, e -> jobOffersTable.updateTable());
+            timer.start();
+
+            executor.shutdown();
+
+        } catch (Exception e) {
+            logger.fatal("Fatal error, cannot start the scraping porcess");
         }
-        if ("dowolny".equals(inputExpLevel)) {
-            inputExpLevel = "";
-        }
 
-        String[] urls = UrlModifier.getModifiedUrls(inputLocation, inputOfferName, inputExpLevel);
-        String nofluffjobsUrl = urls[0];
-        String justjoinitUrl = urls[1];
-
-
-        ExecutorService executor = Executors.newFixedThreadPool(2);
-        executor.execute(() -> Scraper.getNfjData(nofluffjobsUrl));
-        executor.execute(() -> Scraper.getJjitData(justjoinitUrl));
-
-        Timer timer = new Timer(1000, e -> jobOffersTable.updateTable());
-        timer.start();
-
-        executor.shutdown();
     }
 
     public static void main(String[] args) {
