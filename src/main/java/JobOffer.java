@@ -1,6 +1,12 @@
 //nazwa, firma, kaska, exp level, link
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class JobOffer {
+
+    private static final Logger logger = LogManager.getLogger(Scraper.class);
+
     String name = "";
     String company = "";
     String salary = "";
@@ -25,14 +31,19 @@ public class JobOffer {
 
     public double getMeanSalary() {
 
-        String cleanedSalary = salary.endsWith(" PLN") ? salary.substring(0, salary.length() - 4) : salary;
+        try {
 
-        String[] salaryRange = cleanedSalary.replaceAll("–", "-").replaceAll("\\s", "").split("-");
+            String cleanedSalary = salary.replaceAll("–", "-");
+            String[] salaryRange = cleanedSalary.replaceAll("[^\\d-]+", "").split("-");
 
-        int lower = Integer.parseInt(salaryRange[0]);
-        int upper = Integer.parseInt(salaryRange[1]);
+            int lower = Integer.parseInt(salaryRange[0]);
+            int upper = Integer.parseInt(salaryRange[1]);
 
-        return (lower + upper) / 2.0;
+            return (lower + upper) / 2.0;
+        } catch (Exception e) {
+            logger.error("Failed to get mean salary");
+            return 1;
+        }
     }
 
     public String getCompany() {
